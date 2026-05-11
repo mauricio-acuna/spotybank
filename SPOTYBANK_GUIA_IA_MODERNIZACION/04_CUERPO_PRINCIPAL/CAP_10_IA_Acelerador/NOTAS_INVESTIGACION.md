@@ -2,7 +2,7 @@
 
 ## Estado
 
-Pendiente de redaccion.
+Redactado como borrador completo en `CAP_10_BORRADOR.md`.
 
 ## Enfoque previsto
 
@@ -19,3 +19,9 @@ Pendiente de redaccion.
 - Backlog tecnico.
 - Status de tareas.
 - Registro de bloqueos externos.
+
+## Pendiente de revision
+
+- Agregar plantilla de prompt seguro.
+- Agregar ejemplo de clasificacion evidencia/inferencia.
+- Revisar el capitulo con perfil de seguridad antes de publicacion final.

@@ -6,8 +6,8 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 
 ## Resumen de avance
 
-- Avance global estimado: 67%.
-- Estado editorial: REDACCION INICIAL.
+- Avance global estimado: 83%.
+- Estado editorial: CUERPO PRINCIPAL COMPLETO EN BORRADOR.
 - Estrategia recomendada: publicar primero por fasciculos y consolidar luego como libro unico.
 - Versionado GitHub: ACTIVO COMO REPO INDEPENDIENTE DE OBRA LITERARIA.
 - Base documental disponible: suficiente para avanzar capitulos tecnicos basados en inspeccion estatica.
@@ -17,7 +17,7 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 
 - DONE: creado y utilizable como borrador.
 - IN_PROGRESS: en redaccion o ampliacion.
-- PENDING: pendiente de redactar.
+- PENDING: pendiente de redactar, crear o completar.
 - NEEDS_REVIEW: requiere revision tecnica/editorial.
 - BLOCKED: requiere informacion externa.
 
@@ -68,9 +68,9 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 | 7 - Seguridad y DevSecOps | DONE | `04_CUERPO_PRINCIPAL/CAP_07_Conclusiones/CAP_07_BORRADOR.md` | Agregar checklist DevSecOps |
 | 8 - Despliegue cloud native | DONE | `04_CUERPO_PRINCIPAL/CAP_08_Despliegue_Cloud_Native/CAP_08_BORRADOR.md` | Agregar laboratorio OpenShift/Kind/Minikube |
 | 9 - Performance, escalamiento y resiliencia | DONE | `04_CUERPO_PRINCIPAL/CAP_09_Performance_Escalamiento_Resiliencia/CAP_09_BORRADOR.md` | Agregar plantilla de prueba de carga |
-| 10 - IA como acelerador | PENDING | `04_CUERPO_PRINCIPAL/CAP_10_IA_Acelerador/NOTAS_INVESTIGACION.md` | Redactar |
-| 11 - Spotybank como curso | PENDING | `04_CUERPO_PRINCIPAL/CAP_11_Spotybank_Como_Curso/NOTAS_INVESTIGACION.md` | Redactar |
-| 12 - Roadmap de evolucion | PENDING | `04_CUERPO_PRINCIPAL/CAP_12_Roadmap_Evolucion/NOTAS_INVESTIGACION.md` | Redactar |
+| 10 - IA como acelerador | DONE | `04_CUERPO_PRINCIPAL/CAP_10_IA_Acelerador/CAP_10_BORRADOR.md` | Agregar plantilla de prompt seguro |
+| 11 - Spotybank como curso | DONE | `04_CUERPO_PRINCIPAL/CAP_11_Spotybank_Como_Curso/CAP_11_BORRADOR.md` | Crear planes de clase por duracion |
+| 12 - Roadmap de evolucion | DONE | `04_CUERPO_PRINCIPAL/CAP_12_Roadmap_Evolucion/CAP_12_BORRADOR.md` | Convertir roadmap en tabla ejecutiva |
 
 ## Fasciculos
 
@@ -84,7 +84,7 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 | 5 - QA y testing | PENDING | Requiere ejercicios |
 | 6 - Nube y observabilidad | IN_PROGRESS | Base textual lista desde capitulo 8; faltan ejercicios y figuras |
 | 7 - Performance | IN_PROGRESS | Base textual lista desde capitulo 9; faltan ejercicios y figuras |
-| 8 - Diseno curricular | PENDING | Requiere capitulo 11 |
+| 8 - Diseno curricular | IN_PROGRESS | Base textual lista desde capitulo 11; faltan rubricas y planes de clase |
 
 ## Pendientes priorizados
 
@@ -99,6 +99,9 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 | P1 | Crear carpetas para capitulos 8 a 12 | DONE | Carpetas y notas de investigacion creadas |
 | P1 | Redactar capitulo 8 | DONE | Despliegue cloud native |
 | P1 | Redactar capitulo 9 | DONE | Performance, escalamiento y resiliencia |
+| P1 | Redactar capitulo 10 | DONE | IA como acelerador de modernizacion |
+| P1 | Redactar capitulo 11 | DONE | Spotybank como curso y producto educativo |
+| P1 | Redactar capitulo 12 | DONE | Roadmap de evolucion |
 | P1 | Crear ejercicios por capitulo | PENDING | Necesario para uso academico |
 | P1 | Crear figuras y tablas | PENDING | Necesario para lectura didactica |
 | P2 | Revision tecnica por perfil | PENDING | Backend, arquitectura, seguridad, DevOps, QA |
@@ -118,11 +121,11 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 
 ## Proximo bloque recomendado
 
-1. Redactar capitulo 10: IA como acelerador de modernizacion.
-2. Redactar capitulo 11: Spotybank como curso.
-3. Redactar capitulo 12: roadmap de evolucion.
-4. Agregar ejercicios practicos a capitulos 1 a 9.
-5. Crear plantillas de laboratorio para nube y performance.
+1. Crear ejercicios practicos a capitulos 1 a 12.
+2. Crear rubricas por perfil.
+3. Crear planes de clase por duracion: 12, 24, 40 y 80 horas.
+4. Crear figuras iniciales para capitulos 8 a 12.
+5. Definir licencia y formato de publicacion.
 
 ## Historial
 
@@ -136,3 +139,4 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 | 2026-05-11 | Publicado commit inicial en `https://github.com/mauricio-acuna/spotybank.git` y creada tarea programada 09:00, 14:00 y 19:00. |
 | 2026-05-11 | Creado instructivo para descargar la obra y continuar aportes desde otro ordenador. |
 | 2026-05-11 | Creadas carpetas de capitulos 8 a 12 y redactados capitulos 8 y 9 en borrador completo. |
+| 2026-05-11 | Redactados capitulos 10, 11 y 12 en borrador completo; cuerpo principal completo de la obra. |

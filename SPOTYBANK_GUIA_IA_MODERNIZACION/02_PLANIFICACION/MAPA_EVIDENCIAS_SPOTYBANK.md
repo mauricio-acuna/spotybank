@@ -13,6 +13,9 @@ Este mapa conecta la obra literaria tecnica con los documentos ya generados en e
 | Backlog tecnico | `../../../arquitectura/backlog-tecnico.md` | Capitulos 6, 7, 8, 9 y 12 |
 | Refactor de identidad | `../../../spotybank/refactor-identidad.md` | Capitulo 3 |
 | Servicios canonicos | `../../../spotybank/servicios-canonicos.md` | Capitulo 5 |
+| Gobierno documental | `../../../gobernanza/definicion-done-documentacion.md` | Capitulos 10 y 11 |
+| Onboarding | `../../../onboarding/guia-primeros-7-dias.md` | Capitulo 11 |
+| Versionado de la obra | `../../INSTRUCCIONES_DESCARGA_Y_APORTES.md` | Capitulos 10 y 12 |
 | Bloqueos externos | `../../../validacion/registro-bloqueos-externos.md` | Notas metodologicas y advertencias |
 
 ## Regla de redaccion

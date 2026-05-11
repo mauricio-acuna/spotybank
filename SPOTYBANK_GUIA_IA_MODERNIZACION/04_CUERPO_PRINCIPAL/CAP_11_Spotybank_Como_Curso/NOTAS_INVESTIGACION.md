@@ -2,7 +2,7 @@
 
 ## Estado
 
-Pendiente de redaccion.
+Redactado como borrador completo en `CAP_11_BORRADOR.md`.
 
 ## Enfoque previsto
 
@@ -18,3 +18,9 @@ Pendiente de redaccion.
 - Indice provisional.
 - Capitulos 1 a 9.
 - Backlog tecnico y ejercicios practicos.
+
+## Pendiente de revision
+
+- Crear plan de clases por duracion: 12, 24, 40 y 80 horas.
+- Definir rubricas especificas por perfil.
+- Crear ejercicios resueltos de referencia.

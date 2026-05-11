@@ -7,6 +7,9 @@
 | FIG_001 | 1        | 1.1    |                      | Propio | N/A     |         |
 | FIG_008 | 8        | 8.1    | Unidad minima de despliegue cloud native | Propio | N/A     | Por crear |
 | FIG_009 | 9        | 9.1    | Flujo de observabilidad para performance | Propio | N/A     | Por crear |
+| FIG_010 | 10       | 10.1   | Ciclo de trabajo con IA y validacion humana | Propio | N/A     | Por crear |
+| FIG_011 | 11       | 11.1   | Rutas formativas por perfil | Propio | N/A     | Por crear |
+| FIG_012 | 12       | 12.1   | Roadmap de evolucion por fases | Propio | N/A     | Por crear |
 
 ## Tablas
 
@@ -15,6 +18,9 @@
 | TAB_001 | 1        | 1.1    |                      | Propio | N/A     |         |
 | TAB_008 | 8        | 8.1    | Escenarios de despliegue Spotybank | Propio | N/A     | Incluida en capitulo |
 | TAB_009 | 9        | 9.1    | SLIs y SLOs educativos por dominio | Propio | N/A     | Incluida en capitulo |
+| TAB_010 | 10       | 10.1   | Categorias de afirmacion tecnica | Propio | N/A     | Incluida en capitulo |
+| TAB_011 | 11       | 11.1   | Rutas por perfil | Propio | N/A     | Incluida en capitulo |
+| TAB_012 | 12       | 12.1   | Fases de evolucion Spotybank | Propio | N/A     | Incluida en capitulo |
 
 ---
 

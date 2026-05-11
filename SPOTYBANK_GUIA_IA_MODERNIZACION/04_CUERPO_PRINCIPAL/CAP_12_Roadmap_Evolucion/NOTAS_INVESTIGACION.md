@@ -2,7 +2,7 @@
 
 ## Estado
 
-Pendiente de redaccion.
+Redactado como borrador completo en `CAP_12_BORRADOR.md`.
 
 ## Enfoque previsto
 
@@ -18,3 +18,9 @@ Pendiente de redaccion.
 - Backlog tecnico.
 - Servicios canonicos Spotybank.
 - Bloqueos externos.
+
+## Pendiente de revision
+
+- Convertir el roadmap en tabla ejecutiva de versiones.
+- Definir licencia y estrategia de publicacion.
+- Crear checklist de salida para MVP educativo.
