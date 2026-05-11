@@ -42,7 +42,7 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 |---|---|---|---|
 | Repo Git independiente de la obra | DONE | Directorio versionado: `Documentacion/ObraLiteraria` | Mantener fuera del repo principal |
 | Repo remoto | DONE | `https://github.com/mauricio-acuna/spotybank.git` con rama `main` publicada | Mantener credenciales GitHub vigentes |
-| Publicacion manual segura | DONE | `Publicar_ObraLiteraria_Spotybank.ps1` creado con escaneo previo | Ejecutar despues de cada bloque de escritura |
+| Publicacion manual segura | DONE | `Publicar_ObraLiteraria_Spotybank.ps1` creado con escaneo previo y manejo de commits locales pendientes de push | Ejecutar despues de cada bloque de escritura |
 | Publicacion automatica 3 veces al dia | DONE | Tarea Windows `Spotybank-ObraLiteraria-Publicar` creada para 09:00, 14:00 y 19:00 | Revisar logs/credenciales si un push falla |
 | Exclusiones de material no publicable | DONE | `.gitignore` creado para logs, zips, llaves y temporales | Mantener escaneo antes de publicar |
 | Descarga y aportes desde otro ordenador | DONE | `INSTRUCCIONES_DESCARGA_Y_APORTES.md` creado | Mantener actualizado si cambia el flujo Git |
@@ -167,3 +167,4 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 | 2026-05-11 | Creados propuesta de licencia, checklist de revision y plan de version publicable. |
 | 2026-05-11 | Creados revision interna asistida, matriz de revision por perfil, release notes borrador y checklist de tag/release. |
 | 2026-05-11 | Agregada evidencia directa desde fuentes de microservicios, referencias actuales de modernizacion y mapa de modernizacion por oleadas. |
+| 2026-05-11 | Ajustado el publicador para empujar commits locales pendientes aunque no existan cambios nuevos en working tree. |
