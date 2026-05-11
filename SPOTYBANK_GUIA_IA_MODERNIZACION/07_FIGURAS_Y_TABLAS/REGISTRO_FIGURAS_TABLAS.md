@@ -5,11 +5,11 @@
 | ID      | Capítulo | Número | Título / Descripción | Origen | Permiso | Archivo |
 |---------|----------|--------|----------------------|--------|---------|---------|
 | FIG_001 | 1        | 1.1    |                      | Propio | N/A     |         |
-| FIG_008 | 8        | 8.1    | Unidad minima de despliegue cloud native | Propio | N/A     | Por crear |
-| FIG_009 | 9        | 9.1    | Flujo de observabilidad para performance | Propio | N/A     | Por crear |
-| FIG_010 | 10       | 10.1   | Ciclo de trabajo con IA y validacion humana | Propio | N/A     | Por crear |
-| FIG_011 | 11       | 11.1   | Rutas formativas por perfil | Propio | N/A     | Por crear |
-| FIG_012 | 12       | 12.1   | Roadmap de evolucion por fases | Propio | N/A     | Por crear |
+| FIG_008 | 8        | 8.1    | Unidad minima de despliegue cloud native | Propio | N/A     | `FIGURAS_MERMAID_INICIALES.md` |
+| FIG_009 | 9        | 9.1    | Flujo de observabilidad para performance | Propio | N/A     | `FIGURAS_MERMAID_INICIALES.md` |
+| FIG_010 | 10       | 10.1   | Ciclo de trabajo con IA y validacion humana | Propio | N/A     | `FIGURAS_MERMAID_INICIALES.md` |
+| FIG_011 | 11       | 11.1   | Rutas formativas por perfil | Propio | N/A     | `FIGURAS_MERMAID_INICIALES.md` |
+| FIG_012 | 12       | 12.1   | Roadmap de evolucion por fases | Propio | N/A     | `FIGURAS_MERMAID_INICIALES.md` |
 
 ## Tablas
 
