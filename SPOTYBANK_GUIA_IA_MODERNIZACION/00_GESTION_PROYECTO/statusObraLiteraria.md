@@ -9,7 +9,7 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 - Avance global estimado: 55%.
 - Estado editorial: REDACCION INICIAL.
 - Estrategia recomendada: publicar primero por fasciculos y consolidar luego como libro unico.
-- Versionado GitHub: PREPARADO COMO REPO INDEPENDIENTE DE OBRA LITERARIA.
+- Versionado GitHub: ACTIVO COMO REPO INDEPENDIENTE DE OBRA LITERARIA.
 - Base documental disponible: suficiente para avanzar capitulos tecnicos basados en inspeccion estatica.
 - Dependencias externas: owners, SLAs, contratos vigentes, metricas reales, trazas y ambientes.
 
@@ -37,10 +37,10 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 
 | Item | Estado | Resultado actual | Pendiente |
 |---|---|---|---|
-| Repo Git independiente de la obra | IN_PROGRESS | Directorio objetivo: `Documentacion/ObraLiteraria` | Crear commit inicial y conectar remoto |
-| Repo remoto | IN_PROGRESS | `https://github.com/mauricio-acuna/spotybank.git` | Validar push con credenciales GitHub |
+| Repo Git independiente de la obra | DONE | Directorio versionado: `Documentacion/ObraLiteraria` | Mantener fuera del repo principal |
+| Repo remoto | DONE | `https://github.com/mauricio-acuna/spotybank.git` con rama `main` publicada | Mantener credenciales GitHub vigentes |
 | Publicacion manual segura | DONE | `Publicar_ObraLiteraria_Spotybank.ps1` creado con escaneo previo | Ejecutar despues de cada bloque de escritura |
-| Publicacion automatica 3 veces al dia | READY | `Instalar_Tareas_Actualizacion_Obra.ps1` creado para 09:00, 14:00 y 19:00 | Registrar la tarea en Windows |
+| Publicacion automatica 3 veces al dia | DONE | Tarea Windows `Spotybank-ObraLiteraria-Publicar` creada para 09:00, 14:00 y 19:00 | Revisar logs/credenciales si un push falla |
 | Exclusiones de material no publicable | DONE | `.gitignore` creado para logs, zips, llaves y temporales | Mantener escaneo antes de publicar |
 
 ## Estructura editorial
@@ -101,7 +101,7 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 | P2 | Revision tecnica por perfil | PENDING | Backend, arquitectura, seguridad, DevOps, QA |
 | P2 | Revision editorial | PENDING | Coherencia, estilo y publicacion |
 | P2 | Definir licencia y formato de publicacion | PENDING | Uso academico/empresa |
-| P1 | Versionar solo la obra literaria en GitHub | IN_PROGRESS | Scripts creados; falta commit inicial, push y agenda local |
+| P1 | Versionar solo la obra literaria en GitHub | DONE | Repo local independiente, push inicial y tarea automatica creados |
 
 ## Bloqueos
 
@@ -110,6 +110,7 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 - No hay contratos vigentes validados contra ambiente.
 - No hay trazas reales saneadas.
 - `spotybank-core-ledger` aun no existe como modulo implementado.
+- La publicacion automatica depende de que las credenciales GitHub locales sigan funcionando.
 
 ## Proximo bloque recomendado
 
@@ -128,3 +129,4 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 | 2026-05-11 | Marcados como borradores completos los capitulos 4 y 5. |
 | 2026-05-11 | Marcados como borradores completos los capitulos 6 y 7. |
 | 2026-05-11 | Preparado versionado GitHub independiente para publicar solo la obra literaria Spotybank. |
+| 2026-05-11 | Publicado commit inicial en `https://github.com/mauricio-acuna/spotybank.git` y creada tarea programada 09:00, 14:00 y 19:00. |
