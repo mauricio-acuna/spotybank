@@ -133,6 +133,28 @@ Invoke-Git add -A .
 $changes = & git status --porcelain
 
 if (-not $changes) {
+  $aheadResult = Invoke-GitCapture rev-list --count "@{u}..HEAD"
+  $aheadCount = 0
+  if ($aheadResult.ExitCode -eq 0) {
+    $aheadText = $aheadResult.Output | Select-Object -First 1
+    if (-not [string]::IsNullOrWhiteSpace($aheadText)) {
+      $aheadCount = [int]$aheadText
+    }
+  }
+
+  if ($aheadCount -gt 0) {
+    if ($SkipPush) {
+      Write-Host "Sin cambios nuevos. Hay $aheadCount commit(s) local(es) pendiente(s); push omitido por parametro -SkipPush."
+      Stop-PublicacionLog
+      exit 0
+    }
+
+    Invoke-Git push -u origin main
+    Write-Host "Obra literaria Spotybank publicada en $RemoteUrl"
+    Stop-PublicacionLog
+    exit 0
+  }
+
   Write-Host "Sin cambios para publicar en la obra literaria Spotybank."
   Stop-PublicacionLog
   exit 0
