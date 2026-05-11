@@ -4,6 +4,27 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
+$script:TranscriptStarted = $false
+
+function Start-PublicacionLog {
+  $logDir = Join-Path $PSScriptRoot "_logs"
+  New-Item -ItemType Directory -Force -Path $logDir | Out-Null
+  $logFile = Join-Path $logDir ("publicacion-" + (Get-Date -Format "yyyy-MM-dd") + ".log")
+  Start-Transcript -Path $logFile -Append | Out-Null
+  $script:TranscriptStarted = $true
+}
+
+function Stop-PublicacionLog {
+  if ($script:TranscriptStarted) {
+    Stop-Transcript | Out-Null
+    $script:TranscriptStarted = $false
+  }
+}
+
+trap {
+  Stop-PublicacionLog
+  throw $_
+}
 
 function Invoke-Git {
   $Arguments = $args
@@ -77,6 +98,7 @@ function Assert-ContenidoPublicable {
 }
 
 Set-Location $PSScriptRoot
+Start-PublicacionLog
 
 Assert-GitDisponible
 
@@ -112,6 +134,7 @@ $changes = & git status --porcelain
 
 if (-not $changes) {
   Write-Host "Sin cambios para publicar en la obra literaria Spotybank."
+  Stop-PublicacionLog
   exit 0
 }
 
@@ -120,8 +143,10 @@ Invoke-Git commit -m "docs: actualiza obra literaria Spotybank $stamp"
 
 if ($SkipPush) {
   Write-Host "Commit local creado. Push omitido por parametro -SkipPush."
+  Stop-PublicacionLog
   exit 0
 }
 
 Invoke-Git push -u origin main
 Write-Host "Obra literaria Spotybank publicada en $RemoteUrl"
+Stop-PublicacionLog
