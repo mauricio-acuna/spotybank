@@ -1,0 +1,19 @@
+# Archivos locales/editoriales no publicables
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*.log
+*.zip
+*.7z
+*.rar
+
+# Salidas locales de sincronizacion
+_logs/
+
+# Material sensible que no debe entrar al repo publico
+*.secret
+*.pem
+*.p12
+*.jks
+*.key
