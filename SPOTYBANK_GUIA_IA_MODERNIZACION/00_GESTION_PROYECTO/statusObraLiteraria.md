@@ -6,11 +6,11 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 
 ## Resumen de avance
 
-- Avance global estimado: 97%.
+- Avance global estimado: 98%.
 - Estado editorial: CUERPO PRINCIPAL COMPLETO EN BORRADOR.
 - Estrategia recomendada: publicar primero por fasciculos y consolidar luego como libro unico.
 - Versionado GitHub: ACTIVO COMO REPO INDEPENDIENTE DE OBRA LITERARIA.
-- Base documental disponible: suficiente para avanzar capitulos tecnicos basados en inspeccion estatica.
+- Base documental disponible: suficiente para avanzar capitulos tecnicos basados en inspeccion estatica, fuentes locales y referencias oficiales actuales.
 - Dependencias externas: owners, SLAs, contratos vigentes, metricas reales, trazas y ambientes.
 
 ## Estados usados
@@ -32,6 +32,9 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 | Seguridad y riesgos | DONE | Capitulos 3 y 7 |
 | Roadmap de mejoras | DONE | Capitulos 6, 8, 9 y 12 |
 | Bloqueos externos | DONE | Metodologia y advertencias |
+| Evidencia directa desde fuentes | DONE | Inventario real de POMs, Java, configuracion, mensajeria, Camel, SOAP, pruebas y despliegue |
+| Referencias actuales 2026 | DONE | Modernizacion Spring, Camel, Kubernetes, OpenTelemetry, OWASP, SLSA, Karate y Testcontainers |
+| Mapa de modernizacion desde fuentes | DONE | Secuencia de oleadas ejecutables sin requerir decisiones externas |
 
 ## Versionado GitHub
 
@@ -54,6 +57,9 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 | Indice provisional | DONE | `INDICE_PROVISIONAL.md` creado | Ajustar cuando avance la redaccion |
 | Plan por fasciculos | DONE | `PLAN_FASCICULOS_PERFILES.md` creado | Definir orden de publicacion real |
 | Mapa de evidencias | DONE | `MAPA_EVIDENCIAS_SPOTYBANK.md` creado | Mantener actualizado por capitulo |
+| Evidencia desde codigo/configuracion | DONE | `EVIDENCIA_FUENTES_MICROSERVICIOS_2026-05-11.md` creado | Ampliar si se agregan nuevos microservicios |
+| Referencias de modernizacion | DONE | `REFERENCIAS_MODERNIZACION_2026.md` creado | Actualizar antes de publicacion final |
+| Mapa de modernizacion desde fuentes | DONE | `MAPA_MODERNIZACION_DESDE_FUENTES.md` creado | Convertir oleadas en fasciculos ejecutables |
 | Ejercicios y laboratorios | DONE | `APE_F_Ejercicios_Laboratorios` creado | Revisar con docentes o facilitadores |
 | Planes de clase | DONE | `PLANES_CLASE.md` creado | Ajustar a calendario real |
 | Figuras iniciales | IN_PROGRESS | `FIGURAS_MERMAID_INICIALES.md` creado | Exportar o disenar version final |
@@ -116,6 +122,9 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 | P1 | Crear laboratorios por perfil | DONE | Laboratorios backend, arquitectura, seguridad, DevOps/SRE, QA, gestion y docencia creados |
 | P1 | Crear rubricas por perfil | DONE | Rubricas general, perfil y proyecto final creadas |
 | P1 | Crear planes de clase | DONE | Planes de 12, 24, 40 y 80 horas creados |
+| P1 | Leer fuentes locales y documentar evidencia tecnica | DONE | Se relevaron POMs, Java, properties, YAML, Dockerfiles, JMS, Camel/SOAP, Swagger/Springfox, Karate y despliegue |
+| P1 | Buscar referencias actuales para propuestas nuevas | DONE | Se agrego bibliografia oficial/primaria 2026 para modernizacion |
+| P1 | Crear mapa de modernizacion basado en evidencia | DONE | Oleadas por baseline, pruebas, seguridad, observabilidad, runtime, cloud native, performance y supply chain |
 | P1 | Crear figuras y tablas | IN_PROGRESS | Figuras Mermaid iniciales 8 a 12 creadas; falta version grafica final |
 | P1 | Preparar revision interna y release notes | DONE | Revision interna, matriz por perfil, release notes y checklist de tag creados |
 | P2 | Revision tecnica por perfil | PENDING | Checklist creado; falta revision real por backend, arquitectura, seguridad, DevOps y QA |
@@ -157,3 +166,4 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 | 2026-05-11 | Creados ejercicios por capitulo, laboratorios por perfil, rubricas, planes de clase y figuras Mermaid iniciales. |
 | 2026-05-11 | Creados propuesta de licencia, checklist de revision y plan de version publicable. |
 | 2026-05-11 | Creados revision interna asistida, matriz de revision por perfil, release notes borrador y checklist de tag/release. |
+| 2026-05-11 | Agregada evidencia directa desde fuentes de microservicios, referencias actuales de modernizacion y mapa de modernizacion por oleadas. |

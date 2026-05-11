@@ -18,6 +18,14 @@ La obra se apoya en la documentacion local ya generada:
 - [Seguridad y riesgos](../../arquitectura/seguridad-y-riesgos.md)
 - [Escalamiento y performance](../../arquitectura/escalamiento-performance.md)
 
+## Evidencia desde fuentes
+
+Este bloque separa lo observado en el codigo de las propuestas de modernizacion:
+
+- [Evidencia desde fuentes de microservicios](01_INVESTIGACION/notas_campo/EVIDENCIA_FUENTES_MICROSERVICIOS_2026-05-11.md)
+- [Referencias de modernizacion 2026](01_INVESTIGACION/referencias_bibliograficas/REFERENCIAS_MODERNIZACION_2026.md)
+- [Mapa de modernizacion desde fuentes](02_PLANIFICACION/MAPA_MODERNIZACION_DESDE_FUENTES.md)
+
 ## Estructura editorial
 
 ```text
@@ -42,7 +50,11 @@ SPOTYBANK_GUIA_IA_MODERNIZACION/
 2. Revisar `00_GESTION_PROYECTO/FICHA_PROYECTO.md`.
 3. Revisar `02_PLANIFICACION/INDICE_PROVISIONAL.md`.
 4. Usar `02_PLANIFICACION/PLAN_FASCICULOS_PERFILES.md` para decidir si se publica como libro unico o por entregas.
-5. Leer los borradores iniciales:
+5. Revisar la evidencia directa de fuentes:
+   - `01_INVESTIGACION/notas_campo/EVIDENCIA_FUENTES_MICROSERVICIOS_2026-05-11.md`
+   - `01_INVESTIGACION/referencias_bibliograficas/REFERENCIAS_MODERNIZACION_2026.md`
+   - `02_PLANIFICACION/MAPA_MODERNIZACION_DESDE_FUENTES.md`
+6. Leer los borradores iniciales:
    - `04_CUERPO_PRINCIPAL/CAP_01_Introduccion/CAP_01_BORRADOR.md`
    - `04_CUERPO_PRINCIPAL/CAP_02_Marco_Teorico/CAP_02_BORRADOR.md`
    - `04_CUERPO_PRINCIPAL/CAP_03_Metodologia/CAP_03_BORRADOR.md`
