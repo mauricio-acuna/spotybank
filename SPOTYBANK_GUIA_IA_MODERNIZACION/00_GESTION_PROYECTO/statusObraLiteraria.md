@@ -42,6 +42,7 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 | Publicacion manual segura | DONE | `Publicar_ObraLiteraria_Spotybank.ps1` creado con escaneo previo | Ejecutar despues de cada bloque de escritura |
 | Publicacion automatica 3 veces al dia | DONE | Tarea Windows `Spotybank-ObraLiteraria-Publicar` creada para 09:00, 14:00 y 19:00 | Revisar logs/credenciales si un push falla |
 | Exclusiones de material no publicable | DONE | `.gitignore` creado para logs, zips, llaves y temporales | Mantener escaneo antes de publicar |
+| Descarga y aportes desde otro ordenador | DONE | `INSTRUCCIONES_DESCARGA_Y_APORTES.md` creado | Mantener actualizado si cambia el flujo Git |
 
 ## Estructura editorial
 
@@ -102,6 +103,7 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 | P2 | Revision editorial | PENDING | Coherencia, estilo y publicacion |
 | P2 | Definir licencia y formato de publicacion | PENDING | Uso academico/empresa |
 | P1 | Versionar solo la obra literaria en GitHub | DONE | Repo local independiente, push inicial y tarea automatica creados |
+| P1 | Documentar descarga y aportes desde otro ordenador | DONE | Instrucciones creadas para clonar, aportar, publicar y resolver conflictos |
 
 ## Bloqueos
 
@@ -130,3 +132,4 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 | 2026-05-11 | Marcados como borradores completos los capitulos 6 y 7. |
 | 2026-05-11 | Preparado versionado GitHub independiente para publicar solo la obra literaria Spotybank. |
 | 2026-05-11 | Publicado commit inicial en `https://github.com/mauricio-acuna/spotybank.git` y creada tarea programada 09:00, 14:00 y 19:00. |
+| 2026-05-11 | Creado instructivo para descargar la obra y continuar aportes desde otro ordenador. |

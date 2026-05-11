@@ -147,6 +147,7 @@ if ($SkipPush) {
   exit 0
 }
 
+Invoke-Git pull --rebase origin main
 Invoke-Git push -u origin main
 Write-Host "Obra literaria Spotybank publicada en $RemoteUrl"
 Stop-PublicacionLog

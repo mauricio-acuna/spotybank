@@ -6,6 +6,7 @@ Indice del material editorial de Spotybank.
 
 - [Spotybank - Guia IA de Modernizacion de Microservicios](SPOTYBANK_GUIA_IA_MODERNIZACION/README.md)
 - [Status de obra literaria](SPOTYBANK_GUIA_IA_MODERNIZACION/00_GESTION_PROYECTO/statusObraLiteraria.md)
+- [Instrucciones de descarga y aportes](INSTRUCCIONES_DESCARGA_Y_APORTES.md)
 
 ## Generador
 
@@ -21,6 +22,7 @@ Este directorio se versiona como repo Git independiente para publicar solo la ob
 - Script de publicacion: [Publicar_ObraLiteraria_Spotybank.ps1](Publicar_ObraLiteraria_Spotybank.ps1)
 - Script de agenda local: [Instalar_Tareas_Actualizacion_Obra.ps1](Instalar_Tareas_Actualizacion_Obra.ps1)
 - Script para retirar la agenda: [Desinstalar_Tareas_Actualizacion_Obra.ps1](Desinstalar_Tareas_Actualizacion_Obra.ps1)
+- Guia para continuar desde otro ordenador: [INSTRUCCIONES_DESCARGA_Y_APORTES.md](INSTRUCCIONES_DESCARGA_Y_APORTES.md)
 
 La agenda sugerida publica 3 veces al dia: 09:00, 14:00 y 19:00 hora local de la maquina.
 
