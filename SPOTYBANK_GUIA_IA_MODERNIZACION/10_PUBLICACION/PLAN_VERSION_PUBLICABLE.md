@@ -52,6 +52,13 @@ No incluye:
 9. Publicar release en GitHub.
 10. Registrar cambios en status de obra.
 
+## Artefactos de release preparados
+
+- `RELEASE_NOTES_v0.1-publicable_DRAFT.md`
+- `CHECKLIST_TAG_RELEASE.md`
+- `../09_REVISIONES/REVISION_INTERNA_IA_2026-05-11.md`
+- `../09_REVISIONES/MATRIZ_REVISION_POR_PERFIL.md`
+
 ## Fasciculos candidatos
 
 | Fasciculo | Capitulos base | Estado |

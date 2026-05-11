@@ -6,7 +6,7 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 
 ## Resumen de avance
 
-- Avance global estimado: 95%.
+- Avance global estimado: 97%.
 - Estado editorial: CUERPO PRINCIPAL COMPLETO EN BORRADOR.
 - Estrategia recomendada: publicar primero por fasciculos y consolidar luego como libro unico.
 - Versionado GitHub: ACTIVO COMO REPO INDEPENDIENTE DE OBRA LITERARIA.
@@ -58,8 +58,12 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 | Planes de clase | DONE | `PLANES_CLASE.md` creado | Ajustar a calendario real |
 | Figuras iniciales | IN_PROGRESS | `FIGURAS_MERMAID_INICIALES.md` creado | Exportar o disenar version final |
 | Checklist de revision | DONE | `CHECKLIST_REVISION_TECNICA_EDITORIAL.md` creado | Ejecutar revision real por perfil |
+| Revision interna asistida | DONE | `REVISION_INTERNA_IA_2026-05-11.md` creado | No reemplaza revision humana |
+| Matriz de revision por perfil | DONE | `MATRIZ_REVISION_POR_PERFIL.md` creado | Asignar responsables reales |
 | Propuesta de licencia | IN_PROGRESS | `PROPUESTA_LICENCIA_Y_USO.md` creado | Confirmar licencia final |
 | Plan de version publicable | DONE | `PLAN_VERSION_PUBLICABLE.md` creado | Ejecutar release/tag cuando corresponda |
+| Release notes v0.1 | DONE | `RELEASE_NOTES_v0.1-publicable_DRAFT.md` creado | Revisar antes de tag |
+| Checklist tag/release | DONE | `CHECKLIST_TAG_RELEASE.md` creado | Ejecutar cuando licencia/revision esten listas |
 
 ## Capitulos
 
@@ -113,6 +117,7 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 | P1 | Crear rubricas por perfil | DONE | Rubricas general, perfil y proyecto final creadas |
 | P1 | Crear planes de clase | DONE | Planes de 12, 24, 40 y 80 horas creados |
 | P1 | Crear figuras y tablas | IN_PROGRESS | Figuras Mermaid iniciales 8 a 12 creadas; falta version grafica final |
+| P1 | Preparar revision interna y release notes | DONE | Revision interna, matriz por perfil, release notes y checklist de tag creados |
 | P2 | Revision tecnica por perfil | PENDING | Checklist creado; falta revision real por backend, arquitectura, seguridad, DevOps y QA |
 | P2 | Revision editorial | PENDING | Checklist creado; falta lectura editorial |
 | P2 | Definir licencia y formato de publicacion | IN_PROGRESS | Propuesta de licencia y plan publicable creados; falta decision final |
@@ -130,10 +135,10 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 
 ## Proximo bloque recomendado
 
-1. Ejecutar revision tecnica por perfil.
+1. Asignar responsables reales para revision por perfil.
 2. Ejecutar revision editorial.
 3. Confirmar licencia final.
-4. Exportar o disenar version final de figuras.
+4. Decidir si se publica v0.1 con figuras Mermaid o con figuras exportadas.
 5. Crear tag/release `v0.1-publicable`.
 
 ## Historial
@@ -151,3 +156,4 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 | 2026-05-11 | Redactados capitulos 10, 11 y 12 en borrador completo; cuerpo principal completo de la obra. |
 | 2026-05-11 | Creados ejercicios por capitulo, laboratorios por perfil, rubricas, planes de clase y figuras Mermaid iniciales. |
 | 2026-05-11 | Creados propuesta de licencia, checklist de revision y plan de version publicable. |
+| 2026-05-11 | Creados revision interna asistida, matriz de revision por perfil, release notes borrador y checklist de tag/release. |
