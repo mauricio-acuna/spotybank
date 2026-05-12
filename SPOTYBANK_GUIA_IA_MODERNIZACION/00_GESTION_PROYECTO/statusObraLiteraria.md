@@ -1,12 +1,12 @@
 # Status de Obra Literaria Tecnica
 
-Fecha de control: 2026-05-11
+Fecha de control: 2026-05-12
 
 Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacion de microservicios bancarios`. No reemplaza `Documentacion/statusTasks.md`; lo complementa con el detalle de capitulos, fasciculos, revision y publicacion.
 
 ## Resumen de avance
 
-- Avance global estimado: 98%.
+- Avance global estimado: 99%.
 - Estado editorial: CUERPO PRINCIPAL COMPLETO EN BORRADOR.
 - Estrategia recomendada: publicar primero por fasciculos y consolidar luego como libro unico.
 - Versionado GitHub: ACTIVO COMO REPO INDEPENDIENTE DE OBRA LITERARIA.
@@ -56,13 +56,14 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 | Decisiones editoriales | DONE | `DECISIONES_EDITORIALES.md` creado | Revisar con stakeholders |
 | Indice provisional | DONE | `INDICE_PROVISIONAL.md` creado | Ajustar cuando avance la redaccion |
 | Plan por fasciculos | DONE | `PLAN_FASCICULOS_PERFILES.md` creado | Definir orden de publicacion real |
+| Fasciculos ejecutables | DONE | `FASCICULOS_EJECUTABLES_POR_PERFIL.md` creado con practicas, entregables y criterios por perfil | Revisar con docentes o coordinadores |
 | Mapa de evidencias | DONE | `MAPA_EVIDENCIAS_SPOTYBANK.md` creado | Mantener actualizado por capitulo |
 | Evidencia desde codigo/configuracion | DONE | `EVIDENCIA_FUENTES_MICROSERVICIOS_2026-05-11.md` creado | Ampliar si se agregan nuevos microservicios |
 | Referencias de modernizacion | DONE | `REFERENCIAS_MODERNIZACION_2026.md` creado | Actualizar antes de publicacion final |
 | Mapa de modernizacion desde fuentes | DONE | `MAPA_MODERNIZACION_DESDE_FUENTES.md` creado | Convertir oleadas en fasciculos ejecutables |
 | Ejercicios y laboratorios | DONE | `APE_F_Ejercicios_Laboratorios` creado | Revisar con docentes o facilitadores |
 | Planes de clase | DONE | `PLANES_CLASE.md` creado | Ajustar a calendario real |
-| Figuras iniciales | IN_PROGRESS | `FIGURAS_MERMAID_INICIALES.md` creado | Exportar o disenar version final |
+| Figuras y tablas editoriales | DONE | `FIGURAS_MERMAID_INICIALES.md`, `REGISTRO_FIGURAS_TABLAS.md` y `TABLAS_EJECUTIVAS_MODERNIZACION.md` actualizados | Exportar version grafica final si se exige maquetacion |
 | Checklist de revision | DONE | `CHECKLIST_REVISION_TECNICA_EDITORIAL.md` creado | Ejecutar revision real por perfil |
 | Revision interna asistida | DONE | `REVISION_INTERNA_IA_2026-05-11.md` creado | No reemplaza revision humana |
 | Matriz de revision por perfil | DONE | `MATRIZ_REVISION_POR_PERFIL.md` creado | Asignar responsables reales |
@@ -92,15 +93,15 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 
 | Fasciculo | Estado | Pendiente |
 |---|---|---|
-| 0 - Presentacion del caso | IN_PROGRESS | Derivar desde capitulos 1 y 3 |
-| 1 - Inventario del sistema | IN_PROGRESS | Derivar desde capitulo 2 |
-| 2 - Arquitectura | IN_PROGRESS | Base textual lista desde capitulos 4 y 5; faltan ejercicios y figuras |
-| 3 - Seguridad y DevSecOps | IN_PROGRESS | Derivar desde capitulo 3 y seguridad |
-| 4 - Modernizacion Java/Spring/Maven | IN_PROGRESS | Base textual lista desde capitulo 6; faltan ejercicios y figuras |
-| 5 - QA y testing | IN_PROGRESS | Ejercicios y laboratorio QA creados; falta revision de perfil |
-| 6 - Nube y observabilidad | IN_PROGRESS | Base textual lista desde capitulo 8; faltan ejercicios y figuras |
-| 7 - Performance | IN_PROGRESS | Base textual lista desde capitulo 9; faltan ejercicios y figuras |
-| 8 - Diseno curricular | IN_PROGRESS | Base textual lista desde capitulo 11; faltan rubricas y planes de clase |
+| 0 - Presentacion del caso | DONE | Fasciculo ejecutable creado; pendiente revision real |
+| 1 - Inventario del sistema | DONE | Fasciculo ejecutable creado; pendiente revision real |
+| 2 - Arquitectura | DONE | Fasciculo ejecutable creado; pendiente revision real |
+| 3 - Seguridad y DevSecOps | DONE | Fasciculo ejecutable creado; pendiente revision real |
+| 4 - Modernizacion Java/Spring/Maven | DONE | Fasciculo ejecutable creado; pendiente revision real |
+| 5 - QA y testing | DONE | Fasciculo ejecutable creado; pendiente revision real |
+| 6 - Nube y observabilidad | DONE | Fasciculo ejecutable creado; pendiente revision real |
+| 7 - Performance | DONE | Fasciculo ejecutable creado; pendiente revision real |
+| 8 - Diseno curricular | DONE | Fasciculo ejecutable creado; pendiente revision real |
 
 ## Pendientes priorizados
 
@@ -125,7 +126,8 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 | P1 | Leer fuentes locales y documentar evidencia tecnica | DONE | Se relevaron POMs, Java, properties, YAML, Dockerfiles, JMS, Camel/SOAP, Swagger/Springfox, Karate y despliegue |
 | P1 | Buscar referencias actuales para propuestas nuevas | DONE | Se agrego bibliografia oficial/primaria 2026 para modernizacion |
 | P1 | Crear mapa de modernizacion basado en evidencia | DONE | Oleadas por baseline, pruebas, seguridad, observabilidad, runtime, cloud native, performance y supply chain |
-| P1 | Crear figuras y tablas | IN_PROGRESS | Figuras Mermaid iniciales 8 a 12 creadas; falta version grafica final |
+| P1 | Crear fasciculos ejecutables por perfil | DONE | Fasciculos 0 a 8 creados con practicas, entregables, criterios de evaluacion y backlog por fasciculo |
+| P1 | Crear figuras y tablas | DONE | Figuras Mermaid 1 a 12, registro de figuras/tablas y tablas ejecutivas creadas; queda exportacion grafica si se define formato |
 | P1 | Preparar revision interna y release notes | DONE | Revision interna, matriz por perfil, release notes y checklist de tag creados |
 | P2 | Revision tecnica por perfil | PENDING | Checklist creado; falta revision real por backend, arquitectura, seguridad, DevOps y QA |
 | P2 | Revision editorial | PENDING | Checklist creado; falta lectura editorial |
@@ -168,3 +170,4 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 | 2026-05-11 | Creados revision interna asistida, matriz de revision por perfil, release notes borrador y checklist de tag/release. |
 | 2026-05-11 | Agregada evidencia directa desde fuentes de microservicios, referencias actuales de modernizacion y mapa de modernizacion por oleadas. |
 | 2026-05-11 | Ajustado el publicador para empujar commits locales pendientes aunque no existan cambios nuevos en working tree. |
+| 2026-05-12 | Creados fasciculos ejecutables 0 a 8, figuras Mermaid para capitulos 1 a 7 y tablas ejecutivas de modernizacion. |

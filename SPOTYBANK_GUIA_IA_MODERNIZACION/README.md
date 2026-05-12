@@ -25,6 +25,7 @@ Este bloque separa lo observado en el codigo de las propuestas de modernizacion:
 - [Evidencia desde fuentes de microservicios](01_INVESTIGACION/notas_campo/EVIDENCIA_FUENTES_MICROSERVICIOS_2026-05-11.md)
 - [Referencias de modernizacion 2026](01_INVESTIGACION/referencias_bibliograficas/REFERENCIAS_MODERNIZACION_2026.md)
 - [Mapa de modernizacion desde fuentes](02_PLANIFICACION/MAPA_MODERNIZACION_DESDE_FUENTES.md)
+- [Fasciculos ejecutables por perfil](02_PLANIFICACION/FASCICULOS_EJECUTABLES_POR_PERFIL.md)
 
 ## Estructura editorial
 
@@ -75,6 +76,8 @@ SPOTYBANK_GUIA_IA_MODERNIZACION/
 - `05_APENDICES/APE_F_Ejercicios_Laboratorios/RUBRICAS_EVALUACION.md`
 - `02_PLANIFICACION/PLANES_CLASE.md`
 - `07_FIGURAS_Y_TABLAS/FIGURAS_MERMAID_INICIALES.md`
+- `07_FIGURAS_Y_TABLAS/TABLAS_EJECUTIVAS_MODERNIZACION.md`
+- `02_PLANIFICACION/FASCICULOS_EJECUTABLES_POR_PERFIL.md`
 
 ## Preparacion de publicacion
 

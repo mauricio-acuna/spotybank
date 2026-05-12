@@ -8,9 +8,9 @@ Este plan permite publicar la obra como un libro unico o como entregas independi
 | 1 | Backend / onboarding tecnico | Inventario del sistema | Reconocer servicios, dependencias, stack y deuda inicial |
 | 2 | Arquitectura | Dominios y fronteras | Proponer mapa de dominios, servicios canonicos y contratos |
 | 3 | Seguridad / DevSecOps | Anonimizacion, secretos y hardening | Publicar un caso seguro, sin identidad ni secretos reales |
-| 4 | Backend senior | Modernizacion Java/Spring/Maven | Diseñar una ruta de upgrade incremental |
+| 4 | Backend senior | Modernizacion Java/Spring/Maven | Disenar una ruta de upgrade incremental |
 | 5 | QA / testing | Pruebas, contratos y datos de prueba | Definir piramide de pruebas y estrategia de regresion |
-| 6 | DevOps / SRE | Nube, despliegue y observabilidad | Diseñar escenarios Kubernetes/OpenShift y SLIs/SLOs |
+| 6 | DevOps / SRE | Nube, despliegue y observabilidad | Disenar escenarios Kubernetes/OpenShift y SLIs/SLOs |
 | 7 | Performance | Escalamiento y resiliencia | Medir, perfilar y escalar servicios criticos |
 | 8 | Docentes / formadores | Diseno curricular | Convertir Spotybank en curso, taller o proyecto final |
 
@@ -32,3 +32,8 @@ Este plan permite publicar la obra como un libro unico o como entregas independi
 
 Conviene un libro unico cuando el objetivo es presentar Spotybank como obra de referencia integral, con una narrativa completa desde el diagnostico hasta el roadmap. En ese caso, los fasciculos funcionan como capitulos o partes internas.
 
+## Version ejecutable
+
+La version operativa de estos fasciculos, con practicas, entregables y criterios de evaluacion, esta en:
+
+- `FASCICULOS_EJECUTABLES_POR_PERFIL.md`
