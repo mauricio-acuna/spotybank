@@ -60,7 +60,7 @@ Este tablero controla solo la obra editorial `Spotybank: guia IA de modernizacio
 | Mapa de evidencias | DONE | `MAPA_EVIDENCIAS_SPOTYBANK.md` creado | Mantener actualizado por capitulo |
 | Evidencia desde codigo/configuracion | DONE | `EVIDENCIA_FUENTES_MICROSERVICIOS_2026-05-11.md` creado | Ampliar si se agregan nuevos microservicios |
 | Referencias de modernizacion | DONE | `REFERENCIAS_MODERNIZACION_2026.md` creado | Actualizar antes de publicacion final |
-| Mapa de modernizacion desde fuentes | DONE | `MAPA_MODERNIZACION_DESDE_FUENTES.md` creado | Convertir oleadas en fasciculos ejecutables |
+| Mapa de modernizacion desde fuentes | DONE | `MAPA_MODERNIZACION_DESDE_FUENTES.md` creado y convertido en fasciculos ejecutables | Mantener alineado con cambios futuros de la obra |
 | Ejercicios y laboratorios | DONE | `APE_F_Ejercicios_Laboratorios` creado | Revisar con docentes o facilitadores |
 | Planes de clase | DONE | `PLANES_CLASE.md` creado | Ajustar a calendario real |
 | Figuras y tablas editoriales | DONE | `FIGURAS_MERMAID_INICIALES.md`, `REGISTRO_FIGURAS_TABLAS.md` y `TABLAS_EJECUTIVAS_MODERNIZACION.md` actualizados | Exportar version grafica final si se exige maquetacion |
