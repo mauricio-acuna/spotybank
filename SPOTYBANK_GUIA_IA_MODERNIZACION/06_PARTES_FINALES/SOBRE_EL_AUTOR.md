@@ -1,22 +1,16 @@
-﻿# SOBRE EL AUTOR
+# SOBRE EL AUTOR
 
-## [Nombre completo del autor]
+## Mauricio Acuña
 
-[Párrafo 1: Cargo actual, institución, país. Especialidad principal.
-Extensión: 2-3 oraciones.]
+Mauricio Acuña es Ingeniero en Informatica y autor de esta guia tecnica sobre modernizacion de microservicios bancarios asistida por inteligencia artificial. Su trabajo en esta obra combina documentacion tecnica, arquitectura de software, seguridad, DevSecOps, operacion cloud native y diseno de material educativo aplicable.
 
-[Párrafo 2: Trayectoria académica y profesional relevante.
-Principales publicaciones, proyectos, premios. 3-4 oraciones.]
+En Spotybank propone una forma ordenada de transformar un sistema legacy anonimizado en un laboratorio de aprendizaje. El enfoque prioriza evidencia, trazabilidad, saneamiento de identidad, ejercicios verificables y uso responsable de IA como copiloto de ingenieria.
 
-[Párrafo 3: Líneas de investigación actuales. Proyectos en curso.
-1-2 oraciones.]
+Sus lineas de interes para esta obra incluyen modernizacion incremental, arquitectura de microservicios, seguridad de publicacion, observabilidad, performance, automatizacion documental y formacion tecnica por perfiles.
 
 **Contacto:**
-- Web: https://
-- ORCID: https://orcid.org/
-- LinkedIn: https://linkedin.com/in/
-- Email profesional: autor@institucion.edu
+- Contacto profesional: definido por el autor en el canal de publicacion correspondiente.
 
 ---
 
-*(Foto institucional: insertar imagen en alta resolución — mínimo 300 dpi)*
+Foto institucional: opcional para edicion impresa o ficha editorial.

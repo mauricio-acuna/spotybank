@@ -1,34 +1,44 @@
-﻿# REQUISITOS DE ENTREGA A EDITORIAL
+# REQUISITOS DE ENTREGA A EDITORIAL
 
-> Completa con los requisitos específicos de tu editorial o plataforma.
+Requisitos definidos para la version `v0.1-publicable` de Spotybank.
 
 ---
 
 ## Formato de los ficheros
-- Texto: [ ] .docx  [ ] .odt  [ ] LaTeX  [ ] Markdown
-- Imágenes: mínimo ___ dpi, formato ___
-- Tamaño máximo de fichero adjunto: ___
 
-## Estilo bibliográfico requerido
-- [ ] APA 7.ª  [ ] IEEE  [ ] Chicago  [ ] Vancouver  [ ] Otro: ___
+- Texto principal: Markdown.
+- Exportaciones recomendadas: PDF y HTML.
+- Fasciculos: Markdown por perfil, exportables a PDF.
+- Imagenes: Mermaid como fuente inicial; exportacion PNG/SVG segun maquetacion final.
+- Resolucion para imagenes raster de portada o promocion: minimo 300 dpi si se imprime.
+- Tamano maximo de adjunto: segun plataforma de publicacion.
 
-## Extensión
-- Mínimo: ___ palabras / páginas
-- Máximo: ___ palabras / páginas
+## Estilo bibliografico requerido
+
+- Estilo base: IEEE para referencias tecnicas.
+- APA 7 puede usarse si una institucion educativa lo exige.
+
+## Extension
+
+- Libro base estimado: 180 a 260 paginas.
+- Fasciculos: 25 a 45 paginas por entrega.
 
 ## Metadatos requeridos
-- Título y subtítulo definitivos
-- Palabras clave (mínimo ___, máximo ___)
-- Resumen / Abstract (máximo ___ palabras)
-- Clasificación temática: ___
+
+- Titulo y subtitulo definitivos: definidos en `00_GESTION_PROYECTO/FICHA_PROYECTO.md`.
+- Palabras clave: minimo 8, maximo 15.
+- Resumen / abstract: maximo 250 palabras.
+- Clasificacion tematica: ingenieria de software, arquitectura, microservicios, banca digital educativa, DevSecOps, cloud native e IA aplicada.
 
 ## Declaraciones requeridas
-- [ ] Declaración de originalidad
-- [ ] Declaración de conflicto de intereses
-- [ ] Cesión de derechos
-- [ ] Financiación y agradecimientos
+
+- Declaracion de originalidad: requerida antes de una editorial externa.
+- Declaracion de conflicto de intereses: no aplica a `v0.1-publicable` independiente salvo que una institucion lo exija.
+- Cesion de derechos: no aplica a publicacion independiente; requerida solo si hay editorial externa.
+- Financiacion y agradecimientos: sin financiacion declarada para `v0.1-publicable`.
 
 ## Contacto editorial
-- Nombre del editor/a responsable:
-- Email:
-- Portal de envío:
+
+- Responsable editorial inicial: Mauricio Acuña.
+- Email: definido por el autor en el canal de publicacion correspondiente.
+- Portal de envio: repositorio GitHub de la obra o plataforma definida para la version final.

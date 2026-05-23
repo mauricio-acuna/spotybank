@@ -2,6 +2,17 @@
 
 Este directorio contiene la base editorial de una obra tecnica y educativa basada en el caso Spotybank. La idea no es escribir una novela sobre tecnologia, sino construir una guia-libro que use un sistema realista de microservicios bancarios como laboratorio de modernizacion asistida por IA.
 
+## Datos editoriales
+
+- Titulo: `Spotybank: guia IA de modernizacion de microservicios bancarios`.
+- Subtitulo: `De sistema legacy anonimizado a laboratorio educativo de arquitectura, nube, seguridad y performance`.
+- Autor: Mauricio Acuña, Ingeniero en Informatica.
+- Version: `v0.1-publicable`.
+- Estado: version preliminar publicable.
+- Licencia textual: CC BY-NC-SA 4.0.
+- Ejemplos de codigo propios: Apache License 2.0.
+- Archivo de licencia: `../LICENSE.md`.
+
 ## Proposito
 
 Spotybank se plantea como un caso testigo para universidades, institutos, empresas, terciarios y centros de formacion profesional. El material debe permitir que distintos perfiles trabajen sobre el mismo producto: desarrollo backend, arquitectura, seguridad, operaciones, QA, datos, gestion tecnica y docencia.

@@ -1,28 +1,26 @@
-﻿# PORTADA — Plantilla
+# PORTADA
 
 ---
 
-# [TÍTULO PRINCIPAL]
-## [Subtítulo descriptivo y con palabras clave]
+# Spotybank: guia IA de modernizacion de microservicios bancarios
+## De sistema legacy anonimizado a laboratorio educativo de arquitectura, nube, seguridad y performance
 
 ---
 
-**Autor/es:**
-[Nombre completo, Título académico]
-[Afiliación institucional]
+**Autor:**
+
+Mauricio Acuña, Ingeniero en Informatica
 
 ---
 
-[Nombre de la Editorial / Institución]
-[Ciudad, País]
-[Año]
+Edicion independiente para uso educativo, academico y empresarial
 
-[Edición: Primera edición]
+Version preliminar publicable
+
+2026
+
+Primera edicion
 
 ---
 
-> **Instrucciones:**
-> - El título debe ser específico, no genérico. Evita títulos como "Introducción a...".
-> - Incluye la palabra clave más importante en las primeras 3 palabras.
-> - El subtítulo puede ser más largo y descriptivo.
-> - Si es una obra académica, incluye afiliación y número de proyecto si aplica.
+> Spotybank es un caso educativo ficticio para estudiar modernizacion de microservicios bancarios. No representa una entidad financiera real ni un producto operativo.

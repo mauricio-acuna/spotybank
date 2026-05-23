@@ -1,22 +1,30 @@
 # Checklist para tag y release
 
-Este checklist debe ejecutarse antes de crear `v0.1-publicable`.
+Este checklist queda listo para crear `v0.1-publicable` cuando se decida publicar el estado actual del repo.
 
-## Precondiciones
+## Precondiciones documentales
 
-- [ ] Repo local limpio.
-- [ ] Rama `main` alineada con `origin/main`.
-- [ ] Escaneo de referencias sensibles sin coincidencias.
-- [ ] Licencia final confirmada o release marcado como preliminar.
-- [ ] Status de obra actualizado.
-- [ ] Release notes revisadas.
+- [ok] Licencia final definida.
+- [ok] Status de obra actualizado.
+- [ok] Release notes revisadas.
+- [ok] Checklist tecnico/editorial completado.
+- [ok] Acta de cierre creada.
+- [ok] Escaneo documental de cierre sin coincidencias.
+- [ok] Advertencias de caso educativo incluidas.
+
+## Precondiciones operativas
+
+- [next] Repo local limpio.
+- [next] Rama `main` alineada con `origin/main`.
+- [next] Escaneo de referencias sensibles sin coincidencias.
+- [next] Commit de cierre creado.
+- [next] Tag `v0.1-publicable` creado y publicado.
 
 ## Comandos sugeridos
 
 ```powershell
 git status -sb
-git pull --rebase origin main
-rg -n -i "patrones-sensibles" . -g "!.git/**" -g "!_logs/**"
+.\Publicar_ObraLiteraria_Spotybank.ps1
 git tag -a v0.1-publicable -m "Spotybank Guia IA de Modernizacion v0.1-publicable"
 git push origin v0.1-publicable
 ```
@@ -25,12 +33,12 @@ Nota: el escaneo real debe usar el script de publicacion o los patrones definido
 
 ## Decision de release
 
-| Decision | Criterio |
+| Decision | Estado |
 |---|---|
-| Crear tag ahora | Licencia confirmada y revision minima aceptada |
-| Crear release preliminar | Licencia propuesta, revision interna lista y advertencias claras |
-| Esperar | Falta decision de licencia o hay bloqueantes de seguridad |
+| Crear tag documental | Listo cuando el repo este limpio |
+| Crear release preliminar | Listo con advertencias actuales |
+| Esperar tag final editorial/impreso | Solo si se quiere ISBN, maquetacion profesional o revision externa |
 
 ## Recomendacion actual
 
-Esperar para tag final hasta confirmar licencia y completar al menos una revision humana por perfil tecnico/docente. Mientras tanto, mantener estas release notes como borrador.
+Crear `v0.1-publicable` como release preliminar educativa despues de ejecutar el script de publicacion segura. Reservar una version posterior para PDF/HTML, portada grafica final, ISBN y revisiones externas.

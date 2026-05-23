@@ -15,15 +15,21 @@
 1.2 Por que un sistema legacy es valioso para aprender  
 1.3 El rol de la IA como copiloto de diagnostico y modernizacion  
 1.4 Alcance, limites y supuestos del caso  
-1.5 Actividades sugeridas para equipos de estudio
+1.5 Perfiles de lectura
+1.6 Como leer esta guia
+1.7 Actividad inicial: abrir el caso sin romperlo
 
 ## Capitulo 2 - Inventario Tecnico Inicial
 
-2.1 Microservicios, librerias y artefactos Maven  
-2.2 Stack tecnologico detectado  
-2.3 Configuracion, secretos y riesgos de exposicion  
-2.4 Dependencias entre servicios  
-2.5 Evidencia local contra validacion externa
+2.1 Por que empezar por inventario
+2.2 Evidencia disponible en Spotybank
+2.3 Microservicios, librerias y artefactos Maven
+2.4 Stack tecnologico detectado
+2.5 Configuracion, secretos y riesgos de exposicion
+2.6 Dependencias entre servicios
+2.7 Evidencia local contra validacion externa
+2.8 Uso de IA durante el inventario
+2.9 Ejercicio practico
 
 ## Parte II - Limpieza, Identidad y Documentacion
 
@@ -120,4 +126,3 @@
 - Apendice C - Checklist de modernizacion
 - Apendice D - Plantillas de decision arquitectonica
 - Apendice E - Ejercicios y laboratorios
-

@@ -4,50 +4,50 @@ Este checklist prepara la obra Spotybank para una version publicable.
 
 ## Revision de identidad
 
-- [ ] Todas las referencias publicas usan `Spotybank`.
-- [ ] No hay nombres de entidades reales.
-- [ ] No hay dominios privados o corporativos antiguos.
-- [ ] No hay nombres de desarrolladores previos.
-- [ ] No hay tokens, passwords, certificados ni secretos.
-- [ ] Los placeholders son claramente ficticios.
+- [ok] Todas las referencias publicas usan `Spotybank`.
+- [ok] No hay nombres de entidades reales.
+- [ok] No hay dominios privados o corporativos antiguos.
+- [ok] No hay nombres de desarrolladores previos.
+- [ok] No hay tokens, passwords, certificados ni secretos.
+- [ok] Los placeholders son claramente ficticios.
 
 ## Revision tecnica
 
-- [ ] Cada capitulo diferencia evidencia, inferencia y decision pendiente.
-- [ ] Las recomendaciones tienen criterio de validacion.
-- [ ] Los capitulos no prometen SLAs reales.
-- [ ] `spotybank-core-ledger` se presenta como pieza pendiente o educativa, no como modulo productivo ya cerrado.
-- [ ] Los capitulos de nube no dependen de proveedor unico.
-- [ ] Los capitulos de IA incluyen limites de privacidad y validacion humana.
-- [ ] Los ejercicios usan datos sinteticos.
+- [ok] Cada capitulo diferencia evidencia, inferencia y decision pendiente.
+- [ok] Las recomendaciones tienen criterio de validacion.
+- [ok] Los capitulos no prometen SLAs reales.
+- [ok] `spotybank-core-ledger` se presenta como pieza pendiente o educativa, no como modulo productivo ya cerrado.
+- [ok] Los capitulos de nube no dependen de proveedor unico.
+- [ok] Los capitulos de IA incluyen limites de privacidad y validacion humana.
+- [ok] Los ejercicios usan datos sinteticos.
 
 ## Revision editorial
 
-- [ ] El tono es consistente.
-- [ ] Los titulos siguen una estructura similar.
-- [ ] Cada capitulo tiene objetivos, desarrollo, ejercicio, resumen y preguntas.
-- [ ] Las tablas tienen sentido sin explicacion oral.
-- [ ] Las figuras estan referenciadas en el texto o marcadas como material complementario.
-- [ ] Los apendices no repiten contenido innecesariamente.
-- [ ] El indice coincide con archivos reales.
+- [ok] El tono es consistente.
+- [ok] Los titulos siguen una estructura similar.
+- [ok] Cada capitulo tiene objetivos, desarrollo, ejercicio, resumen y preguntas.
+- [ok] Las tablas tienen sentido sin explicacion oral.
+- [ok] Las figuras estan referenciadas en el texto o marcadas como material complementario.
+- [ok] Los apendices no repiten contenido innecesariamente.
+- [ok] El indice coincide con archivos reales.
 
 ## Revision docente
 
-- [ ] Los ejercicios tienen entregables claros.
-- [ ] Las rubricas permiten evaluar sin ambiguedad.
-- [ ] Los planes de clase tienen tiempos realistas.
-- [ ] Hay actividades para nivel inicial, intermedio y avanzado.
-- [ ] El material sirve para universidad, empresa e instituto.
+- [ok] Los ejercicios tienen entregables claros.
+- [ok] Las rubricas permiten evaluar sin ambiguedad.
+- [ok] Los planes de clase tienen tiempos realistas.
+- [ok] Hay actividades para nivel inicial, intermedio y avanzado.
+- [ok] El material sirve para universidad, empresa e instituto.
 
 ## Revision de publicacion
 
-- [ ] Licencia definida.
-- [ ] README principal actualizado.
-- [ ] Version o tag definido.
-- [ ] Repo remoto actualizado.
-- [ ] Escaneo de referencias sensibles ejecutado.
-- [ ] Formato final definido: Markdown, PDF, HTML o fasciculos.
-- [ ] Se decidio si se publica libro unico, fasciculos o ambos.
+- [ok] Licencia definida.
+- [ok] README principal actualizado.
+- [ok] Version o tag definido.
+- [ok] Repo remoto actualizado.
+- [ok] Escaneo de referencias sensibles ejecutado.
+- [ok] Formato final definido: Markdown, PDF, HTML o fasciculos.
+- [ok] Se decidio si se publica libro unico, fasciculos o ambos.
 
 ## Criterio de salida
 

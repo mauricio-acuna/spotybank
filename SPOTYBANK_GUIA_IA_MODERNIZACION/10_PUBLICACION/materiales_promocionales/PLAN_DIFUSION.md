@@ -1,36 +1,42 @@
-﻿# PLAN DE DIFUSIÓN Y MARKETING DE LA OBRA
+# PLAN DE DIFUSION Y MARKETING DE LA OBRA
 
 ---
 
-## 1. Propuesta de valor única (UVP)
-[En 2-3 frases: ¿Por qué ESTE libro y no los existentes?]
+## 1. Propuesta de valor unica
+
+Spotybank convierte un sistema legacy anonimizado en un laboratorio completo de modernizacion de microservicios bancarios. Su valor esta en unir arquitectura, seguridad, DevOps/SRE, QA, performance, nube e IA aplicada en un mismo caso educativo, con ejercicios y fasciculos por perfil.
 
 ## 2. Audiencias objetivo
-- **Primaria:** [Descripción detallada]
-- **Secundaria:** [Descripción detallada]
 
-## 3. Canales de distribución
-- [ ] Venta directa en web propia
-- [ ] Amazon / eBooks
-- [ ] Google Play Books
-- [ ] ResearchGate / Academia.edu (acceso abierto parcial)
-- [ ] Librerías técnicas especializadas
-- [ ] Editorial universitaria
+- **Primaria:** estudiantes avanzados, desarrolladores backend, arquitectos, QA, DevOps/SRE, seguridad y lideres tecnicos que necesitan practicar modernizacion con evidencia.
+- **Secundaria:** docentes, institutos, universidades, centros de formacion y empresas que buscan material modular para cursos o talleres.
 
-## 4. Acciones previas al lanzamiento (pre-launch)
-- [ ] Landing page o página de pre-venta.
-- [ ] Lista de correo / newsletter para anunciar el lanzamiento.
-- [ ] Advance Reader Copies (ARCs) a influencers del sector.
-- [ ] Artículo de blog o podcast anunciando la obra.
+## 3. Canales de distribucion
+
+- [ok] Repositorio GitHub de la obra.
+- [ok] Distribucion por fasciculos Markdown/PDF.
+- [later] Landing page propia.
+- [later] Editorial universitaria o institucional.
+- [later] Plataformas de eBook si se define version comercial.
+
+## 4. Acciones previas al lanzamiento
+
+- [ok] Preparar README, portada, contraportada y release notes.
+- [ok] Definir licencia y alcance de uso.
+- [ok] Preparar prompt de imagen para portada.
+- [later] Crear landing page.
+- [later] Compartir fasciculo piloto con revisores externos.
 
 ## 5. Acciones en el lanzamiento
-- [ ] Nota de prensa.
-- [ ] Webinar / presentación online.
-- [ ] Posts en LinkedIn, Twitter/X, ResearchGate.
-- [ ] Email a la lista de suscriptores.
+
+- [next] Publicar version `v0.1-publicable` en GitHub.
+- [later] Post de lanzamiento en LinkedIn.
+- [later] Webinar o clase abierta basada en un fasciculo.
+- [later] Articulo tecnico de presentacion.
 
 ## 6. Acciones post-lanzamiento
-- [ ] Artículos derivados en revistas o blogs.
-- [ ] Curso o taller basado en el libro.
-- [ ] Ponencias en congresos referenciando la obra.
-- [ ] Reseñas en plataformas especializadas.
+
+- [later] Convertir fasciculos en curso corto.
+- [later] Recoger feedback docente y tecnico.
+- [later] Preparar `v0.2` con revisiones externas.
+- [later] Exportar version maquetada PDF/HTML.

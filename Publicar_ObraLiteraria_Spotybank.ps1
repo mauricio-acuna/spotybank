@@ -111,12 +111,12 @@ Invoke-Git checkout -B main
 
 $localUserName = Invoke-GitCapture config user.name
 if ($localUserName.ExitCode -ne 0 -or [string]::IsNullOrWhiteSpace(($localUserName.Output -join ""))) {
-  Invoke-Git config user.name "Hernando"
+  Invoke-Git config user.name "Mauricio Acuña"
 }
 
 $localUserEmail = Invoke-GitCapture config user.email
 if ($localUserEmail.ExitCode -ne 0 -or [string]::IsNullOrWhiteSpace(($localUserEmail.Output -join ""))) {
-  Invoke-Git config user.email "maundroid@gmail.com"
+  Invoke-Git config user.email "mauricio-acuna@users.noreply.github.com"
 }
 
 $origin = Invoke-GitCapture remote get-url origin

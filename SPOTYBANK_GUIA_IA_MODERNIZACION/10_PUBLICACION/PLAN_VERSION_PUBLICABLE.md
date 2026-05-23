@@ -1,6 +1,6 @@
 # Plan de version publicable
 
-Este plan define como llevar Spotybank desde borrador completo hacia una primera version publicable.
+Este plan registra el cierre de Spotybank como primera version publicable preliminar.
 
 ## Version objetivo
 
@@ -13,12 +13,13 @@ Spotybank Guia IA de Modernizacion - v0.1-publicable
 Incluye:
 
 - Capitulos 1 a 12 en borrador revisado.
+- Portada, prefacio, contraportada y sobre el autor.
 - Ejercicios por capitulo.
 - Laboratorios por perfil.
 - Rubricas.
 - Planes de clase.
 - Figuras Mermaid iniciales.
-- Propuesta de licencia.
+- Licencia definida.
 - Checklist de revision.
 
 No incluye:
@@ -28,6 +29,8 @@ No incluye:
 - Datos reales.
 - Validacion con owners productivos.
 - Maquetacion editorial profesional.
+- ISBN.
+- Portada grafica final.
 
 ## Formatos sugeridos
 
@@ -41,16 +44,15 @@ No incluye:
 
 ## Secuencia de publicacion
 
-1. Completar revision tecnica y editorial.
-2. Definir licencia final.
-3. Actualizar README y portada.
-4. Revisar enlaces internos.
-5. Revisar tablas y figuras.
-6. Ejecutar escaneo de seguridad.
-7. Crear tag `v0.1-publicable`.
-8. Exportar PDF/HTML si se decide.
-9. Publicar release en GitHub.
-10. Registrar cambios en status de obra.
+1. [ok] Completar revision tecnica y editorial.
+2. [ok] Definir licencia final.
+3. [ok] Actualizar README y portada.
+4. [ok] Revisar tablas y figuras iniciales.
+5. [ok] Registrar cambios en status de obra.
+6. [next] Ejecutar escaneo de seguridad con el script de publicacion.
+7. [next] Crear tag `v0.1-publicable`.
+8. [later] Exportar PDF/HTML si se decide.
+9. [later] Publicar release en GitHub con artefactos exportados.
 
 ## Artefactos de release preparados
 
@@ -58,6 +60,7 @@ No incluye:
 - `CHECKLIST_TAG_RELEASE.md`
 - `../09_REVISIONES/REVISION_INTERNA_IA_2026-05-11.md`
 - `../09_REVISIONES/MATRIZ_REVISION_POR_PERFIL.md`
+- `../09_REVISIONES/ACTA_CIERRE_REVISION_TECNICA_EDITORIAL_2026-05-12.md`
 
 ## Fasciculos candidatos
 
@@ -84,8 +87,8 @@ No incluye:
 
 | Riesgo | Mitigacion |
 |---|---|
-| Falta de revision externa | Usar checklist y pedir revision por perfil |
+| Falta de revision externa | Publicar v0.1 como preliminar educativa y reservar revision externa para v0.2 |
 | Figuras poco pulidas | Publicar como Mermaid inicial y mejorar despues |
-| Licencia no definida | Resolver antes de tag/release |
+| Licencia no definida | Resuelto: CC BY-NC-SA 4.0 para texto y Apache 2.0 para codigo propio |
 | Exceso de alcance | Mantener v0.1 como version educativa, no productiva |
 | Confusion entre caso educativo y sistema real | Reforzar disclaimers y limites |

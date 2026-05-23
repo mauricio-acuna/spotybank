@@ -2,10 +2,20 @@
 
 Indice del material editorial de Spotybank.
 
+## Datos de la obra
+
+- Titulo: `Spotybank: guia IA de modernizacion de microservicios bancarios`.
+- Autor: Mauricio Acuña, Ingeniero en Informatica.
+- Version actual: `v0.1-publicable`.
+- Licencia textual: CC BY-NC-SA 4.0.
+- Ejemplos de codigo propios: Apache License 2.0.
+- Archivo de licencia: [LICENSE.md](LICENSE.md)
+
 ## Proyecto activo
 
 - [Spotybank - Guia IA de Modernizacion de Microservicios](SPOTYBANK_GUIA_IA_MODERNIZACION/README.md)
 - [Status de obra literaria](SPOTYBANK_GUIA_IA_MODERNIZACION/00_GESTION_PROYECTO/statusObraLiteraria.md)
+- [Acta de cierre tecnico/editorial](SPOTYBANK_GUIA_IA_MODERNIZACION/09_REVISIONES/ACTA_CIERRE_REVISION_TECNICA_EDITORIAL_2026-05-12.md)
 - [Instrucciones de descarga y aportes](INSTRUCCIONES_DESCARGA_Y_APORTES.md)
 - [Evidencia desde fuentes de microservicios](SPOTYBANK_GUIA_IA_MODERNIZACION/01_INVESTIGACION/notas_campo/EVIDENCIA_FUENTES_MICROSERVICIOS_2026-05-11.md)
 - [Referencias de modernizacion 2026](SPOTYBANK_GUIA_IA_MODERNIZACION/01_INVESTIGACION/referencias_bibliograficas/REFERENCIAS_MODERNIZACION_2026.md)

@@ -1,32 +1,31 @@
-﻿# CONTRAPORTADA
-
-> Extensión: 150-200 palabras. Es la primera lectura de quien hojea el libro.
-> Debe responder: ¿Qué aprenderé? ¿Por qué este libro y no otro?
-
----
+# CONTRAPORTADA
 
 ## Sinopsis del libro
 
-[2-3 párrafos que resuman el contenido, el enfoque y el valor único de la obra.
-Sin tecnicismos excesivos. Orientado al beneficio del lector.]
+Spotybank es una guia tecnica y educativa para aprender a modernizar microservicios bancarios con apoyo de inteligencia artificial, sin perder criterio profesional ni trazabilidad. La obra parte de un sistema legacy anonimizado y lo convierte en un laboratorio de arquitectura, nube, seguridad, performance, pruebas, observabilidad y documentacion viva.
+
+El lector encontrara un proceso repetible: inventariar servicios, separar evidencia de inferencias, sanear identidad, documentar dependencias, detectar riesgos, definir fronteras de dominio y planificar una migracion incremental hacia practicas cloud native. La IA aparece como copiloto para acelerar diagnostico, redaccion y backlog, siempre con validacion humana.
+
+El valor de Spotybank esta en su enfoque aplicable. No es una coleccion de conceptos aislados, sino un caso completo que puede usarse como libro, curso o serie de fasciculos para distintos perfiles de un equipo tecnico.
 
 ---
 
-## Público al que va dirigido
+## Publico al que va dirigido
 
-- [Perfil 1: ej. Ingenieros de software con 2+ años de experiencia.]
-- [Perfil 2: ej. Estudiantes de último año de carrera técnica.]
-- [Perfil 3: ej. Gestores de proyectos tecnológicos.]
-
----
-
-## Reseñas de expertos
-
-> "Cita de un experto reconocido sobre el libro."
-> — Nombre, Cargo, Institución
+- Estudiantes avanzados de informatica, ingenieria de software y carreras tecnicas.
+- Desarrolladores, arquitectos, QA, DevOps/SRE y especialistas de seguridad.
+- Docentes, facilitadores y lideres tecnicos que necesitan material de modernizacion aplicable.
 
 ---
 
-**ISBN:** 978-X-XXXXX-XXX-X
+## Nota editorial
 
-[Logo editorial]        [Código de barras ISBN]        [Precio si aplica]
+Spotybank es un caso educativo ficticio. No representa una entidad financiera real, no incluye datos productivos y no debe usarse como producto bancario operativo.
+
+---
+
+**ISBN:** no asignado para la version preliminar publicable.
+
+**Licencia textual:** CC BY-NC-SA 4.0.
+
+**Ejemplos de codigo propios:** Apache License 2.0.
