@@ -2,6 +2,8 @@
 
 Esta revision es una lectura interna preparatoria de la obra Spotybank. No reemplaza una revision real por perfiles tecnicos, docentes o editoriales. Sirve para ordenar riesgos antes de pedir esa lectura.
 
+Actualizacion 2026-05-26: esta revision queda como antecedente preparatorio. El cierre posterior esta documentado en `09_REVISIONES/ACTA_CIERRE_REVISION_TECNICA_EDITORIAL_2026-05-12.md` y en `00_GESTION_PROYECTO/statusObraLiteraria.md`.
+
 ## Alcance revisado
 
 - Capitulos 1 a 12 en borrador.
@@ -22,8 +24,8 @@ Esta revision es una lectura interna preparatoria de la obra Spotybank. No reemp
 | Estructura editorial | OK preliminar | Hay cuerpo principal completo y apendices docentes. |
 | Seguridad editorial | OK preliminar | El escaneo automatizado no detecta patrones sensibles definidos. |
 | Uso docente | OK preliminar | Existen ejercicios, laboratorios, rubricas y planes por duracion. |
-| Publicacion | PARCIAL | Falta licencia final, revision externa y tag/release. |
-| Figuras | PARCIAL | Hay Mermaid inicial; falta version final exportada o disenada. |
+| Publicacion | CERRADO PARA V0.1 | Licencia, acta, release notes y checklist quedaron definidos; falta publicar tag/release. |
+| Figuras | ACEPTADO PARA V0.1 | Mermaid queda como formato inicial; arte final exportado pasa a v0.2. |
 
 ## Hallazgos
 
@@ -31,25 +33,28 @@ Esta revision es una lectura interna preparatoria de la obra Spotybank. No reemp
 
 - Tipo: publicacion.
 - Severidad: media.
-- Estado: pendiente.
+- Estado: cerrado para v0.1.
 - Evidencia: `10_PUBLICACION/PROPUESTA_LICENCIA_Y_USO.md`.
 - Recomendacion: confirmar si se adopta CC BY-NC-SA 4.0 para texto y Apache 2.0 para codigo propio, o documentar otra decision.
+  Decision posterior: licencia textual CC BY-NC-SA 4.0 y codigo propio Apache 2.0 definidos en acta de cierre.
 
 ### REV-002 - Falta revision humana por perfiles
 
 - Tipo: calidad.
 - Severidad: alta para publicacion final.
-- Estado: pendiente.
+- Estado: no bloqueante para v0.1.
 - Evidencia: `09_REVISIONES/CHECKLIST_REVISION_TECNICA_EDITORIAL.md`.
 - Recomendacion: pedir revision minima a perfiles backend, arquitectura, seguridad, DevOps/SRE, QA y docente/editorial.
+  Decision posterior: mantener revision externa por perfiles como mejora de v0.2.
 
 ### REV-003 - Figuras aun son borradores Mermaid
 
 - Tipo: editorial.
 - Severidad: baja para repo, media para PDF/libro.
-- Estado: pendiente.
+- Estado: aceptado para v0.1.
 - Evidencia: `07_FIGURAS_Y_TABLAS/FIGURAS_MERMAID_INICIALES.md`.
 - Recomendacion: aceptar Mermaid para v0.1 o exportar a SVG/PNG antes de una edicion formal.
+  Decision posterior: aceptar Mermaid en v0.1 y mover exportacion final a v0.2.
 
 ### REV-004 - `spotybank-core-ledger` sigue como pieza conceptual
 
@@ -63,9 +68,10 @@ Esta revision es una lectura interna preparatoria de la obra Spotybank. No reemp
 
 - Tipo: docente.
 - Severidad: baja para v0.1, media para adopcion docente.
-- Estado: pendiente.
+- Estado: no bloqueante para v0.1.
 - Evidencia: `05_APENDICES/APE_F_Ejercicios_Laboratorios`.
 - Recomendacion: crear al menos un ejercicio resuelto para inventario, despliegue y roadmap.
+  Decision posterior: mantener ejercicios resueltos de referencia como mejora docente posterior.
 
 ## Criterio para v0.1-publicable
 
@@ -78,7 +84,6 @@ La version `v0.1-publicable` puede prepararse como release borrador si:
 
 ## Recomendacion de avance
 
-1. Crear matriz de revision por perfil.
-2. Preparar notas de release.
-3. Mantener estado en 97% hasta recibir revision/licencia final.
-4. No crear tag final si la licencia queda sin confirmar.
+1. Publicar el commit documental de seguimiento.
+2. Crear tag `v0.1-publicable`.
+3. Reservar revision externa, ejercicios resueltos y arte final para `v0.2`.

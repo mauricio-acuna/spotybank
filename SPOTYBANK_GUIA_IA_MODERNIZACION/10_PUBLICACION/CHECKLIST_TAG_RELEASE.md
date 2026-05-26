@@ -14,10 +14,10 @@ Este checklist queda listo para crear `v0.1-publicable` cuando se decida publica
 
 ## Precondiciones operativas
 
-- [next] Repo local limpio.
-- [next] Rama `main` alineada con `origin/main`.
+- [ok] Repo local verificado antes del seguimiento documental 2026-05-26.
+- [ok] Rama `main` alineada con `origin/main` al 2026-05-26.
 - [next] Escaneo de referencias sensibles sin coincidencias.
-- [next] Commit de cierre creado.
+- [next] Commit documental de seguimiento creado y subido.
 - [next] Tag `v0.1-publicable` creado y publicado.
 
 ## Comandos sugeridos
@@ -42,3 +42,5 @@ Nota: el escaneo real debe usar el script de publicacion o los patrones definido
 ## Recomendacion actual
 
 Crear `v0.1-publicable` como release preliminar educativa despues de ejecutar el script de publicacion segura. Reservar una version posterior para PDF/HTML, portada grafica final, ISBN y revisiones externas.
+
+Actualizacion 2026-05-26: el repo local fue verificado contra `origin/main`; queda pendiente subir el commit documental de seguimiento y crear/publicar el tag.

@@ -1,6 +1,6 @@
 # Status de Obra Literaria Tecnica
 
-Fecha de control: 2026-05-12
+Fecha de control: 2026-05-26
 
 Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de microservicios bancarios`.
 
@@ -15,6 +15,7 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 - Licencia de ejemplos de codigo propios: Apache License 2.0.
 - Repo Git independiente de la obra: `Documentacion/ObraLiteraria`.
 - Repo remoto registrado: `https://github.com/mauricio-acuna/spotybank.git`.
+- Estado Git verificado: `main` alineada con `origin/main` al 2026-05-26.
 - Ciclo actual: desarrollo editorial de contenidos para evolucion posterior a `v0.1-publicable`.
 
 ## Estados usados
@@ -101,8 +102,8 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 ## Proximo bloque recomendado
 
 1. Revisar `09_REVISIONES/ACTA_CIERRE_REVISION_TECNICA_EDITORIAL_2026-05-12.md`.
-2. Ejecutar el script de publicacion segura si se desea confirmar y subir cambios.
-3. Crear tag `v0.1-publicable` cuando el repo quede limpio y publicado.
+2. Ejecutar el script de publicacion segura antes de publicar nuevos cambios.
+3. Crear y publicar el tag `v0.1-publicable` cuando el commit documental de cierre este subido.
 4. Preparar exportacion PDF/HTML y arte final de portada como trabajo de `v0.2`.
 
 ## Historial
@@ -117,3 +118,4 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-12 | Cerrada identidad editorial con autor, licencia, portada, prefacio, contraportada, glosario, acronimos y documentos de publicacion. |
 | 2026-05-13 | Desarrollado editorialmente el capitulo 1 como apertura tecnica y metodologica de la obra. |
 | 2026-05-13 | Desarrollado editorialmente el capitulo 2 como inventario tecnico inicial basado en evidencia. |
+| 2026-05-26 | Verificado estado Git contra `origin/main` y preparado seguimiento documental previo a tag `v0.1-publicable`. |
