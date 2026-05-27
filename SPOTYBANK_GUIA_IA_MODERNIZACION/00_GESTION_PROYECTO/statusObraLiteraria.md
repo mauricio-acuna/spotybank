@@ -9,7 +9,8 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 - Avance global estimado: 100% para `v0.1-publicable` preliminar.
 - Estado editorial: CIERRE TECNICO Y EDITORIAL COMPLETADO.
 - Autor: Mauricio Acuña, Ingeniero en Informatica.
-- Version: `v0.1-publicable`.
+- Version base publicada: `v0.1-publicable`.
+- Version objetivo del ciclo actual: `v0.2-editorial`.
 - Estrategia de publicacion: libro unico en Markdown y fasciculos por perfil; exportacion PDF/HTML disponible como siguiente formato.
 - Licencia textual: CC BY-NC-SA 4.0.
 - Licencia de ejemplos de codigo propios: Apache License 2.0.
@@ -22,6 +23,7 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 
 - DONE: creado, revisado internamente y utilizable para `v0.1-publicable`.
 - DONE_EDITORIAL: desarrollado con voz editorial ampliada para el ciclo posterior a `v0.1-publicable`.
+- NEXT: bloque inmediato recomendado para cerrar `v0.2-editorial`.
 - LATER: mejora posterior, no bloqueante para `v0.1-publicable`.
 - OUT_OF_SCOPE_V01: requiere informacion externa o trabajo productivo real; no forma parte de esta version.
 
@@ -74,7 +76,7 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 
 | Item | Estado | Motivo |
 |---|---|---|
-| Revision externa por especialistas | LATER | Mejora de calidad para `v0.2`, no bloquea la version preliminar publicable |
+| Revision externa por especialistas | NEXT | Proximo bloque recomendado para cerrar `v0.2-editorial` con mirada por perfiles |
 | ISBN | LATER | Solo requerido para edicion editorial o impresa formal |
 | Maquetacion profesional | LATER | Markdown es el formato base de `v0.1-publicable` |
 | Exportacion PDF/HTML | LATER | Formato recomendado posterior al cierre documental |
@@ -108,14 +110,15 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-27 | Capitulo 11 - Spotybank como curso | DONE_EDITORIAL | Reescritura desarrollada con rutas por perfil, fasciculos, duraciones, laboratorios, revision por pares y rubricas |
 | 2026-05-27 | Capitulo 12 - Roadmap de evolucion | DONE_EDITORIAL | Reescritura desarrollada con versiones, fases, ledger, roadmap 90 dias, criterios `v0.2` y cierre de obra |
 | 2026-05-27 | Revision integral de coherencia | DONE | Alineados status, registro de cambios y checklist de etapas con cierre editorial ampliado |
-| 2026-05-27 | Checklist de salida `v0.2-editorial` | NEXT | Proximo bloque recomendado para preparar criterios de release, revision externa y exportacion |
+| 2026-05-27 | Checklist de salida `v0.2-editorial` | DONE | Creado checklist para criterios de release, revision externa, exportacion y artefactos |
+| 2026-05-27 | Revision externa minima por perfiles | NEXT | Usar `09_REVISIONES/PLANTILLA_REVISION.md` para levantar observaciones por backend, arquitectura, seguridad, SRE, QA y docencia |
 
 ## Proximo bloque recomendado
 
-1. Preparar checklist de salida para `v0.2-editorial`.
-2. Ejecutar revision externa minima por perfiles.
-3. Preparar release formal en GitHub si se desean artefactos descargables.
-4. Preparar exportacion PDF/HTML y arte final de portada como trabajo de `v0.2`.
+1. Ejecutar revision externa minima por perfiles usando `09_REVISIONES/PLANTILLA_REVISION.md`.
+2. Resolver criterios obligatorios del checklist `10_PUBLICACION/CHECKLIST_SALIDA_v0.2-editorial.md`.
+3. Preparar release notes y tag `v0.2-editorial` cuando los obligatorios esten en `[ok]`.
+4. Preparar exportacion PDF/HTML y arte final de portada como trabajo complementario de `v0.2`.
 
 ## Historial
 
@@ -143,3 +146,4 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-27 | Desarrollado editorialmente el capitulo 12 como roadmap de evolucion y cierre de obra. |
 | 2026-05-27 | Completado desarrollo editorial ampliado de capitulos 1 a 12 en `main` posterior al tag `v0.1-publicable`. |
 | 2026-05-27 | Alineados registro de cambios y checklist de etapas con publicacion del tag y cierre editorial ampliado. |
+| 2026-05-27 | Creado checklist de salida `v0.2-editorial` para orientar revision externa, exportacion y release. |
