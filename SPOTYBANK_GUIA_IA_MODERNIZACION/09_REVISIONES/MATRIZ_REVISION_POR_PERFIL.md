@@ -31,3 +31,18 @@ Esta matriz registra el cierre interno para `v0.1-publicable` y deja las revisio
 ## Recomendacion para v0.2
 
 Solicitar revision externa opcional por al menos tres perfiles: arquitectura, seguridad/DevSecOps y docente. Esa revision mejora la madurez de la obra, pero no bloquea `v0.1-publicable`.
+
+## Preparacion de revision externa v0.2-editorial
+
+La ronda minima para `v0.2-editorial` queda preparada en `REVISION_EXTERNA_MINIMA_v0.2-editorial.md`.
+
+| Perfil | Estado | Entregable minimo |
+|---|---|---|
+| Backend Java/Spring | PENDIENTE_DICTAMEN | Dictamen tecnico sobre modernizacion, pruebas y deuda |
+| Arquitectura de microservicios | PENDIENTE_DICTAMEN | Dictamen sobre fronteras, dependencias, contratos y roadmap |
+| Seguridad / DevSecOps | PENDIENTE_DICTAMEN | Dictamen sobre saneamiento, secretos, threat model y supply chain |
+| DevOps / SRE | PENDIENTE_DICTAMEN | Dictamen sobre despliegue, observabilidad, resiliencia y rollback |
+| QA / Testing | PENDIENTE_DICTAMEN | Dictamen sobre verificabilidad, datos sinteticos, pruebas y rubricas |
+| Docencia / Editorial | PENDIENTE_DICTAMEN | Dictamen sobre progresion, claridad, actividades y legibilidad |
+
+Para cerrar `v0.2-editorial`, priorizar al menos arquitectura, seguridad/DevSecOps y docencia/editorial. Backend, SRE y QA completan la madurez tecnica de la salida.

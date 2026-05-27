@@ -32,7 +32,7 @@ Preparar una salida editorial mas completa, revisable y exportable, sin converti
 | Capitulos 1 a 12 en estado `DONE_EDITORIAL` | [ok] | `00_GESTION_PROYECTO/statusObraLiteraria.md` |
 | Registro de cambios actualizado | [ok] | `00_GESTION_PROYECTO/REGISTRO_CAMBIOS.md` |
 | Checklist de etapas alineado con el cierre editorial | [ok] | `00_GESTION_PROYECTO/CHECKLIST_ETAPAS.md` |
-| Revision externa minima por perfiles | [next] | Plantillas completadas en `09_REVISIONES` |
+| Revision externa minima por perfiles | [next] | Dictamenes guiados por `09_REVISIONES/REVISION_EXTERNA_MINIMA_v0.2-editorial.md` |
 | Escaneo de publicacion segura ejecutado | [next] | Salida del script sin coincidencias sensibles |
 | Limites del caso educativo vigentes | [ok] | Disclaimers, fuera de alcance y notas metodologicas |
 | Decision de formato de entrega tomada | [next] | Markdown solo, PDF/HTML, o ambos |
@@ -50,7 +50,7 @@ Preparar una salida editorial mas completa, revisable y exportable, sin converti
 
 ## Revision por perfiles
 
-Usar `09_REVISIONES/PLANTILLA_REVISION.md` como base. Cada perfil debe entregar observaciones concretas y una recomendacion de salida.
+Usar `09_REVISIONES/REVISION_EXTERNA_MINIMA_v0.2-editorial.md` y `09_REVISIONES/PLANTILLA_REVISION.md` como base. Cada perfil debe entregar observaciones concretas y una recomendacion de salida.
 
 | Perfil | Estado | Foco de revision |
 |---|---|---|

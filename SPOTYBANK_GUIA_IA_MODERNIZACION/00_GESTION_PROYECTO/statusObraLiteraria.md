@@ -111,11 +111,12 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-27 | Capitulo 12 - Roadmap de evolucion | DONE_EDITORIAL | Reescritura desarrollada con versiones, fases, ledger, roadmap 90 dias, criterios `v0.2` y cierre de obra |
 | 2026-05-27 | Revision integral de coherencia | DONE | Alineados status, registro de cambios y checklist de etapas con cierre editorial ampliado |
 | 2026-05-27 | Checklist de salida `v0.2-editorial` | DONE | Creado checklist para criterios de release, revision externa, exportacion y artefactos |
-| 2026-05-27 | Revision externa minima por perfiles | NEXT | Usar `09_REVISIONES/PLANTILLA_REVISION.md` para levantar observaciones por backend, arquitectura, seguridad, SRE, QA y docencia |
+| 2026-05-27 | Paquete de revision externa minima | DONE | Preparado documento de ronda, perfiles, preguntas, escala y criterio de cierre para `v0.2-editorial` |
+| 2026-05-27 | Dictamenes de revision externa por perfiles | NEXT | Recopilar observaciones por backend, arquitectura, seguridad, SRE, QA y docencia |
 
 ## Proximo bloque recomendado
 
-1. Ejecutar revision externa minima por perfiles usando `09_REVISIONES/PLANTILLA_REVISION.md`.
+1. Recopilar dictamenes de revision externa por perfiles usando `09_REVISIONES/REVISION_EXTERNA_MINIMA_v0.2-editorial.md`.
 2. Resolver criterios obligatorios del checklist `10_PUBLICACION/CHECKLIST_SALIDA_v0.2-editorial.md`.
 3. Preparar release notes y tag `v0.2-editorial` cuando los obligatorios esten en `[ok]`.
 4. Preparar exportacion PDF/HTML y arte final de portada como trabajo complementario de `v0.2`.
@@ -147,3 +148,4 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-27 | Completado desarrollo editorial ampliado de capitulos 1 a 12 en `main` posterior al tag `v0.1-publicable`. |
 | 2026-05-27 | Alineados registro de cambios y checklist de etapas con publicacion del tag y cierre editorial ampliado. |
 | 2026-05-27 | Creado checklist de salida `v0.2-editorial` para orientar revision externa, exportacion y release. |
+| 2026-05-27 | Preparado paquete de revision externa minima para `v0.2-editorial` por perfiles. |

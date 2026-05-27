@@ -26,3 +26,4 @@
 | 2026-05-27 | v0.2-escritura | Cuerpo principal | Desarrollados editorialmente los capitulos 3 a 12 y actualizadas notas de investigacion asociadas. |
 | 2026-05-27 | v0.2-escritura | Gestion | Actualizado status de obra, checklist de etapas y roadmap para reflejar el cierre editorial ampliado posterior al tag. |
 | 2026-05-27 | v0.2-editorial | Publicacion | Creado checklist de salida para ordenar revision externa, seguridad de publicacion, exportacion y release. |
+| 2026-05-27 | v0.2-editorial | Revision | Preparado paquete de revision externa minima por perfiles, con preguntas, escala, entregables y criterio de cierre. |
