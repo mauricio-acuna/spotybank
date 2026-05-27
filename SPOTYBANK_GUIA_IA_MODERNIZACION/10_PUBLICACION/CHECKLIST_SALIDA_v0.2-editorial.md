@@ -35,7 +35,7 @@ Preparar una salida editorial mas completa, revisable y exportable, sin converti
 | Revision externa minima por perfiles | [next] | Dictamenes guiados por `09_REVISIONES/REVISION_EXTERNA_MINIMA_v0.2-editorial.md` |
 | Escaneo de publicacion segura ejecutado | [next] | Salida del script sin coincidencias sensibles |
 | Limites del caso educativo vigentes | [ok] | Disclaimers, fuera de alcance y notas metodologicas |
-| Decision de formato de entrega tomada | [next] | Markdown solo, PDF/HTML, o ambos |
+| Decision de formato de entrega tomada | [ok] | Markdown como fuente; PDF unico recomendado; HTML opcional |
 
 ## Coherencia editorial
 
@@ -76,7 +76,7 @@ Usar `09_REVISIONES/REVISION_EXTERNA_MINIMA_v0.2-editorial.md` y `09_REVISIONES/
 | Entregable | Estado | Decision |
 |---|---|---|
 | Markdown versionado en Git | [ok] | Entregable base |
-| PDF unico de la obra | [next] | Recomendado para lectores y estudiantes |
+| PDF unico de la obra | [next] | Plan de exportacion preparado; falta herramienta local y generacion |
 | HTML navegable | [later] | Util si se publica como sitio |
 | Fasciculos PDF por perfil | [later] | Util para talleres especificos |
 | Release notes de `v0.2-editorial` | [next] | Draft creado; revisar y cerrar antes de tag/release |

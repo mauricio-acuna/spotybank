@@ -79,7 +79,7 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | Revision externa por especialistas | NEXT | Proximo bloque recomendado para cerrar `v0.2-editorial` con mirada por perfiles |
 | ISBN | LATER | Solo requerido para edicion editorial o impresa formal |
 | Maquetacion profesional | LATER | Markdown es el formato base de `v0.1-publicable` |
-| Exportacion PDF/HTML | LATER | Formato recomendado posterior al cierre documental |
+| Exportacion PDF/HTML | NEXT | Plan preparado; falta herramienta local y generacion de artefactos si se decide release formal |
 | Portada grafica final | LATER | Ya existe prompt de imagen; falta generar o seleccionar arte final |
 | Landing page y difusion ampliada | LATER | Plan creado; ejecucion posterior |
 
@@ -113,6 +113,7 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-27 | Checklist de salida `v0.2-editorial` | DONE | Creado checklist para criterios de release, revision externa, exportacion y artefactos |
 | 2026-05-27 | Paquete de revision externa minima | DONE | Preparado documento de ronda, perfiles, preguntas, escala y criterio de cierre para `v0.2-editorial` |
 | 2026-05-27 | Release notes draft `v0.2-editorial` | DONE | Preparado borrador de release notes con cambios, alcance, exclusiones y checklist previo a tag |
+| 2026-05-27 | Plan de exportacion PDF/HTML `v0.2-editorial` | DONE | Definido orden de archivos, comandos Pandoc y decision de formatos; herramientas no disponibles localmente |
 | 2026-05-27 | Dictamenes de revision externa por perfiles | NEXT | Recopilar observaciones por backend, arquitectura, seguridad, SRE, QA y docencia |
 
 ## Proximo bloque recomendado
@@ -120,7 +121,7 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 1. Recopilar dictamenes de revision externa por perfiles usando `09_REVISIONES/REVISION_EXTERNA_MINIMA_v0.2-editorial.md`.
 2. Resolver criterios obligatorios del checklist `10_PUBLICACION/CHECKLIST_SALIDA_v0.2-editorial.md`.
 3. Preparar release notes y tag `v0.2-editorial` cuando los obligatorios esten en `[ok]`.
-4. Preparar exportacion PDF/HTML y arte final de portada como trabajo complementario de `v0.2`.
+4. Instalar herramienta de exportacion y generar PDF/HTML si se desea release con artefactos.
 
 ## Historial
 
@@ -151,3 +152,4 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-27 | Creado checklist de salida `v0.2-editorial` para orientar revision externa, exportacion y release. |
 | 2026-05-27 | Preparado paquete de revision externa minima para `v0.2-editorial` por perfiles. |
 | 2026-05-27 | Preparado borrador de release notes para `v0.2-editorial`. |
+| 2026-05-27 | Preparado plan de exportacion PDF/HTML para `v0.2-editorial`. |

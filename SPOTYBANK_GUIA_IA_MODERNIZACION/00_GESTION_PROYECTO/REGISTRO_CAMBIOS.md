@@ -28,3 +28,4 @@
 | 2026-05-27 | v0.2-editorial | Publicacion | Creado checklist de salida para ordenar revision externa, seguridad de publicacion, exportacion y release. |
 | 2026-05-27 | v0.2-editorial | Revision | Preparado paquete de revision externa minima por perfiles, con preguntas, escala, entregables y criterio de cierre. |
 | 2026-05-27 | v0.2-editorial | Publicacion | Preparado borrador de release notes con alcance, cambios principales, exclusiones y checklist previo a tag. |
+| 2026-05-27 | v0.2-editorial | Formatos | Preparado plan de exportacion PDF/HTML con orden de archivos, comandos y criterio de versionado de artefactos. |
