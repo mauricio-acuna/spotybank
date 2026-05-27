@@ -1,5 +1,11 @@
 # Capitulo 10 - IA como Acelerador de Modernizacion
 
+La inteligencia artificial puede acelerar una modernizacion. Tambien puede amplificar una mala interpretacion si se usa sin control. Esa doble condicion define todo este capitulo.
+
+Spotybank no propone una fantasia donde una IA toma un sistema heredado y lo convierte magicamente en una plataforma moderna. La propuesta es mas sobria y mas util: la IA puede acelerar lectura, clasificacion, documentacion, comparacion, generacion de hipotesis y preparacion de decisiones. La decision sigue siendo humana, verificable y contextual.
+
+La IA entra como copiloto de diagnostico. No firma la arquitectura.
+
 ## Objetivos del capitulo
 
 Al finalizar este capitulo, el lector podra:
@@ -8,15 +14,24 @@ Al finalizar este capitulo, el lector podra:
 - Diferenciar asistencia, inferencia y decision tecnica validada.
 - Generar documentacion, mapas, backlog y planes de mejora con trazabilidad.
 - Identificar riesgos de privacidad, seguridad y confianza en el uso de IA.
-- Disenar un flujo de trabajo donde IA acelera sin reemplazar criterio profesional.
+- Disenar un flujo donde IA acelera sin reemplazar criterio profesional.
+- Crear prompts seguros que exijan evidencia, limites y validacion.
 
 ## 10.1 La IA no moderniza sola
 
-Spotybank no propone una fantasia donde una IA toma un sistema heredado y lo convierte magicamente en una plataforma moderna. La propuesta es mas sobria y mas util: la IA puede acelerar lectura, clasificacion, documentacion, comparacion, generacion de hipotesis y preparacion de decisiones.
+La modernizacion sigue siendo responsabilidad humana. Alguien debe decidir que riesgo es aceptable, que contrato se mantiene, que dependencia se reemplaza, que modulo se reescribe y que comportamiento bancario no puede romperse.
 
-La modernizacion sigue siendo una responsabilidad humana. Alguien debe decidir que riesgo es aceptable, que contrato se mantiene, que dependencia se reemplaza, que modulo se reescribe y que comportamiento bancario no puede romperse.
+La IA ayuda a:
 
-La IA entra como una herramienta de multiplicacion: lee rapido, organiza volumen, encuentra patrones, propone caminos y ayuda a escribir evidencia. Pero el equipo conserva la responsabilidad tecnica, funcional y etica.
+- Leer volumen.
+- Ordenar evidencia.
+- Detectar patrones.
+- Formular hipotesis.
+- Redactar documentacion.
+- Proponer pruebas.
+- Convertir hallazgos en backlog.
+
+Pero no puede, por si sola, confirmar owners, SLAs, criticidad real, trazas productivas, decisiones regulatorias ni comportamiento de negocio. En Spotybank, eso se marca como decision pendiente.
 
 ## 10.2 Un nuevo modo de leer sistemas heredados
 
@@ -32,7 +47,7 @@ La IA permite un flujo distinto:
 6. Crear preguntas para owners.
 7. Convertir hallazgos en backlog.
 
-El valor no esta en que la IA "adivine" la arquitectura. El valor esta en que ayude a construir un mapa inicial que despues se revisa con codigo, logs, owners y ambientes.
+El valor no esta en que la IA adivine la arquitectura. El valor esta en que ayude a construir un mapa inicial que despues se revisa con codigo, logs, owners y ambientes.
 
 ## 10.3 La regla de evidencia
 
@@ -47,9 +62,30 @@ Toda afirmacion tecnica en Spotybank debe entrar en una de estas categorias:
 
 Esta regla es crucial para usar IA con responsabilidad. El lector debe poder distinguir entre "lo vimos", "lo deducimos", "hay que confirmarlo" y "proponemos hacerlo".
 
-## 10.4 Documentacion asistida
+## 10.4 Prompt seguro para diagnostico
 
-Uno de los primeros usos de IA en Spotybank es generar documentacion inicial. Esto no reemplaza documentacion oficial, pero crea una base navegable.
+Un prompt util no pide magia. Pide trabajo acotado, formato claro y prudencia.
+
+Plantilla:
+
+```text
+Analiza la evidencia local adjunta sobre este microservicio.
+No afirmes uso productivo.
+No inventes owners, SLAs ni flujos reales.
+Separa la respuesta en:
+1. Evidencia observada.
+2. Inferencias razonables.
+3. Decisiones pendientes.
+4. Riesgos.
+5. Recomendaciones verificables.
+Incluye criterios de validacion para cada recomendacion.
+```
+
+Este tipo de prompt reduce dos riesgos: fluidez sin evidencia y recomendaciones genericas sin camino de validacion.
+
+## 10.5 Documentacion asistida
+
+Uno de los primeros usos de IA en Spotybank es generar documentacion inicial. Esto no reemplaza documentacion validada, pero crea una base navegable.
 
 Resultados posibles:
 
@@ -73,7 +109,7 @@ La documentacion asistida debe tener limites claros:
 
 En Spotybank, el documento no termina cuando se genera. Empieza ahi su ciclo de revision.
 
-## 10.5 IA para mapas de arquitectura
+## 10.6 IA para mapas de arquitectura
 
 La IA puede ayudar a construir mapas iniciales de arquitectura a partir de pistas:
 
@@ -88,7 +124,7 @@ La IA puede ayudar a construir mapas iniciales de arquitectura a partir de pista
 
 El mapa resultante debe tratarse como hipotesis. Si un servicio contiene rutas de notificacion, no significa automaticamente que sea owner del dominio de notificaciones. Puede ser adapter, fachada o modulo historico. Por eso la obra insiste en validar.
 
-## 10.6 IA para detectar deuda tecnica
+## 10.7 IA para detectar deuda tecnica
 
 La deuda tecnica suele estar dispersa. La IA puede ayudar a reunirla y clasificarla:
 
@@ -103,7 +139,7 @@ La deuda tecnica suele estar dispersa. La IA puede ayudar a reunirla y clasifica
 
 El peligro es convertir la deuda en una lista infinita. El trabajo profesional consiste en priorizar por riesgo, impacto y capacidad de ejecucion.
 
-## 10.7 IA para generar backlog accionable
+## 10.8 IA para backlog accionable
 
 Un buen backlog no dice solo "mejorar seguridad". Dice que se hara, por que, con que evidencia y como se validara.
 
@@ -112,6 +148,8 @@ Formato recomendado:
 ```text
 Titulo:
 Contexto:
+Evidencia:
+Inferencia:
 Riesgo:
 Alcance:
 Criterios de aceptacion:
@@ -125,6 +163,8 @@ Ejemplo educativo:
 ```text
 Titulo: Documentar DLQ y reproceso para flujo de notificaciones
 Contexto: El catalogo de mensajeria identifica productores y consumidores, pero falta owner operativo de DLQ.
+Evidencia: Existe flujo de mensajeria asociado a notificaciones en documentacion local.
+Inferencia: La falta de DLQ operable puede dificultar recuperacion.
 Riesgo: Mensajes fallidos pueden acumularse sin alerta ni proceso de recuperacion.
 Alcance: Definir DLQ, owner, alerta, runbook y prueba de reproceso con datos sinteticos.
 Criterios de aceptacion: Existe runbook, metrica, alerta y prueba documentada.
@@ -134,7 +174,7 @@ Prioridad: P1.
 
 La IA puede producir borradores de tickets. El equipo decide prioridad real.
 
-## 10.8 IA para pruebas y calidad
+## 10.9 IA para pruebas y calidad
 
 La IA puede ayudar a proponer pruebas, pero no debe inventar comportamiento bancario sin validacion.
 
@@ -157,7 +197,7 @@ Usos riesgosos:
 
 En Spotybank, la IA ayuda a preguntar mejor. La respuesta final viene de evidencia.
 
-## 10.9 IA y refactorizacion
+## 10.10 IA y refactorizacion
 
 La refactorizacion asistida por IA debe ser incremental. Un sistema bancario no se mejora con cambios masivos sin control. La IA puede proponer transformaciones, pero el equipo debe reducir blast radius.
 
@@ -172,9 +212,9 @@ Secuencia recomendada:
 7. Documentar decision.
 8. Repetir.
 
-La IA es especialmente util para encontrar duplicacion, sugerir nombres, aislar responsabilidades y preparar pruebas. Pero debe evitarse el "refactor por entusiasmo", donde se cambia mucho y se entiende poco.
+La IA es especialmente util para encontrar duplicacion, sugerir nombres, aislar responsabilidades y preparar pruebas. Pero debe evitarse el refactor por entusiasmo, donde se cambia mucho y se entiende poco.
 
-## 10.10 IA en seguridad
+## 10.11 IA en seguridad
 
 El uso de IA en seguridad tiene dos caras. Puede acelerar deteccion de riesgos, pero tambien puede exponer informacion sensible si se usa mal.
 
@@ -190,13 +230,13 @@ Reglas para Spotybank:
 
 La IA puede explicar por que un secreto versionado es peligroso, pero no debe convertirse en otro lugar donde el secreto queda copiado.
 
-## 10.11 IA para escritura tecnica
+## 10.12 IA para escritura tecnica
 
 Una obra como Spotybank se beneficia mucho de IA en escritura:
 
 - Convertir notas en secciones.
 - Normalizar tono.
-- Crear resumanes.
+- Crear resumenes.
 - Proponer ejercicios.
 - Generar tablas comparativas.
 - Reordenar capitulos.
@@ -205,7 +245,7 @@ Una obra como Spotybank se beneficia mucho de IA en escritura:
 
 La escritura tecnica buena no es decorar texto. Es hacer que el conocimiento sea navegable. La IA ayuda cuando ordena, reduce ambiguedad y mantiene consistencia.
 
-## 10.12 Flujo de trabajo recomendado
+## 10.13 Flujo de trabajo recomendado
 
 Un flujo maduro de IA para Spotybank podria ser:
 
@@ -221,7 +261,20 @@ Un flujo maduro de IA para Spotybank podria ser:
 
 El ciclo no termina con generar contenido. Termina cuando hay revision y evidencia.
 
-## 10.13 Antipatrones
+## 10.14 Riesgos y controles
+
+| Riesgo | Control |
+|---|---|
+| Alucinacion tecnica | Exigir evidencia local y marcar inferencias |
+| Exposicion de secretos | Usar placeholders y escaneo previo |
+| Recomendaciones genericas | Pedir criterios de validacion |
+| Refactors masivos | Reducir alcance y exigir pruebas |
+| Backlog inflado | Priorizar por riesgo e impacto |
+| Texto convincente pero falso | Revision humana y trazabilidad |
+
+La IA mejora el ritmo. La trazabilidad mejora la confianza.
+
+## 10.15 Antipatrones
 
 Antipatrones frecuentes:
 
@@ -236,7 +289,7 @@ Antipatrones frecuentes:
 
 Spotybank debe ensenar estos riesgos porque son parte del trabajo real.
 
-## 10.14 Ejercicio practico
+## Ejercicio practico
 
 Tomar un microservicio documentado y pedir asistencia para generar:
 
@@ -249,13 +302,22 @@ Tomar un microservicio documentado y pedir asistencia para generar:
 
 Luego clasificar cada resultado como evidencia, inferencia, decision pendiente o recomendacion.
 
-La entrega se evalua por trazabilidad, no por cantidad de texto.
+### Criterios de exito
+
+| Criterio | Esperado |
+|---|---|
+| Seguridad | No se comparten secretos ni datos reales |
+| Trazabilidad | Cada afirmacion importante tiene categoria |
+| Prudencia | No se afirman owners, SLAs ni uso productivo |
+| Accion | Los tickets tienen criterio de aceptacion |
+| Validacion | Las recomendaciones tienen evidencia de cierre |
 
 ## Resumen del capitulo
 
 - La IA acelera lectura, organizacion, documentacion y backlog.
 - No reemplaza criterio tecnico ni validacion humana.
 - Toda afirmacion debe distinguir evidencia, inferencia, decision pendiente y recomendacion.
+- Los prompts seguros piden limites, formato y criterios de validacion.
 - La IA es poderosa para escribir y sintetizar, pero riesgosa si se usa con secretos o datos reales.
 - La modernizacion asistida debe ser incremental, trazable y verificable.
 
@@ -264,7 +326,7 @@ La entrega se evalua por trazabilidad, no por cantidad de texto.
 1. Por que la IA no debe decidir sola una arquitectura objetivo?
 2. Que diferencia hay entre evidencia e inferencia?
 3. Que riesgos aparecen al usar IA con logs reales?
-4. Como convertiras un hallazgo asistido por IA en un ticket accionable?
+4. Como convertirias un hallazgo asistido por IA en un ticket accionable?
 5. Que significa revisar un texto generado en contexto tecnico?
 
 ## Referencias del capitulo
@@ -274,3 +336,6 @@ La entrega se evalua por trazabilidad, no por cantidad de texto.
 - `Documentacion/arquitectura/backlog-tecnico.md`
 - `Documentacion/validacion/registro-bloqueos-externos.md`
 - `Documentacion/ObraLiteraria/INSTRUCCIONES_DESCARGA_Y_APORTES.md`
+- `SPOTYBANK_GUIA_IA_MODERNIZACION/02_PLANIFICACION/MAPA_EVIDENCIAS_SPOTYBANK.md`
+- `SPOTYBANK_GUIA_IA_MODERNIZACION/04_CUERPO_PRINCIPAL/CAP_01_Introduccion/CAP_01_BORRADOR.md`
+- `SPOTYBANK_GUIA_IA_MODERNIZACION/04_CUERPO_PRINCIPAL/CAP_04_Desarrollo/CAP_04_BORRADOR.md`
