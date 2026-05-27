@@ -1,19 +1,40 @@
 # Capitulo 07 - Seguridad y DevSecOps
 
+La seguridad de Spotybank empieza antes de ejecutar un servicio. Empieza cuando se decide que un material tecnico puede convertirse en caso educativo sin exponer identidad, secretos, datos reales ni infraestructura sensible. Esa decision atraviesa todo el libro: no hay aprendizaje responsable si el material de aprendizaje publica aquello que deberia proteger.
+
+Pero el saneamiento editorial es solo una capa. Un sistema de microservicios tambien necesita seguridad de aplicacion, seguridad de plataforma, controles de supply chain, gobierno de secretos, observabilidad segura y una forma de convertir hallazgos en trabajo real.
+
+DevSecOps, en este contexto, no significa agregar una herramienta mas al pipeline. Significa que cada cambio pueda ser construido, probado, escaneado, desplegado y operado con controles que reduzcan riesgo sin bloquear el aprendizaje.
+
 ## Objetivos del capitulo
 
 Al finalizar este capitulo, el lector podra:
 
 - Identificar riesgos de seguridad habituales en microservicios heredados.
-- Diseñar una estrategia DevSecOps para Spotybank.
-- Separar saneamiento educativo, seguridad de plataforma y seguridad de aplicacion.
-- Proponer controles de secretos, dependencias, endpoints, APIs y despliegue.
+- Separar saneamiento educativo, seguridad de aplicacion y seguridad de plataforma.
+- Disenar una estrategia DevSecOps para Spotybank.
+- Proponer controles de secretos, dependencias, endpoints, APIs, contenedores y mensajeria.
+- Convertir hallazgos de seguridad en backlog accionable con evidencia de cierre.
+- Usar IA en seguridad sin exponer informacion sensible ni reemplazar revision humana.
 
 ## 07.1 Seguridad como condicion de aprendizaje
 
-Spotybank existe como caso educativo porque fue anonimizado y saneado. Esa idea es central: no se puede enseñar con un sistema si el material expone secretos, dominios reales o configuraciones sensibles. La seguridad no aparece al final de la obra; aparece antes de que el caso pueda compartirse.
+Spotybank existe como caso educativo porque fue anonimizado y saneado. Esa idea es central: no se puede ensenar con un sistema si el material expone secretos, dominios reales, nombres internos o configuraciones sensibles. La seguridad no aparece al final de la obra; aparece antes de que el caso pueda compartirse.
 
-En un equipo profesional, seguridad tampoco deberia ser una auditoria tardia. Debe estar integrada en el ciclo de vida: repositorio, build, test, contenedor, despliegue, runtime y operacion.
+En un equipo profesional, seguridad tampoco deberia ser auditoria tardia. Debe estar integrada en el ciclo de vida:
+
+- Repositorio.
+- Build.
+- Tests.
+- Analisis de dependencias.
+- Imagen de contenedor.
+- Manifiestos.
+- Despliegue.
+- Runtime.
+- Operacion.
+- Publicacion de documentacion.
+
+La pregunta no es "quien revisa seguridad al final?". La pregunta es "que controles evitan que el riesgo avance sin ser visto?".
 
 ## 07.2 Tres niveles de seguridad
 
@@ -25,11 +46,28 @@ Para ordenar el trabajo, Spotybank separa tres niveles:
 | Seguridad de aplicacion | El servicio maneja bien identidad, datos y errores? | Auth, validacion, errores, tokens, Actuator |
 | Seguridad de plataforma | El runtime esta protegido? | Secrets, network policies, TLS, imagenes, RBAC |
 
-Los tres niveles se complementan. Un repositorio limpio no garantiza un despliegue seguro, y una plataforma segura no compensa una aplicacion que expone datos o tokens.
+Los tres niveles se complementan. Un repositorio limpio no garantiza un despliegue seguro. Una plataforma segura no compensa una aplicacion que expone datos. Una aplicacion bien escrita no elimina el riesgo de una imagen vulnerable o de una clave versionada.
 
-## 07.3 Gestion de secretos
+Esta separacion ayuda a planificar. Un equipo puede trabajar primero el saneamiento para publicar el caso, despues controles de aplicacion para laboratorios y luego plataforma para despliegues cloud native.
 
-El inventario de configuracion sensible de Spotybank muestra una concentracion alta de referencias a credenciales, endpoints, tokens, certificados, mensajeria y base de datos. La documentacion no copia valores sensibles, pero el hallazgo es suficiente para definir una politica.
+## 07.3 Modelo de amenazas minimo
+
+Antes de listar herramientas, conviene construir un modelo de amenazas minimo. Para Spotybank, las preguntas base son:
+
+| Pregunta | Ejemplo |
+|---|---|
+| Que activo se protege? | Credenciales, tokens MFA, datos de cliente, contratos, colas |
+| Quien podria abusarlo? | Usuario no autorizado, consumidor interno, atacante externo, error operativo |
+| Por donde entra el riesgo? | API, broker, repositorio, imagen, dependencia, configuracion |
+| Que control existe? | Autenticacion, validacion, secretos, RBAC, escaneo, auditoria |
+| Que evidencia falta? | Logs, trazas, owner, pruebas, configuracion real |
+| Que ticket queda? | Rotar secreto, cerrar endpoint, agregar test, documentar DLQ |
+
+Un modelo de amenazas no necesita ser enorme para ser util. Debe obligar a pensar en activos, actores, vectores y controles.
+
+## 07.4 Gestion de secretos
+
+La configuracion sensible de microservicios suele concentrar referencias a credenciales, endpoints, tokens, certificados, mensajeria y bases de datos. La documentacion no debe copiar valores sensibles, pero la presencia de esos patrones basta para definir una politica.
 
 Reglas minimas:
 
@@ -40,12 +78,13 @@ Reglas minimas:
 - Secrets gestionados por Vault, Secret Manager u OpenShift/Kubernetes Secrets.
 - Rotacion obligatoria de cualquier valor que haya estado versionado o compartido.
 - Escaneo de secretos en pre-commit y CI.
+- Bloqueo de push o merge ante hallazgos criticos.
 
-En educacion, los placeholders son utiles porque enseñan estructura sin exponer valor real.
+En educacion, los placeholders son utiles porque ensenan estructura sin exponer valor real. Pero un placeholder debe ser claramente invalido. Si parece una clave real, confunde.
 
-## 07.4 Endpoints, Actuator y superficie expuesta
+## 07.5 Endpoints, Actuator y superficie expuesta
 
-La documentacion de seguridad detecta propiedades relacionadas con Actuator y configuraciones que deben revisarse. En servicios Spring Boot, Actuator puede ser muy util para health, metrics y operacion, pero tambien puede revelar informacion sensible si se expone sin control.
+En servicios Spring Boot, Actuator puede ser muy util para health, metrics y operacion. Tambien puede revelar informacion sensible si se expone sin control.
 
 Buenas practicas:
 
@@ -54,10 +93,12 @@ Buenas practicas:
 - Evitar detalles internos en respuestas publicas.
 - Registrar intentos de acceso no autorizado.
 - Separar endpoints publicos, internos y administrativos.
+- Revisar CORS, headers y errores.
+- Evitar stack traces o configuracion en respuestas.
 
-En Spotybank, esta discusion sirve para que el lector entienda que observabilidad y seguridad no son enemigos; deben diseñarse juntas.
+En Spotybank, esta discusion muestra que observabilidad y seguridad no son enemigos. Deben disenar juntas una superficie operable pero controlada.
 
-## 07.5 Autenticacion y autorizacion
+## 07.6 Autenticacion y autorizacion
 
 El dominio `spotybank-auth` permite discutir autenticacion moderna. Una evolucion esperable es moverse hacia OAuth2/OIDC, manejo robusto de tokens y separacion entre identidad humana y credenciales servicio a servicio.
 
@@ -69,11 +110,12 @@ Preguntas que el equipo debe responder:
 - Como se validan tokens?
 - Como se revocan sesiones?
 - Como se auditan intentos fallidos?
-- Como se protegen claves publicas/privadas?
+- Como se protegen claves publicas y privadas?
+- Como se limita el acceso servicio a servicio?
 
-La seguridad no termina al emitir un token. Empieza ahi.
+La seguridad no termina al emitir un token. Empieza ahi. Un token requiere expiracion, validacion, audiencia, emisor, scopes, rotacion de claves y trazabilidad.
 
-## 07.6 Seguridad en MFA
+## 07.7 Seguridad en MFA
 
 MFA es uno de los dominios mas sensibles de Spotybank. Maneja tokens, canales, proveedores, estados de enrolamiento y validacion. Su seguridad debe cubrir tanto el flujo feliz como los bordes: reintentos, expiracion, bloqueo, fraude, replay y auditoria.
 
@@ -86,14 +128,30 @@ Controles esperados:
 - Auditoria de validacion.
 - Separacion entre decision de riesgo y canal de entrega.
 - Proteccion contra replay.
+- Alertas por comportamiento anomalo.
 
-Un sistema MFA sin observabilidad suficiente es dificil de operar y de auditar.
+Un sistema MFA sin observabilidad suficiente es dificil de operar y auditar. Tambien es dificil de defender: no basta con decir que hay segundo factor; hay que demostrar como se controla.
 
-## 07.7 Dependencias y SBOM
+## 07.8 Datos, logs y privacidad
 
-Java 8 y dependencias legacy elevan el riesgo de vulnerabilidades conocidas. Un programa DevSecOps debe incluir inventario de dependencias y SBOM.
+Los logs son necesarios para operar, pero pueden convertirse en fuga de datos. En un caso bancario, payloads, documentos, telefonos, correos, tokens, headers y respuestas externas deben tratarse con cuidado.
 
-Para Spotybank, cada modulo deberia poder responder:
+Reglas practicas:
+
+- No loguear secretos, tokens ni OTP.
+- Enmascarar datos personales.
+- Evitar payloads completos salvo en ambientes controlados.
+- Usar correlation id sin exponer identidad sensible.
+- Definir retencion y acceso a logs.
+- Revisar errores para no exponer detalles internos.
+
+La observabilidad segura no consiste en ver todo. Consiste en ver lo necesario sin publicar lo que debe permanecer protegido.
+
+## 07.9 Dependencias, SBOM y supply chain
+
+Dependencias legacy elevan el riesgo de vulnerabilidades conocidas. Un programa DevSecOps debe incluir inventario de dependencias y SBOM.
+
+Cada modulo deberia poder responder:
 
 - Que librerias usa?
 - Que version?
@@ -102,18 +160,20 @@ Para Spotybank, cada modulo deberia poder responder:
 - Quien es owner de la remediacion?
 - Que imagen base usa?
 - Esta fijada por digest?
+- Hay procedencia verificable del artefacto?
 
-La seguridad de supply chain es especialmente importante cuando se convierte un caso en material reutilizable por muchas instituciones.
+La seguridad de supply chain es especialmente importante cuando un caso educativo puede ser reutilizado por muchas instituciones. Publicar material no productivo no elimina la responsabilidad de evitar dependencias peligrosas o instrucciones inseguras.
 
-## 07.8 Seguridad de contenedores y despliegue
+## 07.10 Seguridad de contenedores y despliegue
 
-Spotybank contiene Dockerfiles y manifests OpenShift/Kubernetes. La plataforma debe proteger tanto build como runtime.
+Spotybank contiene Dockerfiles y manifiestos OpenShift/Kubernetes. La plataforma debe proteger tanto build como runtime.
 
 Controles recomendados:
 
 - Imagenes base soportadas y escaneadas.
 - Tags o digests controlados.
 - Usuario no root cuando sea posible.
+- Filesystem read-only si aplica.
 - Requests y limits definidos.
 - Readiness/liveness probes.
 - ConfigMaps para configuracion no sensible.
@@ -124,7 +184,7 @@ Controles recomendados:
 
 Sin estas medidas, un servicio correcto a nivel de codigo puede fallar o exponerse a nivel de plataforma.
 
-## 07.9 Mensajeria segura
+## 07.11 Mensajeria segura
 
 Los flujos JMS/MQ requieren controles propios:
 
@@ -136,10 +196,11 @@ Los flujos JMS/MQ requieren controles propios:
 - Idempotency key.
 - Replay seguro.
 - Auditoria de productor y consumidor.
+- Alertas por acumulacion o errores repetidos.
 
-En Spotybank, notificaciones y MFA son buenos laboratorios para estudiar estos controles. El riesgo no es solo perder mensajes; tambien puede ser duplicar acciones sensibles.
+En Spotybank, notificaciones y MFA son buenos laboratorios para estudiar estos controles. El riesgo no es solo perder mensajes; tambien puede ser duplicar acciones sensibles o reprocesar eventos fuera de contexto.
 
-## 07.10 DevSecOps en el pipeline
+## 07.12 DevSecOps en el pipeline
 
 Una estrategia DevSecOps no depende de una herramienta unica. Es una cadena de controles.
 
@@ -158,9 +219,39 @@ Pipeline minimo recomendado:
 11. Pruebas de smoke y seguridad.
 12. Promocion controlada.
 
-La clave es que el pipeline falle cuando aparece un riesgo critico, no que solo genere reportes que nadie lee.
+La clave es que el pipeline falle cuando aparece un riesgo critico. Un reporte que nadie lee no es control; es ruido.
 
-## 07.11 Backlog de seguridad para Spotybank
+## 07.13 Publicacion segura del caso educativo
+
+Spotybank agrega una capa particular: publicacion del material educativo. El repo editorial debe mantenerse separado del workspace tecnico completo, y cada publicacion debe pasar controles de contenido.
+
+Controles de publicacion:
+
+- Escaneo de patrones no publicables.
+- Exclusion de logs, zips y binarios no revisados.
+- Revision de referencias a entidades externas.
+- Uso de placeholders ficticios.
+- Separacion entre evidencia local y datos productivos.
+- Commit y tag solo despues de escaneo.
+
+Este control editorial es parte de DevSecOps porque protege el ciclo de distribucion del conocimiento.
+
+## 07.14 Uso de IA en seguridad
+
+La IA puede ayudar a revisar patrones, proponer checklists, convertir hallazgos en tickets y detectar inconsistencias en documentos. Pero no debe recibir secretos reales ni reemplazar una validacion tecnica.
+
+Reglas minimas:
+
+- No pegar tokens, passwords ni certificados en prompts.
+- Usar ejemplos saneados.
+- Pedir clasificacion por evidencia, inferencia y decision pendiente.
+- Verificar localmente cualquier hallazgo.
+- No aceptar recomendaciones genericas sin contexto.
+- Convertir salidas utiles en backlog revisable.
+
+En seguridad, una respuesta convincente no equivale a un control implementado.
+
+## 07.15 Backlog de seguridad para Spotybank
 
 El backlog inicial de Spotybank prioriza:
 
@@ -168,34 +259,51 @@ El backlog inicial de Spotybank prioriza:
 - Mover configuracion sensible a Vault/Secrets.
 - Restringir Actuator.
 - Escanear imagenes y dependencias.
+- Generar SBOM.
 - Documentar colas y DLQ.
 - Definir idempotencia.
 - Agregar network policies.
 - Publicar contratos verificables.
+- Crear checklist ASVS/API Top 10 para APIs.
 
 Este backlog no debe quedarse como documento. Debe convertirse en tickets con owner, criticidad, evidencia de cierre y fecha objetivo.
 
-## 07.12 Ejercicio practico
+## Ejercicio practico
 
-Elegir un servicio de MFA o autenticacion y construir una mini amenaza:
+Elegir un servicio de MFA o autenticacion y construir una mini amenaza.
 
-- Activo protegido.
-- Actor posible.
-- Vector de ataque.
-- Control existente.
-- Control faltante.
-- Evidencia necesaria.
-- Ticket propuesto.
+### Entregables
+
+1. Activo protegido.
+2. Actor posible.
+3. Vector de ataque.
+4. Control existente.
+5. Control faltante.
+6. Evidencia necesaria.
+7. Ticket propuesto.
+8. Criterio de cierre.
 
 Luego clasificar el ticket como P0, P1, P2 o P3 segun impacto y urgencia.
+
+### Criterios de exito
+
+| Criterio | Esperado |
+|---|---|
+| Activo | Identifica que se protege |
+| Amenaza | Describe actor y vector sin exagerar |
+| Control | Diferencia control existente y faltante |
+| Evidencia | No cierra hallazgos sin prueba |
+| Backlog | Propone ticket accionable |
+| Seguridad editorial | No incluye secretos ni datos reales |
 
 ## Resumen del capitulo
 
 - Seguridad es condicion de publicacion y de operacion.
 - Spotybank separa saneamiento educativo, seguridad de aplicacion y seguridad de plataforma.
-- Secretos, Actuator, MFA, dependencias, contenedores y mensajeria son frentes prioritarios.
+- Secretos, Actuator, MFA, logs, dependencias, contenedores y mensajeria son frentes prioritarios.
 - DevSecOps debe integrarse al pipeline con controles que bloqueen riesgos criticos.
-- Todo hallazgo debe terminar en backlog accionable.
+- La publicacion segura del caso educativo tambien forma parte de la cadena de seguridad.
+- Todo hallazgo debe terminar en backlog accionable, con evidencia de cierre.
 
 ## Preguntas de revision
 
@@ -203,6 +311,7 @@ Luego clasificar el ticket como P0, P1, P2 o P3 segun impacto y urgencia.
 2. Por que Actuator puede ser util y riesgoso al mismo tiempo?
 3. Que controles requiere un flujo MFA seguro?
 4. Que evidencia pedirias para cerrar un ticket de rotacion de secretos?
+5. Por que un SBOM ayuda a gobernar supply chain?
 
 ## Referencias del capitulo
 
@@ -211,4 +320,6 @@ Luego clasificar el ticket como P0, P1, P2 o P3 segun impacto y urgencia.
 - `Documentacion/arquitectura/backlog-tecnico.md`
 - `Documentacion/arquitectura/despliegue-nube.md`
 - `Documentacion/arquitectura/catalogo-mensajeria.md`
-
+- `SPOTYBANK_GUIA_IA_MODERNIZACION/02_PLANIFICACION/MAPA_MODERNIZACION_DESDE_FUENTES.md`
+- `SPOTYBANK_GUIA_IA_MODERNIZACION/04_CUERPO_PRINCIPAL/CAP_03_Metodologia/CAP_03_BORRADOR.md`
+- `Publicar_ObraLiteraria_Spotybank.ps1`
