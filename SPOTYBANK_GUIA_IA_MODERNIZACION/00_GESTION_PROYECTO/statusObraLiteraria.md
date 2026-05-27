@@ -51,7 +51,7 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 6 - Modernizacion de backend | DONE_EDITORIAL | `04_CUERPO_PRINCIPAL/CAP_06_Discusion/CAP_06_BORRADOR.md` |
 | 7 - Seguridad y DevSecOps | DONE_EDITORIAL | `04_CUERPO_PRINCIPAL/CAP_07_Conclusiones/CAP_07_BORRADOR.md` |
 | 8 - Despliegue cloud native | DONE_EDITORIAL | `04_CUERPO_PRINCIPAL/CAP_08_Despliegue_Cloud_Native/CAP_08_BORRADOR.md` |
-| 9 - Performance, escalamiento y resiliencia | DONE | `04_CUERPO_PRINCIPAL/CAP_09_Performance_Escalamiento_Resiliencia/CAP_09_BORRADOR.md` |
+| 9 - Performance, escalamiento y resiliencia | DONE_EDITORIAL | `04_CUERPO_PRINCIPAL/CAP_09_Performance_Escalamiento_Resiliencia/CAP_09_BORRADOR.md` |
 | 10 - IA como acelerador | DONE | `04_CUERPO_PRINCIPAL/CAP_10_IA_Acelerador/CAP_10_BORRADOR.md` |
 | 11 - Spotybank como curso | DONE | `04_CUERPO_PRINCIPAL/CAP_11_Spotybank_Como_Curso/CAP_11_BORRADOR.md` |
 | 12 - Roadmap de evolucion | DONE | `04_CUERPO_PRINCIPAL/CAP_12_Roadmap_Evolucion/CAP_12_BORRADOR.md` |
@@ -103,7 +103,8 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-27 | Capitulo 6 - Modernizacion de backend | DONE_EDITORIAL | Reescritura desarrollada con oleadas Java/Spring/Maven, pruebas, contratos, resiliencia, observabilidad y rollback |
 | 2026-05-27 | Capitulo 7 - Seguridad y DevSecOps | DONE_EDITORIAL | Reescritura desarrollada con saneamiento, threat model, secretos, MFA, supply chain, plataforma, pipeline y backlog |
 | 2026-05-27 | Capitulo 8 - Despliegue cloud native | DONE_EDITORIAL | Reescritura desarrollada con contrato runtime, probes, resources, HPA, GitOps, network policies y continuidad |
-| 2026-05-27 | Capitulo 9 - Performance, escalamiento y resiliencia | NEXT | Proximo bloque de desarrollo editorial |
+| 2026-05-27 | Capitulo 9 - Performance, escalamiento y resiliencia | DONE_EDITORIAL | Reescritura desarrollada con SLIs/SLOs, percentiles, pools, colas, HPA, resiliencia y pruebas de carga |
+| 2026-05-27 | Capitulo 10 - IA como acelerador | NEXT | Proximo bloque de desarrollo editorial |
 
 ## Proximo bloque recomendado
 
@@ -132,3 +133,4 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-27 | Desarrollado editorialmente el capitulo 6 como guia de modernizacion backend incremental. |
 | 2026-05-27 | Desarrollado editorialmente el capitulo 7 como guia de seguridad y DevSecOps. |
 | 2026-05-27 | Desarrollado editorialmente el capitulo 8 como guia de despliegue cloud native educativo. |
+| 2026-05-27 | Desarrollado editorialmente el capitulo 9 como guia de performance, escalamiento y resiliencia. |
