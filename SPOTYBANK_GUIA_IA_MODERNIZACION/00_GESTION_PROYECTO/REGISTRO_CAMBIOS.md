@@ -22,3 +22,6 @@
 | 2026-05-12 | v0.1-publicable | Publicacion | Actualizados requisitos editoriales, plan de difusion, release notes y checklist de tag/release. |
 | 2026-05-13 | v0.2-escritura | Cuerpo principal | Desarrollado editorialmente el capitulo 1 con voz tecnica, narrativa, limites del caso, perfiles de lectura y actividad inicial. |
 | 2026-05-13 | v0.2-escritura | Cuerpo principal | Desarrollado editorialmente el capitulo 2 con inventario cuantitativo, clasificacion de componentes, stack detectado, riesgos y ejercicio practico. |
+| 2026-05-27 | v0.1-publicable | Publicacion | Publicados `main` y tag `v0.1-publicable` en GitHub despues del escaneo de publicacion segura. |
+| 2026-05-27 | v0.2-escritura | Cuerpo principal | Desarrollados editorialmente los capitulos 3 a 12 y actualizadas notas de investigacion asociadas. |
+| 2026-05-27 | v0.2-escritura | Gestion | Actualizado status de obra, checklist de etapas y roadmap para reflejar el cierre editorial ampliado posterior al tag. |

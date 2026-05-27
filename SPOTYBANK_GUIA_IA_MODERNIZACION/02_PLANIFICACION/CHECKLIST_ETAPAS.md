@@ -57,8 +57,8 @@ La revision externa queda recomendada para `v0.2`; no bloquea la version prelimi
 - [ok] Licencia definida.
 - [ok] Release notes preparadas.
 - [ok] Checklist de tag/release preparado.
-- [next] Ejecutar script de publicacion segura.
-- [next] Crear tag `v0.1-publicable`.
+- [ok] Ejecutar script de publicacion segura.
+- [ok] Crear tag `v0.1-publicable`.
 - [later] Publicar release con PDF/HTML si se exportan artefactos.
 - [later] Ejecutar acciones ampliadas de difusion.
 
@@ -73,6 +73,7 @@ La revision externa queda recomendada para `v0.2`; no bloquea la version prelimi
 | Revision interna completa | 2026-05-12 | 2026-05-12 | DONE |
 | Licencia definida | 2026-05-12 | 2026-05-12 | DONE |
 | Acta de cierre v0.1 | 2026-05-12 | 2026-05-12 | DONE |
+| Tag `v0.1-publicable` | posterior al commit | 2026-05-27 | DONE |
+| Desarrollo editorial ampliado capitulos 1 a 12 | v0.2 | 2026-05-27 | DONE |
 | Peer review externo | v0.2 | | LATER |
 | Maqueta PDF/HTML | v0.2 | | LATER |
-| Tag `v0.1-publicable` | posterior al commit | | NEXT |

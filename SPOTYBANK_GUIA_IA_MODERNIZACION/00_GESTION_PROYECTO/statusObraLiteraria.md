@@ -107,12 +107,13 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-27 | Capitulo 10 - IA como acelerador | DONE_EDITORIAL | Reescritura desarrollada con prompts seguros, evidencia/inferencia, backlog, pruebas, seguridad y antipatrones |
 | 2026-05-27 | Capitulo 11 - Spotybank como curso | DONE_EDITORIAL | Reescritura desarrollada con rutas por perfil, fasciculos, duraciones, laboratorios, revision por pares y rubricas |
 | 2026-05-27 | Capitulo 12 - Roadmap de evolucion | DONE_EDITORIAL | Reescritura desarrollada con versiones, fases, ledger, roadmap 90 dias, criterios `v0.2` y cierre de obra |
-| 2026-05-27 | Revision integral de coherencia | NEXT | Proximo bloque recomendado para alinear indices, fasciculos, referencias y checklist `v0.2` |
+| 2026-05-27 | Revision integral de coherencia | DONE | Alineados status, registro de cambios y checklist de etapas con cierre editorial ampliado |
+| 2026-05-27 | Checklist de salida `v0.2-editorial` | NEXT | Proximo bloque recomendado para preparar criterios de release, revision externa y exportacion |
 
 ## Proximo bloque recomendado
 
-1. Ejecutar revision integral de coherencia entre indice, capitulos, fasciculos y referencias.
-2. Preparar checklist de salida para `v0.2-editorial`.
+1. Preparar checklist de salida para `v0.2-editorial`.
+2. Ejecutar revision externa minima por perfiles.
 3. Preparar release formal en GitHub si se desean artefactos descargables.
 4. Preparar exportacion PDF/HTML y arte final de portada como trabajo de `v0.2`.
 
@@ -141,3 +142,4 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-27 | Desarrollado editorialmente el capitulo 11 como guia para convertir Spotybank en curso. |
 | 2026-05-27 | Desarrollado editorialmente el capitulo 12 como roadmap de evolucion y cierre de obra. |
 | 2026-05-27 | Completado desarrollo editorial ampliado de capitulos 1 a 12 en `main` posterior al tag `v0.1-publicable`. |
+| 2026-05-27 | Alineados registro de cambios y checklist de etapas con publicacion del tag y cierre editorial ampliado. |
