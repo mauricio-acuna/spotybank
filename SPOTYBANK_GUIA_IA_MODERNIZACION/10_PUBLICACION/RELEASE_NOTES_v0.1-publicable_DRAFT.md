@@ -68,6 +68,6 @@ Primera version publicable preliminar de la obra tecnica educativa Spotybank. In
 - [ok] Revisar release notes.
 - [ok] Mantener advertencias de version preliminar.
 - [ok] Ejecutar escaneo documental de cierre.
-- [next] Ejecutar escaneo con `Publicar_ObraLiteraria_Spotybank.ps1` antes de subir.
-- [next] Crear tag `v0.1-publicable` cuando el repo este limpio.
+- [ok] Ejecutar escaneo con `Publicar_ObraLiteraria_Spotybank.ps1` antes de subir.
+- [ok] Crear tag `v0.1-publicable` cuando el repo este limpio.
 - [next] Publicar release en GitHub si se desea distribucion formal.

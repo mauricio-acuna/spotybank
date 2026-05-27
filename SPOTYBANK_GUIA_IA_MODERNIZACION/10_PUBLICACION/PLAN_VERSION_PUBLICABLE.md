@@ -49,8 +49,8 @@ No incluye:
 3. [ok] Actualizar README y portada.
 4. [ok] Revisar tablas y figuras iniciales.
 5. [ok] Registrar cambios en status de obra.
-6. [next] Ejecutar escaneo de seguridad con el script de publicacion.
-7. [next] Crear tag `v0.1-publicable`.
+6. [ok] Ejecutar escaneo de seguridad con el script de publicacion.
+7. [ok] Crear tag `v0.1-publicable`.
 8. [later] Exportar PDF/HTML si se decide.
 9. [later] Publicar release en GitHub con artefactos exportados.
 

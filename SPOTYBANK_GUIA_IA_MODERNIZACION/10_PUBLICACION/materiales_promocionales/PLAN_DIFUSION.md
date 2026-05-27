@@ -29,7 +29,7 @@ Spotybank convierte un sistema legacy anonimizado en un laboratorio completo de 
 
 ## 5. Acciones en el lanzamiento
 
-- [next] Publicar version `v0.1-publicable` en GitHub.
+- [ok] Publicar version `v0.1-publicable` en GitHub.
 - [later] Post de lanzamiento en LinkedIn.
 - [later] Webinar o clase abierta basada en un fasciculo.
 - [later] Articulo tecnico de presentacion.

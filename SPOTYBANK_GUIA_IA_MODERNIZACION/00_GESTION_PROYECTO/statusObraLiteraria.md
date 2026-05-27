@@ -1,6 +1,6 @@
 # Status de Obra Literaria Tecnica
 
-Fecha de control: 2026-05-26
+Fecha de control: 2026-05-27
 
 Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de microservicios bancarios`.
 
@@ -15,8 +15,8 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 - Licencia de ejemplos de codigo propios: Apache License 2.0.
 - Repo Git independiente de la obra: `Documentacion/ObraLiteraria`.
 - Repo remoto registrado: `https://github.com/mauricio-acuna/spotybank.git`.
-- Estado Git verificado: `main` alineada con `origin/main` al 2026-05-26.
-- Ciclo actual: desarrollo editorial de contenidos para evolucion posterior a `v0.1-publicable`.
+- Estado Git verificado: `main` sincronizada con `origin/main` para cierre `v0.1-publicable` al 2026-05-27.
+- Ciclo actual: publicacion inicial y preparacion de mejoras para `v0.2`.
 
 ## Estados usados
 
@@ -102,8 +102,8 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 ## Proximo bloque recomendado
 
 1. Revisar `09_REVISIONES/ACTA_CIERRE_REVISION_TECNICA_EDITORIAL_2026-05-12.md`.
-2. Ejecutar el script de publicacion segura antes de publicar nuevos cambios.
-3. Crear y publicar el tag `v0.1-publicable` cuando el commit documental de cierre este subido.
+2. Verificar en GitHub que `main` y el tag `v0.1-publicable` quedaron publicados.
+3. Preparar release formal en GitHub si se desean artefactos descargables.
 4. Preparar exportacion PDF/HTML y arte final de portada como trabajo de `v0.2`.
 
 ## Historial
@@ -119,3 +119,4 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-13 | Desarrollado editorialmente el capitulo 1 como apertura tecnica y metodologica de la obra. |
 | 2026-05-13 | Desarrollado editorialmente el capitulo 2 como inventario tecnico inicial basado en evidencia. |
 | 2026-05-26 | Verificado estado Git contra `origin/main` y preparado seguimiento documental previo a tag `v0.1-publicable`. |
+| 2026-05-27 | Cerradas tareas operativas de publicacion inicial: escaneo, push de `main` y tag `v0.1-publicable`. |
