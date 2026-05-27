@@ -112,6 +112,7 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-27 | Revision integral de coherencia | DONE | Alineados status, registro de cambios y checklist de etapas con cierre editorial ampliado |
 | 2026-05-27 | Checklist de salida `v0.2-editorial` | DONE | Creado checklist para criterios de release, revision externa, exportacion y artefactos |
 | 2026-05-27 | Paquete de revision externa minima | DONE | Preparado documento de ronda, perfiles, preguntas, escala y criterio de cierre para `v0.2-editorial` |
+| 2026-05-27 | Release notes draft `v0.2-editorial` | DONE | Preparado borrador de release notes con cambios, alcance, exclusiones y checklist previo a tag |
 | 2026-05-27 | Dictamenes de revision externa por perfiles | NEXT | Recopilar observaciones por backend, arquitectura, seguridad, SRE, QA y docencia |
 
 ## Proximo bloque recomendado
@@ -149,3 +150,4 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-27 | Alineados registro de cambios y checklist de etapas con publicacion del tag y cierre editorial ampliado. |
 | 2026-05-27 | Creado checklist de salida `v0.2-editorial` para orientar revision externa, exportacion y release. |
 | 2026-05-27 | Preparado paquete de revision externa minima para `v0.2-editorial` por perfiles. |
+| 2026-05-27 | Preparado borrador de release notes para `v0.2-editorial`. |

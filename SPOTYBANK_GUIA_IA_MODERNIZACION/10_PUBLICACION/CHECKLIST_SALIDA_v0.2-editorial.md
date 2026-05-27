@@ -79,7 +79,7 @@ Usar `09_REVISIONES/REVISION_EXTERNA_MINIMA_v0.2-editorial.md` y `09_REVISIONES/
 | PDF unico de la obra | [next] | Recomendado para lectores y estudiantes |
 | HTML navegable | [later] | Util si se publica como sitio |
 | Fasciculos PDF por perfil | [later] | Util para talleres especificos |
-| Release notes de `v0.2-editorial` | [next] | Crear antes de tag/release |
+| Release notes de `v0.2-editorial` | [next] | Draft creado; revisar y cerrar antes de tag/release |
 | Arte final de portada | [later] | No bloquea el contenido tecnico |
 | Release de GitHub con artefactos | [later] | Solo si se generan PDF/HTML descargables |
 
