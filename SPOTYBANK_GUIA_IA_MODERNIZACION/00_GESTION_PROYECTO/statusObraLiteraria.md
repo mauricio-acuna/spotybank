@@ -46,7 +46,7 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 1 - Introduccion | DONE_EDITORIAL | `04_CUERPO_PRINCIPAL/CAP_01_Introduccion/CAP_01_BORRADOR.md` |
 | 2 - Inventario tecnico inicial | DONE_EDITORIAL | `04_CUERPO_PRINCIPAL/CAP_02_Marco_Teorico/CAP_02_BORRADOR.md` |
 | 3 - Anonimizacion y rebranding seguro | DONE_EDITORIAL | `04_CUERPO_PRINCIPAL/CAP_03_Metodologia/CAP_03_BORRADOR.md` |
-| 4 - Documentacion viva de microservicios | DONE | `04_CUERPO_PRINCIPAL/CAP_04_Desarrollo/CAP_04_BORRADOR.md` |
+| 4 - Documentacion viva de microservicios | DONE_EDITORIAL | `04_CUERPO_PRINCIPAL/CAP_04_Desarrollo/CAP_04_BORRADOR.md` |
 | 5 - Dominios bancarios y fronteras | DONE | `04_CUERPO_PRINCIPAL/CAP_05_Resultados/CAP_05_BORRADOR.md` |
 | 6 - Modernizacion de backend | DONE | `04_CUERPO_PRINCIPAL/CAP_06_Discusion/CAP_06_BORRADOR.md` |
 | 7 - Seguridad y DevSecOps | DONE | `04_CUERPO_PRINCIPAL/CAP_07_Conclusiones/CAP_07_BORRADOR.md` |
@@ -98,7 +98,8 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-13 | Capitulo 1 - Introduccion | DONE_EDITORIAL | Reescritura desarrollada con apertura narrativa, metodo de evidencia, limites, perfiles y actividad inicial |
 | 2026-05-13 | Capitulo 2 - Inventario tecnico inicial | DONE_EDITORIAL | Reescritura desarrollada con evidencia cuantitativa, clasificacion de artefactos, stack, riesgos y ejercicio practico |
 | 2026-05-27 | Capitulo 3 - Anonimizacion y rebranding seguro | DONE_EDITORIAL | Reescritura desarrollada con enfoque de saneamiento, rebranding, placeholders, artefactos no inspeccionados y ejercicio practico |
-| 2026-05-27 | Capitulo 4 - Documentacion viva de microservicios | NEXT | Proximo bloque de desarrollo editorial |
+| 2026-05-27 | Capitulo 4 - Documentacion viva de microservicios | DONE_EDITORIAL | Reescritura desarrollada con README por servicio, catalogos, matrices, runbooks, gobernanza documental e IA |
+| 2026-05-27 | Capitulo 5 - Dominios bancarios y fronteras | NEXT | Proximo bloque de desarrollo editorial |
 
 ## Proximo bloque recomendado
 
@@ -122,3 +123,4 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-26 | Verificado estado Git contra `origin/main` y preparado seguimiento documental previo a tag `v0.1-publicable`. |
 | 2026-05-27 | Cerradas tareas operativas de publicacion inicial: escaneo, push de `main` y tag `v0.1-publicable`. |
 | 2026-05-27 | Desarrollado editorialmente el capitulo 3 como guia de anonimizacion y rebranding seguro. |
+| 2026-05-27 | Desarrollado editorialmente el capitulo 4 como guia de documentacion viva de microservicios. |
