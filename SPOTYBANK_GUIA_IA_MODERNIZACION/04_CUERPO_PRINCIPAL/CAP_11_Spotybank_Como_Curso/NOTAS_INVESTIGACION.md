@@ -1,26 +1,38 @@
 # Notas de investigacion - Capitulo 11
 
-## Estado
+## Fuentes revisadas
 
-Redactado como borrador completo en `CAP_11_BORRADOR.md`.
+- `SPOTYBANK_GUIA_IA_MODERNIZACION/02_PLANIFICACION/FASCICULOS_EJECUTABLES_POR_PERFIL.md`
+- `SPOTYBANK_GUIA_IA_MODERNIZACION/02_PLANIFICACION/PLANES_CLASE.md`
+- `SPOTYBANK_GUIA_IA_MODERNIZACION/02_PLANIFICACION/PLAN_FASCICULOS_PERFILES.md`
+- `SPOTYBANK_GUIA_IA_MODERNIZACION/05_APENDICES/APE_F_Ejercicios_Laboratorios/RUBRICAS_EVALUACION.md`
+- `SPOTYBANK_GUIA_IA_MODERNIZACION/05_APENDICES/APE_F_Ejercicios_Laboratorios/LABORATORIOS_POR_PERFIL.md`
 
-## Enfoque previsto
+## Ideas clave
 
-- Rutas por perfil: backend, arquitectura, seguridad, DevOps, QA y docencia.
-- Laboratorios por dificultad.
-- Rubricas de evaluacion.
-- Proyecto final por equipos.
-- Uso en universidades, institutos, terciarios, empresas y centros de formacion profesional.
+- Un repositorio necesita objetivos, practicas, evidencias y rubricas para convertirse en curso.
+- Spotybank funciona como laboratorio transversal por perfiles.
+- Los fasciculos permiten modularizar segun duracion y audiencia.
+- La revision por pares convierte diferencias de perfil en aprendizaje.
+- La evaluacion debe premiar evidencia, seguridad, claridad y criterio.
 
-## Evidencia base
+## Argumento editorial
 
-- Plan de fasciculos por perfil.
-- Indice provisional.
-- Capitulos 1 a 9.
-- Backlog tecnico y ejercicios practicos.
+El capitulo debe convertir la obra en herramienta docente util. El punto central es que Spotybank no se ensena como tutorial lineal, sino como caso realista con incertidumbre, deuda, decisiones pendientes y tradeoffs.
 
-## Pendiente de revision
+La ruta docente debe evitar prometer ambientes reales o resolver todas las decisiones. Su valor esta en hacer que cada equipo produzca evidencia revisable.
 
-- Crear plan de clases por duracion: 12, 24, 40 y 80 horas.
-- Definir rubricas especificas por perfil.
-- Crear ejercicios resueltos de referencia.
+## Decisiones cerradas
+
+- Incluir rutas por perfil.
+- Incluir rutas por duracion: taller 1 dia, 12 h, 24 h, 40 h y 80 h.
+- Mantener laboratorios progresivos por dificultad.
+- Agregar revision por pares como dinamica de aprendizaje.
+- Mantener proyecto final por equipos como cierre recomendado.
+
+## Decisiones pendientes para versiones futuras
+
+- Crear agendas detalladas por sesion para 12, 24, 40 y 80 horas.
+- Agregar ejercicios resueltos de referencia.
+- Preparar version docente imprimible con rubricas por perfil.
+- Revisar propuesta con docentes externos antes de una edicion formal.

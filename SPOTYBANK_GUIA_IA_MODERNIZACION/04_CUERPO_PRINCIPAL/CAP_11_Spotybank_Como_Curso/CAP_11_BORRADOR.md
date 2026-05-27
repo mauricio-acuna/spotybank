@@ -1,5 +1,11 @@
 # Capitulo 11 - Spotybank como Curso
 
+Un repositorio no es automaticamente un curso. Tampoco lo es un libro tecnico. Para convertirse en experiencia formativa, Spotybank necesita recorrido, objetivos, consignas, criterios de evaluacion, evidencias y momentos de discusion.
+
+La fuerza del caso esta en que todos trabajan sobre el mismo sistema, pero no todos miran lo mismo. Un perfil backend se concentra en codigo, pruebas y refactor. Un perfil de arquitectura mira dominios, contratos y dependencias. Un perfil DevOps/SRE mira despliegue, observabilidad y continuidad. Un perfil de seguridad mira secretos, amenazas y controles. Un perfil QA convierte riesgos en escenarios de prueba. Un docente convierte todo eso en secuencias de aprendizaje.
+
+El valor pedagogico aparece cuando esos perfiles se encuentran y deben justificar decisiones con evidencia.
+
 ## Objetivos del capitulo
 
 Al finalizar este capitulo, el lector podra:
@@ -9,14 +15,23 @@ Al finalizar este capitulo, el lector podra:
 - Construir rubricas de evaluacion basadas en evidencia.
 - Proponer un proyecto final por equipos.
 - Adaptar el caso a universidades, institutos, empresas y centros de formacion profesional.
+- Definir rutas de 12, 24, 40 y 80 horas con entregables revisables.
 
 ## 11.1 De repositorio a producto educativo
 
-Un repositorio no es automaticamente un curso. Para que Spotybank funcione como producto educativo necesita recorrido, objetivos, consignas, criterios de evaluacion, evidencias y materiales de apoyo.
+Un producto educativo necesita mas que contenido. Necesita una promesa clara: que habilidad desarrolla, con que practica, en cuanto tiempo y como se evalua.
 
-La obra propone usar el sistema como un laboratorio transversal. Todos los perfiles trabajan sobre el mismo caso, pero no todos miran lo mismo. Un perfil backend se concentra en codigo, pruebas y refactor. Un perfil de arquitectura mira dominios, contratos y dependencias. Un perfil DevOps mira despliegue, observabilidad y continuidad. Un perfil de seguridad mira secretos, amenazas y controles.
+Spotybank puede funcionar como:
 
-El valor pedagogico aparece cuando esos perfiles se encuentran y deben negociar decisiones.
+- Libro tecnico.
+- Curso por fasciculos.
+- Taller intensivo.
+- Proyecto final.
+- Caso de onboarding.
+- Simulacion de comite tecnico.
+- Laboratorio de modernizacion asistida por IA.
+
+La clave es elegir alcance. Si se intenta cubrir todo en pocas horas, el caso abruma. Si se selecciona una ruta por perfil, el sistema se vuelve manejable.
 
 ## 11.2 Principio de aprendizaje situado
 
@@ -33,7 +48,24 @@ Spotybank ensena mejor cuando el estudiante trabaja sobre problemas realistas:
 
 Esto es distinto de un tutorial perfecto. En un tutorial, cada paso esta despejado. En Spotybank, parte del aprendizaje consiste en ordenar el terreno.
 
-## 11.3 Rutas por perfil
+## 11.3 Resultados de aprendizaje
+
+Una ruta formativa deberia producir resultados observables:
+
+| Resultado | Evidencia esperada |
+|---|---|
+| Leer un sistema heredado | Inventario con evidencia local |
+| Separar hechos e inferencias | Matriz evidencia/inferencia/pendiente |
+| Proponer modernizacion | Roadmap incremental con rollback |
+| Documentar microservicios | README y catalogos revisables |
+| Pensar seguridad | Threat model y backlog DevSecOps |
+| Operar cloud native | Ficha runtime y manifiesto modelo |
+| Medir performance | Plan de carga con SLI/SLO educativo |
+| Usar IA responsablemente | Prompt, salida clasificada y validacion |
+
+La evaluacion no deberia premiar cantidad de texto. Deberia premiar trazabilidad, criterio y claridad.
+
+## 11.4 Rutas por perfil
 
 | Perfil | Ruta sugerida | Producto de aprendizaje |
 |---|---|---|
@@ -48,9 +80,9 @@ Esto es distinto de un tutorial perfecto. En un tutorial, cada paso esta despeja
 
 Estas rutas no son compartimentos cerrados. Funcionan como puertas de entrada.
 
-## 11.4 Formato por fasciculos
+## 11.5 Formato por fasciculos
 
-La estrategia por fasciculos permite publicar, ensenar y vender el material en modulos. Cada fasciculo puede tener:
+La estrategia por fasciculos permite publicar, ensenar y reutilizar el material por modulos. Cada fasciculo debe tener:
 
 - Objetivos.
 - Lectura base.
@@ -59,8 +91,6 @@ La estrategia por fasciculos permite publicar, ensenar y vender el material en m
 - Rubrica.
 - Preguntas de discusion.
 - Evidencia esperada.
-
-Ejemplo:
 
 | Fasciculo | Laboratorio central | Perfil |
 |---|---|---|
@@ -74,7 +104,19 @@ Ejemplo:
 | 7 - Performance | Definir SLO y prueba de carga | SRE/performance |
 | 8 - Diseno curricular | Crear programa de curso | Docencia |
 
-## 11.5 Laboratorios por dificultad
+## 11.6 Rutas por duracion
+
+| Formato | Fasciculos recomendados | Resultado |
+|---|---|---|
+| Taller 1 dia | 0, 1 y 3 | Entender el caso, inventariar y sanear |
+| Curso 12 h | 0, 1, 2 y 3 | Base de arquitectura y seguridad |
+| Curso 24 h | 0 a 6 | Caso completo con modernizacion y nube |
+| Curso 40 h | 0 a 8 | Curso integral con proyecto final |
+| Programa 80 h | 0 a 8 + proyecto extendido | Modernizacion guiada por equipos |
+
+El error habitual es comprimir un programa de 40 horas en un taller de un dia. Spotybank permite modularizar: primero metodo y seguridad, despues arquitectura, luego modernizacion, nube, QA y performance.
+
+## 11.7 Laboratorios por dificultad
 
 La obra puede organizar practicas en tres niveles.
 
@@ -86,7 +128,7 @@ La obra puede organizar practicas en tres niveles.
 
 Esta progresion evita que un estudiante nuevo quede bloqueado por complejidad excesiva, y permite que perfiles avanzados encuentren retos reales.
 
-## 11.6 Laboratorio 1: inventario de microservicio
+## 11.8 Laboratorio 1: inventario de microservicio
 
 Objetivo: aprender a leer un servicio sin asumir de mas.
 
@@ -108,7 +150,7 @@ Criterio de evaluacion:
 - No inventa funcionalidad.
 - Propone preguntas utiles.
 
-## 11.7 Laboratorio 2: frontera de dominio
+## 11.9 Laboratorio 2: frontera de dominio
 
 Objetivo: reconocer responsabilidades y limites.
 
@@ -128,7 +170,7 @@ Discusion:
 - Que deberia pertenecer a `spotybank-core-ledger`?
 - Que cosas son adapters?
 
-## 11.8 Laboratorio 3: saneamiento y publicacion segura
+## 11.10 Laboratorio 3: saneamiento y publicacion segura
 
 Objetivo: preparar material tecnico para uso educativo.
 
@@ -142,7 +184,7 @@ Entrega:
 
 Regla central: ningun material se publica si contiene identidad real, secretos o dominios privados.
 
-## 11.9 Laboratorio 4: despliegue educativo
+## 11.11 Laboratorio 4: despliegue educativo
 
 Objetivo: disenar un despliegue reproducible.
 
@@ -158,7 +200,7 @@ Entrega:
 
 La evaluacion no exige una nube productiva. Exige claridad operativa.
 
-## 11.10 Laboratorio 5: performance y resiliencia
+## 11.12 Laboratorio 5: performance y resiliencia
 
 Objetivo: medir y razonar.
 
@@ -174,7 +216,21 @@ Entrega:
 
 La clave es que el estudiante aprenda a defender una mejora con datos.
 
-## 11.11 Rubrica general
+## 11.13 Revision por pares
+
+Spotybank funciona especialmente bien con revision cruzada. Un equipo backend revisa si la propuesta de arquitectura es implementable. Un perfil de seguridad revisa si el laboratorio publica datos sensibles. Un perfil DevOps revisa si el despliegue es operable. QA revisa si el plan se puede comprobar.
+
+Preguntas de revision:
+
+- Que afirmacion necesita evidencia?
+- Que riesgo no esta cubierto?
+- Que decision depende de owner externo?
+- Que prueba falta?
+- Que parte del entregable podria usar otro equipo?
+
+La revision por pares ensena comunicacion tecnica. No se trata de ganar la discusion; se trata de mejorar la decision.
+
+## 11.14 Rubrica general
 
 | Criterio | Excelente | A mejorar |
 |---|---|---|
@@ -187,7 +243,7 @@ La clave es que el estudiante aprenda a defender una mejora con datos.
 
 La rubrica debe valorar pensamiento tecnico, no solo cantidad de archivos.
 
-## 11.12 Proyecto final por equipos
+## 11.15 Proyecto final por equipos
 
 Propuesta de proyecto final:
 
@@ -210,9 +266,9 @@ Entregables:
 - Plan de fases.
 - Presentacion ejecutiva.
 
-La defensa oral debe explicar tradeoffs. No alcanza con decir que algo es "mejor"; hay que justificar por que, cuando y con que riesgo.
+La defensa oral debe explicar tradeoffs. No alcanza con decir que algo es mejor; hay que justificar por que, cuando y con que riesgo.
 
-## 11.13 Uso en universidad
+## 11.16 Uso en universidad
 
 En universidad, Spotybank puede usarse como:
 
@@ -225,7 +281,7 @@ En universidad, Spotybank puede usarse como:
 
 La ventaja es que un mismo caso soporta varias materias. La dificultad es que requiere guias claras para no abrumar.
 
-## 11.14 Uso en empresas
+## 11.17 Uso en empresas
 
 En empresas, Spotybank puede usarse para:
 
@@ -238,7 +294,7 @@ En empresas, Spotybank puede usarse para:
 
 El valor empresarial esta en practicar decisiones sin poner en riesgo sistemas reales.
 
-## 11.15 Uso en institutos y centros profesionales
+## 11.18 Uso en institutos y centros profesionales
 
 En instituciones de formacion profesional, conviene modularizar:
 
@@ -251,22 +307,32 @@ En instituciones de formacion profesional, conviene modularizar:
 
 Spotybank puede adaptarse a cursos de 12, 24, 40 u 80 horas.
 
-## 11.16 Ejercicio practico
+## Ejercicio practico
 
 Disenar una unidad didactica de 2 horas usando un capitulo de la obra.
 
-La entrega debe incluir:
+### Entregables
 
-- Perfil del estudiante.
-- Objetivo.
-- Lectura previa.
-- Actividad central.
-- Entregable.
-- Rubrica.
-- Tiempo estimado.
-- Riesgos de ejecucion.
+1. Perfil del estudiante.
+2. Objetivo.
+3. Lectura previa.
+4. Actividad central.
+5. Entregable.
+6. Rubrica.
+7. Tiempo estimado.
+8. Riesgos de ejecucion.
 
 Luego explicar que se simplificaria para un grupo inicial y que se agregaria para un grupo avanzado.
+
+### Criterios de exito
+
+| Criterio | Esperado |
+|---|---|
+| Alcance | La unidad cabe en 2 horas |
+| Evidencia | El entregable puede revisarse |
+| Seguridad | No requiere datos reales ni secretos |
+| Perfil | La actividad coincide con nivel y rol |
+| Evaluacion | La rubrica no depende de opinion vaga |
 
 ## Resumen del capitulo
 
@@ -274,6 +340,7 @@ Luego explicar que se simplificaria para un grupo inicial y que se agregaria par
 - El caso sirve para multiples perfiles porque combina codigo, arquitectura, seguridad, nube, performance y gestion.
 - La estrategia por fasciculos facilita adopcion progresiva.
 - Los laboratorios deben progresar desde lectura hasta implementacion y defensa.
+- La revision por pares convierte diferencias de perfil en aprendizaje.
 - La evaluacion debe priorizar evidencia, seguridad, claridad y criterio.
 
 ## Preguntas de revision
@@ -288,6 +355,9 @@ Luego explicar que se simplificaria para un grupo inicial y que se agregaria par
 
 - `Documentacion/ObraLiteraria/SPOTYBANK_GUIA_IA_MODERNIZACION/02_PLANIFICACION/PLAN_FASCICULOS_PERFILES.md`
 - `Documentacion/ObraLiteraria/SPOTYBANK_GUIA_IA_MODERNIZACION/02_PLANIFICACION/INDICE_PROVISIONAL.md`
+- `SPOTYBANK_GUIA_IA_MODERNIZACION/02_PLANIFICACION/FASCICULOS_EJECUTABLES_POR_PERFIL.md`
+- `SPOTYBANK_GUIA_IA_MODERNIZACION/02_PLANIFICACION/PLANES_CLASE.md`
+- `SPOTYBANK_GUIA_IA_MODERNIZACION/05_APENDICES/APE_F_Ejercicios_Laboratorios/RUBRICAS_EVALUACION.md`
 - `Documentacion/arquitectura/backlog-tecnico.md`
 - `Documentacion/onboarding/guia-primeros-7-dias.md`
 - `Documentacion/gobernanza/definicion-done-documentacion.md`
