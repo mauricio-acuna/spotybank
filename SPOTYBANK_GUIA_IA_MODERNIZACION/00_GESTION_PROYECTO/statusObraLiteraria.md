@@ -16,7 +16,7 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 - Repo Git independiente de la obra: `Documentacion/ObraLiteraria`.
 - Repo remoto registrado: `https://github.com/mauricio-acuna/spotybank.git`.
 - Estado Git verificado: `main` sincronizada con `origin/main` para cierre `v0.1-publicable` al 2026-05-27.
-- Ciclo actual: publicacion inicial y preparacion de mejoras para `v0.2`.
+- Ciclo actual: cierre editorial ampliado de capitulos 1 a 12 y preparacion de mejoras para `v0.2`.
 
 ## Estados usados
 
@@ -54,7 +54,7 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 9 - Performance, escalamiento y resiliencia | DONE_EDITORIAL | `04_CUERPO_PRINCIPAL/CAP_09_Performance_Escalamiento_Resiliencia/CAP_09_BORRADOR.md` |
 | 10 - IA como acelerador | DONE_EDITORIAL | `04_CUERPO_PRINCIPAL/CAP_10_IA_Acelerador/CAP_10_BORRADOR.md` |
 | 11 - Spotybank como curso | DONE_EDITORIAL | `04_CUERPO_PRINCIPAL/CAP_11_Spotybank_Como_Curso/CAP_11_BORRADOR.md` |
-| 12 - Roadmap de evolucion | DONE | `04_CUERPO_PRINCIPAL/CAP_12_Roadmap_Evolucion/CAP_12_BORRADOR.md` |
+| 12 - Roadmap de evolucion | DONE_EDITORIAL | `04_CUERPO_PRINCIPAL/CAP_12_Roadmap_Evolucion/CAP_12_BORRADOR.md` |
 
 ## Fasciculos
 
@@ -106,12 +106,13 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-27 | Capitulo 9 - Performance, escalamiento y resiliencia | DONE_EDITORIAL | Reescritura desarrollada con SLIs/SLOs, percentiles, pools, colas, HPA, resiliencia y pruebas de carga |
 | 2026-05-27 | Capitulo 10 - IA como acelerador | DONE_EDITORIAL | Reescritura desarrollada con prompts seguros, evidencia/inferencia, backlog, pruebas, seguridad y antipatrones |
 | 2026-05-27 | Capitulo 11 - Spotybank como curso | DONE_EDITORIAL | Reescritura desarrollada con rutas por perfil, fasciculos, duraciones, laboratorios, revision por pares y rubricas |
-| 2026-05-27 | Capitulo 12 - Roadmap de evolucion | NEXT | Proximo bloque de desarrollo editorial |
+| 2026-05-27 | Capitulo 12 - Roadmap de evolucion | DONE_EDITORIAL | Reescritura desarrollada con versiones, fases, ledger, roadmap 90 dias, criterios `v0.2` y cierre de obra |
+| 2026-05-27 | Revision integral de coherencia | NEXT | Proximo bloque recomendado para alinear indices, fasciculos, referencias y checklist `v0.2` |
 
 ## Proximo bloque recomendado
 
-1. Revisar `09_REVISIONES/ACTA_CIERRE_REVISION_TECNICA_EDITORIAL_2026-05-12.md`.
-2. Verificar en GitHub que `main` y el tag `v0.1-publicable` quedaron publicados.
+1. Ejecutar revision integral de coherencia entre indice, capitulos, fasciculos y referencias.
+2. Preparar checklist de salida para `v0.2-editorial`.
 3. Preparar release formal en GitHub si se desean artefactos descargables.
 4. Preparar exportacion PDF/HTML y arte final de portada como trabajo de `v0.2`.
 
@@ -138,3 +139,5 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-27 | Desarrollado editorialmente el capitulo 9 como guia de performance, escalamiento y resiliencia. |
 | 2026-05-27 | Desarrollado editorialmente el capitulo 10 como guia de IA aplicada a modernizacion. |
 | 2026-05-27 | Desarrollado editorialmente el capitulo 11 como guia para convertir Spotybank en curso. |
+| 2026-05-27 | Desarrollado editorialmente el capitulo 12 como roadmap de evolucion y cierre de obra. |
+| 2026-05-27 | Completado desarrollo editorial ampliado de capitulos 1 a 12 en `main` posterior al tag `v0.1-publicable`. |
