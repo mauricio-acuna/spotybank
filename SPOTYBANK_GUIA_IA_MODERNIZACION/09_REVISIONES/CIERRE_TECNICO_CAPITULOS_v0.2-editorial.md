@@ -18,8 +18,8 @@ La regla de trabajo es simple: un capitulo solo pasa a `CERRADO_TECNICO` cuando 
 | 2 - Inventario tecnico inicial | CERRADO_TECNICO | Define baseline reproducible, clasificacion de artefactos, matriz de riesgo, dependencias y uso controlado de IA |
 | 3 - Anonimizacion y rebranding seguro | CERRADO_TECNICO | Define saneamiento, rebranding, placeholders, artefactos no publicables y compuerta segura antes de publicar |
 | 4 - Documentacion viva de microservicios | CERRADO_TECNICO | Define README, fichas vivas, catalogos, matriz de relaciones, runbooks, gobernanza e IA documental |
-| 5 - Dominios bancarios y fronteras | PENDIENTE_CIERRE | Siguiente capitulo a revisar |
-| 6 - Modernizacion de backend | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
+| 5 - Dominios bancarios y fronteras | CERRADO_TECNICO | Define dominios, fronteras, adapters, commons, ledger educativo y criterios para mover responsabilidades |
+| 6 - Modernizacion de backend | PENDIENTE_CIERRE | Siguiente capitulo a revisar |
 | 7 - Seguridad y DevSecOps | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
 | 8 - Despliegue cloud native | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
 | 9 - Performance, escalamiento y resiliencia | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
@@ -80,6 +80,19 @@ La regla de trabajo es simple: un capitulo solo pasa a `CERRADO_TECNICO` cuando 
 | Uso de IA condicionado a trazabilidad y validacion humana | OK |
 | No deja pendientes editoriales internos | OK |
 
+## Checklist de cierre aplicado al capitulo 5
+
+| Control | Resultado |
+|---|---|
+| Diferencia servicio desplegable y dominio | OK |
+| Zonas elevadas a fronteras solo con criterios verificables | OK |
+| Auth, accounts, MFA, notificaciones, adapters y commons diferenciados | OK |
+| `spotybank-core-ledger` tratado como pieza de diseno educativo | OK |
+| Adapters limitados a aislamiento y traduccion | OK |
+| Commons revisados como riesgo de acoplamiento invisible | OK |
+| Movimiento de fronteras condicionado a pruebas, contratos y trazabilidad | OK |
+| No deja pendientes editoriales internos | OK |
+
 ## Proximo paso
 
-Cerrar el capitulo 5 con el mismo criterio: dominios, fronteras, adapters, contratos, ownership educativo y criterios de modernizacion sin pendientes internos.
+Cerrar el capitulo 6 con el mismo criterio: estrategia backend incremental, upgrades Java/Spring/Maven, pruebas, contratos, resiliencia, observabilidad y rollback sin pendientes internos.

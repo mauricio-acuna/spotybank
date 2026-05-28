@@ -18,7 +18,7 @@
 - Auth, accounts, MFA, notificaciones, adapters y commons muestran ritmos de cambio distintos.
 - Los adapters deben funcionar como anti-corruption layer y no como lugar oculto de reglas de negocio.
 - Los commons ayudan si son tecnicos; generan riesgo si concentran decisiones funcionales.
-- `spotybank-core-ledger` debe mantenerse como pieza educativa pendiente y no como modulo productivo cerrado.
+- `spotybank-core-ledger` debe mantenerse como pieza de diseno educativo y no como modulo productivo cerrado.
 
 ## Argumento editorial
 
@@ -33,9 +33,11 @@ La propuesta canonica no se presenta como verdad final del negocio, sino como ma
 - Tratar notificaciones como dominio asincronico con responsabilidad de entrega y trazabilidad.
 - Mantener adapters como capa de aislamiento frente a proveedores y contratos externos.
 - Mantener commons bajo revision por riesgo de acoplamiento invisible.
-- Presentar `spotybank-core-ledger` como pieza pendiente de diseno educativo.
+- Presentar `spotybank-core-ledger` como pieza de diseno educativo.
+- Cerrar el capitulo con criterios verificables para elevar zonas a fronteras, mover responsabilidades y disenar ledger educativo.
+- Registrar que no quedan pendientes editoriales internos para el capitulo 5 en el ciclo `v0.2-editorial`.
 
-## Decisiones pendientes para versiones futuras
+## Mejoras futuras no bloqueantes
 
 - Definir ejercicios resueltos de clasificacion de componentes por frontera.
 - Agregar diagramas de bounded contexts o context map para una version grafica.

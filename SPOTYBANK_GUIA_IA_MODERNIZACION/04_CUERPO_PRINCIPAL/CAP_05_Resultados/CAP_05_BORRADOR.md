@@ -1,5 +1,9 @@
 # Capitulo 05 - Dominios Bancarios y Fronteras de Servicio
 
+Estado de cierre tecnico-editorial: `CERRADO_TECNICO`.
+
+Dictamen del capitulo: apto como guia de lectura de dominios y fronteras para Spotybank. El capitulo separa servicio desplegable, dominio, adapter, worker y commons; define responsabilidades canonicas; trata `spotybank-core-ledger` como pieza de diseno educativo, no como modulo productivo cerrado; y establece criterios verificables para mover fronteras.
+
 Una arquitectura de microservicios no se entiende contando repositorios. Tampoco se entiende dibujando cajas con nombres atractivos. Se entiende preguntando que responsabilidad tiene cada pieza, que conocimiento protege, que contratos expone y que decisiones no deberia tomar.
 
 En un sistema bancario, esas preguntas importan mucho. Autenticacion, cuentas, MFA, notificaciones, adapters, commons y ledger no son simples carpetas. Representan capacidades con riesgos, datos, contratos y ritmos de cambio distintos. Si las fronteras son confusas, el sistema empieza a duplicar reglas, mezclar responsabilidades, depender de librerias compartidas demasiado grandes y esconder logica de negocio en adapters o utilidades.
@@ -16,6 +20,7 @@ Al finalizar este capitulo, el lector podra:
 - Explicar por que `spotybank-core-ledger` es una pieza pedagogica necesaria.
 - Proponer fronteras canonicas para una modernizacion incremental.
 - Separar evidencia local, inferencia arquitectonica y decisiones que requieren validacion externa.
+- Evaluar una propuesta de frontera con criterios de cohesion, acoplamiento, datos, operacion, seguridad, pruebas y trazabilidad.
 
 ## 05.1 Por que hablar de dominios
 
@@ -42,7 +47,7 @@ Pero una hipotesis no es una confirmacion de negocio.
 |---|---|---|
 | Evidencia | Existe un conjunto de componentes asociados a MFA | Alta sobre presencia tecnica |
 | Inferencia | MFA funciona como subdominio critico de seguridad transaccional | Media, requiere validacion |
-| Decision pendiente | Confirmar ownership real, SLA, flujos productivos y criticidad | Depende de contexto externo |
+| Validacion externa | Confirmar ownership real, SLA, flujos productivos y criticidad | Depende de contexto externo |
 | Recomendacion | Separar decision de riesgo, canal y validacion de token | Accionable como propuesta |
 
 Esta distincion evita sobreafirmar. La arquitectura propuesta en este capitulo no pretende declarar como opera una entidad real. Propone un mapa educativo para estudiar modernizacion.
@@ -62,6 +67,17 @@ Desde la documentacion generada y el inventario inicial, se observan al menos se
 
 Estas zonas no son bounded contexts definitivos. Son una primera organizacion para conversar, priorizar y disenar laboratorios.
 
+Para evitar falsas certezas, una zona solo puede elevarse a frontera canonica cuando responde cuatro preguntas:
+
+| Pregunta | Criterio |
+|---|---|
+| Que conocimiento protege? | Datos, reglas o decisiones propias |
+| Que contratos expone? | API, evento, cola, adapter o libreria versionada |
+| Que cambia junto? | Motivos de cambio coherentes y no mezclados |
+| Como se valida? | Pruebas, owner educativo, trazas o evidencia documental |
+
+Si una zona no responde esas preguntas, todavia puede servir como agrupacion de estudio, pero no como frontera cerrada.
+
 ## 05.4 Servicio desplegable no es dominio
 
 Uno de los errores mas comunes en microservicios es asumir que cada artefacto desplegable equivale a un dominio. No siempre. Un worker puede ser parte de un dominio. Un adapter puede existir solo para aislar una integracion. Una libreria puede ser soporte tecnico. Un mock puede ser infraestructura de pruebas.
@@ -77,6 +93,8 @@ Una clasificacion util:
 | Mock o soporte | Simulacion, pruebas, ambientes locales | Que dependencia permite aislar? |
 
 Esta distincion cambia la estrategia de modernizacion. Un servicio de dominio exige pruebas funcionales y contratos. Un adapter exige pruebas de integracion y resiliencia. Un commons exige compatibilidad hacia consumidores. Un mock exige fidelidad suficiente para laboratorio.
+
+La decision de frontera debe registrar tambien lo que queda fuera. Decir "este servicio hace autenticacion" es incompleto si no se aclara que no decide saldos, notificaciones o reglas contables. Las fronteras se entienden tanto por inclusion como por exclusion.
 
 ## 05.5 `spotybank-auth`
 
@@ -179,11 +197,11 @@ Para Spotybank, una revision de commons deberia preguntar:
 
 Modernizar commons sin entender impacto puede romper muchos servicios a la vez. Por eso los commons requieren una estrategia de compatibilidad, no solo una actualizacion de dependencias.
 
-## 05.11 La pieza pendiente: `spotybank-core-ledger`
+## 05.11 La pieza de diseno: `spotybank-core-ledger`
 
-`spotybank-core-ledger` no aparece como modulo productivo cerrado en el workspace actual. Aun asi, es central para la obra porque representa una capacidad bancaria fundamental: movimientos, saldos, atomicidad, compensaciones, idempotencia y auditoria.
+`spotybank-core-ledger` no se presenta como modulo productivo cerrado en el workspace actual. Aun asi, es central para la obra porque representa una capacidad bancaria fundamental: movimientos, saldos, atomicidad, compensaciones, idempotencia y auditoria.
 
-La ausencia del ledger no es una debilidad narrativa. Es una oportunidad pedagogica. Permite pedir al lector que disene una pieza critica a partir de fronteras ya observadas.
+Su estado como pieza de diseno educativo no es una debilidad narrativa. Es una oportunidad pedagogica. Permite pedir al lector que disene una pieza critica a partir de fronteras ya observadas, sin afirmar que existe una implementacion bancaria completa.
 
 Construirlo como ejercicio educativo permitiria ensenar:
 
@@ -197,6 +215,17 @@ Construirlo como ejercicio educativo permitiria ensenar:
 - Observabilidad de operaciones financieras.
 
 El ledger tambien obliga a discutir limites. No deberia autenticar usuarios, enviar mensajes, decidir canales ni conocer detalles de proveedores externos. Debe proteger movimientos y consistencia.
+
+La definicion minima de un ledger educativo debe incluir:
+
+| Dimension | Criterio de diseno |
+|---|---|
+| Consistencia | Cada movimiento preserva reglas contables basicas |
+| Idempotencia | La repeticion de una solicitud no duplica efectos |
+| Auditoria | Cada cambio deja rastro verificable |
+| Eventos | La comunicacion externa ocurre despues del commit mediante outbox o mecanismo equivalente |
+| Observabilidad | Cada operacion tiene correlacion, estado y errores trazables |
+| Aislamiento | No asume responsabilidades de autenticacion, cuentas o notificaciones |
 
 ## 05.12 Propuesta de frontera canonica
 
@@ -230,6 +259,8 @@ Mover una frontera de servicio es una decision costosa. Antes de hacerlo, convie
 
 La modernizacion incremental no necesita resolver todas las fronteras al inicio. Necesita identificar las mas riesgosas y crear un camino para mejorarlas sin detener el sistema.
 
+Una frontera puede moverse solo si existe una razon clara y un criterio de seguridad. El movimiento debe quedar acompanado por prueba, contrato, rollback o decision documentada. Sin eso, mover responsabilidades suele esconder complejidad en lugar de resolverla.
+
 ## Ejercicio practico
 
 Elegir cinco componentes reales de Spotybank y clasificarlos:
@@ -248,7 +279,7 @@ Elegir cinco componentes reales de Spotybank y clasificarlos:
 4. Contrato que deberia versionarse.
 5. Prueba que permitiria moverlo con seguridad.
 6. Evidencia local que sostiene la clasificacion.
-7. Decision pendiente que requiere owner o validacion externa.
+7. Validacion externa necesaria si se llevara a un sistema real.
 
 ### Criterios de exito
 
@@ -256,9 +287,11 @@ Elegir cinco componentes reales de Spotybank y clasificarlos:
 |---|---|
 | Clasificacion | No confunde desplegable con dominio |
 | Evidencia | Cita archivos, dependencias o configuracion |
-| Prudencia | Marca inferencias y decisiones pendientes |
+| Prudencia | Marca inferencias y validaciones externas |
 | Frontera | Explica que responsabilidad queda dentro y fuera |
 | Modernizacion | Propone una mejora incremental verificable |
+
+El ejercicio queda cerrado si cada componente tiene una responsabilidad dentro, una responsabilidad fuera, una evidencia local y una prueba o contrato que permita moverlo sin depender solo de intuicion.
 
 ## Resumen del capitulo
 
@@ -266,10 +299,25 @@ Elegir cinco componentes reales de Spotybank y clasificarlos:
 - Spotybank muestra dominios de autenticacion, cuentas, MFA, notificaciones, integraciones y soporte.
 - Un servicio desplegable no siempre equivale a un servicio de dominio.
 - `spotybank-auth` y `spotybank-accounts` funcionan como servicios canonicos iniciales para el caso educativo.
-- `spotybank-core-ledger` es una pieza pendiente y pedagogicamente valiosa.
+- `spotybank-core-ledger` es una pieza de diseno educativo y pedagogicamente valiosa.
 - Los adapters deben proteger al dominio de contratos externos.
 - Los commons deben revisarse para evitar acoplamiento invisible.
-- Toda propuesta de frontera debe distinguir evidencia local, inferencia y decision pendiente.
+- Toda propuesta de frontera debe distinguir evidencia local, inferencia y validacion externa.
+
+## Cierre tecnico-editorial del capitulo
+
+| Control | Dictamen |
+|---|---|
+| Lectura de dominios | Cerrado: dominios se leen desde responsabilidades, datos, contratos y riesgos, no desde carpetas |
+| Evidencia e inferencia | Cerrado: la propuesta canonica se presenta como mapa educativo basado en evidencia local e inferencia arquitectonica |
+| Servicios canonicos | Cerrado: auth, accounts, MFA, notificaciones, adapters, commons y ledger quedan diferenciados |
+| Ledger educativo | Cerrado: se define como pieza de diseno, no como modulo productivo completo |
+| Adapters | Cerrado: se limitan a traduccion, aislamiento y resiliencia frente a contratos externos |
+| Commons | Cerrado: se tratan como soporte tecnico bajo control de compatibilidad |
+| Movimiento de fronteras | Cerrado: requiere cohesion, acoplamiento, datos, operacion, seguridad, pruebas y trazabilidad |
+| Ejercicio practico | Cerrado: exige responsabilidad dentro/fuera, evidencia, contrato o prueba |
+
+Pendientes editoriales internos del capitulo: ninguno.
 
 ## Preguntas de revision
 
@@ -278,6 +326,7 @@ Elegir cinco componentes reales de Spotybank y clasificarlos:
 3. Que problemas aparecen cuando un commons contiene reglas de negocio?
 4. Por que un ledger es un buen ejercicio de arquitectura bancaria?
 5. Que evidencia pedirias antes de mover una regla de negocio entre servicios?
+6. Que diferencia hay entre una agrupacion de estudio y una frontera canonica?
 
 ## Referencias del capitulo
 

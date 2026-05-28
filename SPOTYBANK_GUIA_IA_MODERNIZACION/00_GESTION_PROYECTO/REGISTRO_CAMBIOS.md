@@ -33,3 +33,4 @@
 | 2026-05-28 | v0.2-cierre-tecnico | Cuerpo principal | Cerrado tecnicamente el capitulo 2 con baseline reproducible, matriz de riesgo, clasificacion de artefactos y controles de IA. |
 | 2026-05-28 | v0.2-cierre-tecnico | Cuerpo principal | Cerrado tecnicamente el capitulo 3 con matriz de decision por superficie, control de artefactos, placeholders y compuerta segura de publicacion. |
 | 2026-05-28 | v0.2-cierre-tecnico | Cuerpo principal | Cerrado tecnicamente el capitulo 4 con criterios para documentacion viva, fichas funcionales, catalogos, runbooks, gobernanza e IA documental. |
+| 2026-05-28 | v0.2-cierre-tecnico | Cuerpo principal | Cerrado tecnicamente el capitulo 5 con criterios para dominios, fronteras, adapters, commons, ledger educativo y movimiento de responsabilidades. |
