@@ -23,8 +23,8 @@ La regla de trabajo es simple: un capitulo solo pasa a `CERRADO_TECNICO` cuando 
 | 7 - Seguridad y DevSecOps | CERRADO_TECNICO | Define amenaza, severidad, secretos, MFA, supply chain, pipeline, IA y backlog verificable |
 | 8 - Despliegue cloud native | CERRADO_TECNICO | Define escenarios, contrato runtime, unidad minima, probes, resources, HPA, GitOps, rollout y continuidad |
 | 9 - Performance, escalamiento y resiliencia | CERRADO_TECNICO | Define SLIs/SLOs educativos, bottlenecks, HPA, DLQ, resiliencia, pruebas de carga y backlog medible |
-| 10 - IA como acelerador | PENDIENTE_CIERRE | Siguiente capitulo a revisar |
-| 11 - Spotybank como curso | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
+| 10 - IA como acelerador | CERRADO_TECNICO | Define prompts seguros, evidencia/inferencia, backlog, refactor asistido, privacidad, antipatrones y definicion de done IA |
+| 11 - Spotybank como curso | PENDIENTE_CIERRE | Siguiente capitulo a revisar |
 | 12 - Roadmap de evolucion | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
 
 ## Checklist de cierre aplicado al capitulo 1
@@ -150,6 +150,20 @@ La regla de trabajo es simple: un capitulo solo pasa a `CERRADO_TECNICO` cuando 
 | Backlog de performance medible | OK |
 | No deja pendientes editoriales internos | OK |
 
+## Checklist de cierre aplicado al capitulo 10
+
+| Control | Resultado |
+|---|---|
+| IA definida como copiloto, no autoridad | OK |
+| Prompt seguro con alcance, datos saneados, formato, limites y validacion | OK |
+| Evidencia, inferencia, validacion externa y recomendacion diferenciadas | OK |
+| Documentacion asistida con revision humana | OK |
+| Backlog generado con evidencia, impacto y criterio de cierre | OK |
+| Refactor asistido limitado por pruebas y alcance pequeno | OK |
+| Seguridad y privacidad protegidas | OK |
+| Antipatrones explicitados | OK |
+| No deja pendientes editoriales internos | OK |
+
 ## Proximo paso
 
-Cerrar el capitulo 10 con el mismo criterio: IA como acelerador, prompts seguros, evidencia/inferencia, backlog, pruebas, seguridad, limites y antipatrones sin pendientes internos.
+Cerrar el capitulo 11 con el mismo criterio: rutas de aprendizaje, fasciculos, laboratorios, rubricas, evaluacion, docencia y uso por perfiles sin pendientes internos.

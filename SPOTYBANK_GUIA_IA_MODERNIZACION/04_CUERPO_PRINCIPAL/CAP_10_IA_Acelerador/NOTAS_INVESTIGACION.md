@@ -32,8 +32,10 @@ La obra debe insistir en que la fluidez textual no es certeza tecnica. La confia
 - Reforzar riesgos de privacidad, secretos y logs reales.
 - Presentar antipatrones para evitar uso ingenuo.
 - Mantener IA como acelerador incremental, no como autoridad.
+- Cerrar el capitulo con criterios verificables para prompts, documentacion asistida, backlog, refactor, privacidad y definicion de done de salidas IA.
+- Registrar que no quedan pendientes editoriales internos para el capitulo 10 en el ciclo `v0.2-editorial`.
 
-## Decisiones pendientes para versiones futuras
+## Mejoras futuras no bloqueantes
 
 - Agregar ejemplos resueltos de prompts sobre un microservicio.
 - Crear rubrica especifica para evaluar respuestas generadas por IA.

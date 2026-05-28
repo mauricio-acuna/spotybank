@@ -1,5 +1,9 @@
 # Capitulo 10 - IA como Acelerador de Modernizacion
 
+Estado de cierre tecnico-editorial: `CERRADO_TECNICO`.
+
+Dictamen del capitulo: apto como guia de uso responsable de IA en modernizacion. El capitulo define IA como copiloto, exige trazabilidad, separa evidencia e inferencia, protege privacidad, limita refactors, convierte salidas en backlog verificable y establece antipatrones.
+
 La inteligencia artificial puede acelerar una modernizacion. Tambien puede amplificar una mala interpretacion si se usa sin control. Esa doble condicion define todo este capitulo.
 
 Spotybank no propone una fantasia donde una IA toma un sistema heredado y lo convierte magicamente en una plataforma moderna. La propuesta es mas sobria y mas util: la IA puede acelerar lectura, clasificacion, documentacion, comparacion, generacion de hipotesis y preparacion de decisiones. La decision sigue siendo humana, verificable y contextual.
@@ -16,6 +20,7 @@ Al finalizar este capitulo, el lector podra:
 - Identificar riesgos de privacidad, seguridad y confianza en el uso de IA.
 - Disenar un flujo donde IA acelera sin reemplazar criterio profesional.
 - Crear prompts seguros que exijan evidencia, limites y validacion.
+- Cerrar una salida asistida por IA solo cuando tenga evidencia, categoria, validacion y responsabilidad humana.
 
 ## 10.1 La IA no moderniza sola
 
@@ -32,6 +37,8 @@ La IA ayuda a:
 - Convertir hallazgos en backlog.
 
 Pero no puede, por si sola, confirmar owners, SLAs, criticidad real, trazas productivas, decisiones regulatorias ni comportamiento de negocio. En Spotybank, eso se marca como decision pendiente.
+
+La regla de cierre es directa: una salida de IA puede iniciar una decision, pero no cerrarla. Para cerrar se necesita evidencia local, revision humana y criterio de validacion.
 
 ## 10.2 Un nuevo modo de leer sistemas heredados
 
@@ -83,6 +90,17 @@ Incluye criterios de validacion para cada recomendacion.
 
 Este tipo de prompt reduce dos riesgos: fluidez sin evidencia y recomendaciones genericas sin camino de validacion.
 
+Un prompt seguro para Spotybank debe cumplir:
+
+| Control | Criterio |
+|---|---|
+| Alcance | Pide una tarea concreta, no "moderniza el sistema" |
+| Datos | Usa evidencia saneada, sin secretos ni datos reales |
+| Formato | Exige separar evidencia, inferencia, validacion externa y recomendacion |
+| Limites | Prohibe afirmar uso productivo sin pruebas |
+| Validacion | Pide criterio de cierre para cada recomendacion |
+| Seguridad | Pide no reproducir valores sensibles ni dominios privados |
+
 ## 10.5 Documentacion asistida
 
 Uno de los primeros usos de IA en Spotybank es generar documentacion inicial. Esto no reemplaza documentacion validada, pero crea una base navegable.
@@ -108,6 +126,15 @@ La documentacion asistida debe tener limites claros:
 - No ocultar incertidumbre.
 
 En Spotybank, el documento no termina cuando se genera. Empieza ahi su ciclo de revision.
+
+Un documento asistido por IA queda aceptado solo si:
+
+- Cita fuentes o patrones inspeccionados.
+- Marca inferencias.
+- No contiene secretos, datos reales ni dominios privados.
+- Tiene revision humana.
+- Tiene coherencia con el estado del caso educativo.
+- Declara que validaciones externas siguen fuera de alcance si aplican.
 
 ## 10.6 IA para mapas de arquitectura
 
@@ -138,6 +165,16 @@ La deuda tecnica suele estar dispersa. La IA puede ayudar a reunirla y clasifica
 | Despliegue | Sin probes ni resources | Contrato cloud native |
 
 El peligro es convertir la deuda en una lista infinita. El trabajo profesional consiste en priorizar por riesgo, impacto y capacidad de ejecucion.
+
+Para evitar backlog inflado, cada deuda sugerida por IA debe clasificarse:
+
+| Categoria | Tratamiento |
+|---|---|
+| Critica | Bloquear publicacion o cambio hasta resolver |
+| Alta | Ticket prioritario con evidencia y owner |
+| Media | Backlog planificado con criterio de cierre |
+| Baja | Mejora documental o refactor oportunista |
+| Descartada | No aplica, duplicada o sin evidencia suficiente |
 
 ## 10.8 IA para backlog accionable
 
@@ -173,6 +210,8 @@ Prioridad: P1.
 ```
 
 La IA puede producir borradores de tickets. El equipo decide prioridad real.
+
+Un ticket generado con IA no se acepta si falta evidencia, impacto o criterio de cierre. La redaccion puede ser excelente y aun asi no ser accionable.
 
 ## 10.9 IA para pruebas y calidad
 
@@ -213,6 +252,15 @@ Secuencia recomendada:
 8. Repetir.
 
 La IA es especialmente util para encontrar duplicacion, sugerir nombres, aislar responsabilidades y preparar pruebas. Pero debe evitarse el refactor por entusiasmo, donde se cambia mucho y se entiende poco.
+
+Un refactor asistido por IA queda dentro de alcance si:
+
+- Afecta una pieza pequena.
+- Tiene prueba antes del cambio.
+- El diff puede revisarse en una sola lectura.
+- No cambia contratos publicos sin versionado.
+- No mezcla formato, arquitectura y comportamiento.
+- Deja registro de la decision.
 
 ## 10.11 IA en seguridad
 
@@ -274,6 +322,17 @@ El ciclo no termina con generar contenido. Termina cuando hay revision y evidenc
 
 La IA mejora el ritmo. La trazabilidad mejora la confianza.
 
+La definicion de done para una salida asistida por IA es:
+
+| Control | Evidencia |
+|---|---|
+| Fuente | Archivos, fragmentos saneados o documentos usados |
+| Categoria | Evidencia, inferencia, validacion externa o recomendacion |
+| Riesgo | Seguridad, privacidad, operacion, arquitectura o docencia |
+| Validacion | Prueba, revision, escaneo, owner o experimento |
+| Decision humana | Aceptar, ajustar, descartar o pasar a backlog |
+| Registro | Documento, ticket, checklist o commit asociado |
+
 ## 10.15 Antipatrones
 
 Antipatrones frecuentes:
@@ -312,6 +371,8 @@ Luego clasificar cada resultado como evidencia, inferencia, decision pendiente o
 | Accion | Los tickets tienen criterio de aceptacion |
 | Validacion | Las recomendaciones tienen evidencia de cierre |
 
+El ejercicio queda cerrado si ninguna salida de IA se acepta sin categoria, evidencia y decision humana.
+
 ## Resumen del capitulo
 
 - La IA acelera lectura, organizacion, documentacion y backlog.
@@ -321,6 +382,21 @@ Luego clasificar cada resultado como evidencia, inferencia, decision pendiente o
 - La IA es poderosa para escribir y sintetizar, pero riesgosa si se usa con secretos o datos reales.
 - La modernizacion asistida debe ser incremental, trazable y verificable.
 
+## Cierre tecnico-editorial del capitulo
+
+| Control | Dictamen |
+|---|---|
+| Rol de IA | Cerrado: IA acelera diagnostico, no firma arquitectura |
+| Evidencia e inferencia | Cerrado: toda salida debe categorizarse |
+| Prompt seguro | Cerrado: alcance, datos saneados, formato, limites, validacion y seguridad |
+| Documentacion asistida | Cerrado: aceptada solo con fuentes, inferencias marcadas y revision humana |
+| Backlog | Cerrado: tickets requieren evidencia, impacto, prioridad y criterio de cierre |
+| Refactor asistido | Cerrado: alcance pequeno, pruebas, diff revisable y contrato protegido |
+| Seguridad y privacidad | Cerrado: no se comparten secretos, datos reales, logs sensibles ni contratos internos |
+| Antipatrones | Cerrado: quedan explicitados riesgos de fluidez, refactor masivo y backlog sin owner |
+
+Pendientes editoriales internos del capitulo: ninguno.
+
 ## Preguntas de revision
 
 1. Por que la IA no debe decidir sola una arquitectura objetivo?
@@ -328,6 +404,7 @@ Luego clasificar cada resultado como evidencia, inferencia, decision pendiente o
 3. Que riesgos aparecen al usar IA con logs reales?
 4. Como convertirias un hallazgo asistido por IA en un ticket accionable?
 5. Que significa revisar un texto generado en contexto tecnico?
+6. Que controles debe cumplir una salida asistida por IA para considerarse aceptada?
 
 ## Referencias del capitulo
 

@@ -55,7 +55,7 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 7 - Seguridad y DevSecOps | CERRADO_TECNICO | `04_CUERPO_PRINCIPAL/CAP_07_Conclusiones/CAP_07_BORRADOR.md` |
 | 8 - Despliegue cloud native | CERRADO_TECNICO | `04_CUERPO_PRINCIPAL/CAP_08_Despliegue_Cloud_Native/CAP_08_BORRADOR.md` |
 | 9 - Performance, escalamiento y resiliencia | CERRADO_TECNICO | `04_CUERPO_PRINCIPAL/CAP_09_Performance_Escalamiento_Resiliencia/CAP_09_BORRADOR.md` |
-| 10 - IA como acelerador | DONE_EDITORIAL | `04_CUERPO_PRINCIPAL/CAP_10_IA_Acelerador/CAP_10_BORRADOR.md` |
+| 10 - IA como acelerador | CERRADO_TECNICO | `04_CUERPO_PRINCIPAL/CAP_10_IA_Acelerador/CAP_10_BORRADOR.md` |
 | 11 - Spotybank como curso | DONE_EDITORIAL | `04_CUERPO_PRINCIPAL/CAP_11_Spotybank_Como_Curso/CAP_11_BORRADOR.md` |
 | 12 - Roadmap de evolucion | DONE_EDITORIAL | `04_CUERPO_PRINCIPAL/CAP_12_Roadmap_Evolucion/CAP_12_BORRADOR.md` |
 
@@ -125,10 +125,11 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-28 | Capitulo 7 - Seguridad y DevSecOps | CERRADO_TECNICO | Cierre reforzado con amenaza, severidad, secretos, MFA, supply chain, pipeline, IA y backlog verificable |
 | 2026-05-28 | Capitulo 8 - Despliegue cloud native | CERRADO_TECNICO | Cierre reforzado con contrato runtime, unidad minima, probes, resources, HPA, GitOps, rollout y continuidad |
 | 2026-05-28 | Capitulo 9 - Performance, escalamiento y resiliencia | CERRADO_TECNICO | Cierre reforzado con SLIs/SLOs educativos, bottlenecks, HPA, DLQ, resiliencia, pruebas de carga y backlog medible |
+| 2026-05-28 | Capitulo 10 - IA como acelerador | CERRADO_TECNICO | Cierre reforzado con prompts seguros, definicion de done IA, backlog, refactor asistido, privacidad y antipatrones |
 
 ## Proximo bloque recomendado
 
-1. Cerrar tecnicamente el capitulo 10 antes de avanzar al capitulo 11.
+1. Cerrar tecnicamente el capitulo 11 antes de avanzar al capitulo 12.
 2. Continuar el cierre capitulo por capitulo hasta que los 12 esten en `CERRADO_TECNICO`.
 3. Recien despues ordenar publicacion, formato de venta, release notes finales y tag `v0.2-editorial`.
 
@@ -171,3 +172,4 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-28 | Cerrado tecnicamente el capitulo 7 con criterios verificables de seguridad y DevSecOps. |
 | 2026-05-28 | Cerrado tecnicamente el capitulo 8 con criterios verificables de despliegue cloud native educativo. |
 | 2026-05-28 | Cerrado tecnicamente el capitulo 9 con criterios verificables de performance, escalamiento y resiliencia. |
+| 2026-05-28 | Cerrado tecnicamente el capitulo 10 con criterios verificables de uso responsable de IA. |

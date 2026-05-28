@@ -148,7 +148,7 @@ Resolucion propuesta:
 | Integraciones externas acopladas | Rutas Camel/SOAP y CXF | Crear patron de adapter/anticorrupcion por proveedor externo. |
 | Riesgo de logs sensibles | Workers que procesan payloads completos | Crear checklist de sanitizacion y observabilidad segura. |
 
-## Informacion que sigue bloqueada
+## Validaciones externas que no se cierran desde evidencia estatica
 
 Estos puntos no deben inventarse en la obra:
 
@@ -159,7 +159,6 @@ Estos puntos no deben inventarse en la obra:
 - Ownership tecnico y funcional.
 - Contratos vigentes con sistemas externos.
 - Decisiones de nube, region, residencia de datos y DR.
-- Politica final de licenciamiento del material educativo.
 
 ## Uso sugerido en la obra
 
@@ -173,4 +172,3 @@ Este documento puede alimentar:
 - Capitulo 8: despliegue cloud native.
 - Capitulo 9: performance, escalamiento y resiliencia.
 - Capitulo 12: roadmap de evolucion.
-

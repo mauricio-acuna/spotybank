@@ -38,3 +38,4 @@
 | 2026-05-28 | v0.2-cierre-tecnico | Cuerpo principal | Cerrado tecnicamente el capitulo 7 con amenaza, severidad, secretos, MFA, supply chain, pipeline, IA y backlog verificable. |
 | 2026-05-28 | v0.2-cierre-tecnico | Cuerpo principal | Cerrado tecnicamente el capitulo 8 con contrato runtime, unidad minima, probes, resources, HPA, GitOps, rollout y continuidad. |
 | 2026-05-28 | v0.2-cierre-tecnico | Cuerpo principal | Cerrado tecnicamente el capitulo 9 con SLIs/SLOs educativos, bottlenecks, HPA, DLQ, resiliencia, pruebas de carga y backlog medible. |
+| 2026-05-28 | v0.2-cierre-tecnico | Cuerpo principal | Cerrado tecnicamente el capitulo 10 con prompts seguros, definicion de done IA, backlog, refactor asistido, privacidad y antipatrones. |
