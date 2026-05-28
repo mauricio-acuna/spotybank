@@ -37,6 +37,7 @@ Preparar una salida editorial mas completa, revisable y exportable, sin converti
 | Escaneo de publicacion segura ejecutado | [next] | Salida del script sin coincidencias sensibles |
 | Limites del caso educativo vigentes | [ok] | Disclaimers, fuera de alcance y notas metodologicas |
 | Decision de formato de entrega tomada | [ok] | Markdown como fuente; PDF unico recomendado; HTML opcional |
+| Plan de salida y formato de venta separado | [ok] | `10_PUBLICACION/PLAN_SALIDA_FORMATO_VENTA_v0.2-editorial.md` |
 
 ## Coherencia editorial
 
@@ -81,6 +82,7 @@ Usar `09_REVISIONES/REVISION_EXTERNA_MINIMA_v0.2-editorial.md` y `09_REVISIONES/
 | HTML navegable | [later] | Util si se publica como sitio |
 | Fasciculos PDF por perfil | [later] | Util para talleres especificos |
 | Release notes de `v0.2-editorial` | [ok] | Draft creado y alineado con cierre tecnico; cerrar antes de tag/release |
+| Plan de salida y formato de venta | [ok] | Publicacion editorial separada de venta directa, curso pago y licencia comercial |
 | Arte final de portada | [later] | No bloquea el contenido tecnico |
 | Release de GitHub con artefactos | [later] | Solo si se generan PDF/HTML descargables |
 
@@ -93,6 +95,7 @@ Usar `09_REVISIONES/REVISION_EXTERNA_MINIMA_v0.2-editorial.md` y `09_REVISIONES/
 | Arte | Portada textual actual aceptada | Portada grafica final |
 | Release GitHub | Tag si el contenido esta cerrado | Release con assets exportados |
 | ISBN | No requerido | Edicion editorial o impresa |
+| Venta o curso pago | No requerido para tag editorial | Plan comercial, precio, canal, terminos y licencia separada |
 
 ## Comandos sugeridos
 
@@ -116,6 +119,7 @@ Estos puntos son valiosos, pero no deben impedir el cierre editorial de `v0.2`:
 - Ambientes cloud reales.
 - Implementacion productiva de `spotybank-core-ledger`.
 - Release con assets descargables si aun no se exporta PDF/HTML.
+- Venta directa, curso pago o licencia comercial separada.
 
 ## Criterio de salida
 

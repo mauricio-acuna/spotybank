@@ -1,6 +1,6 @@
 # Licencia y uso
 
-Este documento registra la decision de licencia para la version `v0.1-publicable` de la obra Spotybank. No reemplaza asesoramiento legal especializado.
+Este documento registra la decision de licencia para la version `v0.1-publicable` y orienta la preparacion de `v0.2-editorial`. No reemplaza asesoramiento legal especializado.
 
 ## Objetivo de publicacion
 
@@ -13,7 +13,7 @@ Spotybank busca funcionar como material educativo y tecnico para:
 - Centros de formacion profesional.
 - Equipos de desarrollo, mantenimiento, arquitectura, seguridad, QA y DevOps/SRE.
 
-## Decision para v0.1-publicable
+## Decision vigente
 
 Licencia definida para la obra textual:
 
@@ -88,4 +88,6 @@ No se permite incorporar secretos, datos reales ni referencias a entidades exter
 
 ## Estado de cierre
 
-La licencia queda definida para `v0.1-publicable`. Una version comercial, institucional o empresarial separada requeriria una decision editorial posterior y no bloquea esta version.
+La licencia queda definida para `v0.1-publicable` y se mantiene como base para `v0.2-editorial` mientras no exista una decision editorial distinta.
+
+Una version comercial, institucional, empresarial o de curso pago requiere terminos separados. Esa decision no bloquea el cierre tecnico ni el tag editorial, pero debe resolverse antes de vender PDF, pack docente, licencias institucionales o talleres pagos.

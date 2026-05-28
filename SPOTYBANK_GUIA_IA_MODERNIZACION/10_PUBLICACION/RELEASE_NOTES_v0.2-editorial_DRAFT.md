@@ -20,6 +20,7 @@ Spotybank Guia IA de Modernizacion - v0.2-editorial
 - Roadmap de evolucion mas claro para `spotybank-core-ledger` y siguientes fases.
 - Criterios de salida `v0.2-editorial` documentados.
 - Validacion integral de cierre tecnico documentada.
+- Plan de salida y formato de venta separado de tag/release.
 - Paquete de revision externa minima preparado por perfiles.
 - Registro de cambios, status de obra y checklist de etapas alineados con el ciclo posterior al tag `v0.1-publicable`.
 
@@ -28,6 +29,7 @@ Spotybank Guia IA de Modernizacion - v0.2-editorial
 - Capitulos 1 a 12 en estado `CERRADO_TECNICO`.
 - Checklist de salida `v0.2-editorial`.
 - Validacion integral de cierre tecnico.
+- Plan de salida y formato de venta.
 - Paquete de revision externa minima por perfiles.
 - Matriz de revision por perfil actualizada.
 - Registro de cambios actualizado.
@@ -44,6 +46,7 @@ Spotybank Guia IA de Modernizacion - v0.2-editorial
 - PDF/HTML exportado dentro del repo.
 - Arte grafico final de portada.
 - ISBN.
+- Precio, landing de venta o curso pago.
 - Validacion con ambientes, owners, SLAs o datos productivos reales.
 
 ## Advertencias

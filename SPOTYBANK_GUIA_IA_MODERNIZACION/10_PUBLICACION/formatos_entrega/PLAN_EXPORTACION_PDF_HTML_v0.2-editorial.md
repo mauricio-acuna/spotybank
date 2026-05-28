@@ -11,7 +11,7 @@ Este plan define como generar artefactos PDF/HTML para `v0.2-editorial` cuando s
 
 ## Estado local de herramientas
 
-Chequeo realizado el 2026-05-27:
+Chequeo actualizado el 2026-05-28:
 
 | Herramienta | Estado |
 |---|---|

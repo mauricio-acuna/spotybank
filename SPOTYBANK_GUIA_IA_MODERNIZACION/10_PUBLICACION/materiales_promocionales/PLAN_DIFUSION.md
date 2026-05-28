@@ -14,7 +14,8 @@ Spotybank convierte un sistema legacy anonimizado en un laboratorio completo de 
 ## 3. Canales de distribucion
 
 - [ok] Repositorio GitHub de la obra.
-- [ok] Distribucion por fasciculos Markdown/PDF.
+- [ok] Distribucion por Markdown versionado.
+- [later] Distribucion por fasciculos PDF.
 - [later] Landing page propia.
 - [later] Editorial universitaria o institucional.
 - [later] Plataformas de eBook si se define version comercial.
@@ -40,3 +41,4 @@ Spotybank convierte un sistema legacy anonimizado en un laboratorio completo de 
 - [later] Recoger feedback docente y tecnico.
 - [later] Preparar `v0.2` con revisiones externas.
 - [later] Exportar version maquetada PDF/HTML.
+- [later] Definir formato comercial solo despues de cerrar release editorial y terminos de uso.

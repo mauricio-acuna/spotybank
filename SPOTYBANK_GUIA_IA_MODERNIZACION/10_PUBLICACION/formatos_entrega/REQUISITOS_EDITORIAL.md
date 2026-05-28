@@ -1,6 +1,6 @@
-# REQUISITOS DE ENTREGA A EDITORIAL
+# Requisitos de entrega editorial
 
-Requisitos definidos para la version `v0.1-publicable` de Spotybank.
+Requisitos base para `v0.1-publicable` y para la preparacion de salida `v0.2-editorial` de Spotybank.
 
 ---
 
@@ -33,9 +33,15 @@ Requisitos definidos para la version `v0.1-publicable` de Spotybank.
 ## Declaraciones requeridas
 
 - Declaracion de originalidad: requerida antes de una editorial externa.
-- Declaracion de conflicto de intereses: no aplica a `v0.1-publicable` independiente salvo que una institucion lo exija.
+- Declaracion de conflicto de intereses: no aplica a publicacion independiente salvo que una institucion lo exija.
 - Cesion de derechos: no aplica a publicacion independiente; requerida solo si hay editorial externa.
-- Financiacion y agradecimientos: sin financiacion declarada para `v0.1-publicable`.
+- Financiacion y agradecimientos: sin financiacion declarada.
+
+## Venta o curso comercial
+
+- La venta directa, licencia institucional o curso pago requieren terminos comerciales separados.
+- La licencia textual abierta no debe modificarse sin decision editorial explicita.
+- El material comercial debe conservar el aviso de caso educativo no productivo.
 
 ## Contacto editorial
 
