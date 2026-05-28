@@ -40,3 +40,4 @@
 | 2026-05-28 | v0.2-cierre-tecnico | Cuerpo principal | Cerrado tecnicamente el capitulo 9 con SLIs/SLOs educativos, bottlenecks, HPA, DLQ, resiliencia, pruebas de carga y backlog medible. |
 | 2026-05-28 | v0.2-cierre-tecnico | Cuerpo principal | Cerrado tecnicamente el capitulo 10 con prompts seguros, definicion de done IA, backlog, refactor asistido, privacidad y antipatrones. |
 | 2026-05-28 | v0.2-cierre-tecnico | Cuerpo principal | Cerrado tecnicamente el capitulo 11 con producto educativo, resultados observables, rutas por perfil y duracion, fasciculos, laboratorios, rubricas, revision por pares y proyecto final. |
+| 2026-05-28 | v0.2-cierre-tecnico | Cuerpo principal | Cerrado tecnicamente el capitulo 12 con versiones, fases de evolucion, ledger educativo, eventos, roadmap 90 dias, metricas, riesgos y criterios de salida sin promesas productivas. |

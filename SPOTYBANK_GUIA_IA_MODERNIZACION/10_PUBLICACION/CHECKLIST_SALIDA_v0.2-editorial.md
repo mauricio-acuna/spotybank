@@ -2,7 +2,7 @@
 
 Este checklist define los criterios para declarar lista la version `v0.2-editorial` de la obra Spotybank.
 
-La version `v0.2-editorial` parte del tag `v0.1-publicable` y del desarrollo editorial ampliado de los capitulos 1 a 12 en `main`.
+La version `v0.2-editorial` parte del tag `v0.1-publicable` y del cierre tecnico-editorial de los capitulos 1 a 12 en `main`.
 
 ## Objetivo
 
@@ -29,7 +29,7 @@ Preparar una salida editorial mas completa, revisable y exportable, sin converti
 | Criterio | Estado | Evidencia esperada |
 |---|---|---|
 | Rama `main` sincronizada con `origin/main` | [next] | `git status -sb` sin divergencias |
-| Capitulos 1 a 12 en estado `DONE_EDITORIAL` | [ok] | `00_GESTION_PROYECTO/statusObraLiteraria.md` |
+| Capitulos 1 a 12 en estado `CERRADO_TECNICO` | [ok] | `00_GESTION_PROYECTO/statusObraLiteraria.md` |
 | Registro de cambios actualizado | [ok] | `00_GESTION_PROYECTO/REGISTRO_CAMBIOS.md` |
 | Checklist de etapas alineado con el cierre editorial | [ok] | `00_GESTION_PROYECTO/CHECKLIST_ETAPAS.md` |
 | Revision externa minima por perfiles | [next] | Dictamenes guiados por `09_REVISIONES/REVISION_EXTERNA_MINIMA_v0.2-editorial.md` |

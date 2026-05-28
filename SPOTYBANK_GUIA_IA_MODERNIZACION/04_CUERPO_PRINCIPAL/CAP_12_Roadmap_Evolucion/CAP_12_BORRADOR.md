@@ -1,5 +1,9 @@
 # Capitulo 12 - Roadmap de Evolucion
 
+Estado de cierre tecnico-editorial: `CERRADO_TECNICO`.
+
+Dictamen del capitulo: apto como cierre de obra y guia de evolucion. El capitulo ordena versiones, fases, criterios de salida, evolucion del ledger, eventos, riesgos y roadmap de 90 dias sin prometer plataforma productiva, release comercial ni formato de venta antes del cierre integral.
+
 Un roadmap no es una lista de deseos. Es una narrativa tecnica: explica donde estamos, que problema resolvemos primero, que capacidad habilita la siguiente y como sabremos que avanzamos. Sin esa narrativa, la modernizacion se convierte en acumulacion de iniciativas: un poco de nube, un poco de IA, un poco de seguridad, un poco de refactor, sin una secuencia defendible.
 
 Spotybank necesita un roadmap porque combina dos evoluciones al mismo tiempo. La primera es editorial: convertir la obra en material publicable, docente y revisable. La segunda es tecnica: convertir el caso en un laboratorio cada vez mas ejecutable, observable y seguro.
@@ -16,6 +20,7 @@ Al finalizar este capitulo, el lector podra:
 - Definir la evolucion de `spotybank-core-ledger`.
 - Identificar decisiones que no deben cerrarse sin validacion externa.
 - Cerrar la obra con una vision incremental, verificable y publicable.
+- Diferenciar cierre tecnico-editorial, mejoras futuras, release formal y formato comercial.
 
 ## 12.1 Roadmap como narrativa tecnica
 
@@ -34,6 +39,8 @@ Un buen roadmap explica:
 - Que riesgo se reduce en cada fase.
 - Que evidencia permite cerrar una fase.
 - Que decisiones requieren owner, ambiente o validacion externa.
+
+Un roadmap queda cerrado editorialmente cuando cada fase tiene objetivo, capacidad habilitada, evidencia de cierre, riesgo reducido y limite declarado. Si una fase no puede validarse con evidencia disponible, debe figurar como validacion externa o mejora posterior, no como promesa.
 
 ## 12.2 Principios de priorizacion
 
@@ -55,8 +62,8 @@ Una mejora que reduce riesgo y ademas sirve para varios laboratorios tiene prior
 | Version | Objetivo | Estado |
 |---|---|---|
 | `v0.1-publicable` | Cierre preliminar educativo en Markdown | Publicado como tag |
-| `main` post-tag | Desarrollo editorial ampliado de capitulos | En evolucion hacia `v0.2` |
-| `v0.2-editorial` | Revision externa, PDF/HTML, portada final y mejoras docentes | Pendiente |
+| `main` post-tag | Cierre tecnico-editorial de capitulos 1 a 12 | En cierre de consistencia global |
+| `v0.2-editorial` | Revision externa, decision de formato, checklist final y tag si corresponde | Preparacion posterior al cierre de capitulos |
 | `v0.3-lab` | Laboratorios ejecutables con servicios canonicos minimos | Futuro |
 | `v1.0-docente` | Curso completo validado por perfiles | Futuro |
 
@@ -144,6 +151,8 @@ Capacidades:
 
 El objetivo no es reconstruir todo el sistema historico. El objetivo es crear una superficie ejecutable suficiente para aprender.
 
+La version ejecutable queda fuera del cierre editorial de este ciclo. Para entrar en `v0.3-lab`, cada servicio minimo debe tener objetivo pedagogico, datos sinteticos, prueba base, instrucciones reproducibles y criterio de limpieza segura.
+
 ## 12.8 Fase 4: plataforma cloud native
 
 Objetivo: entrenar despliegue, observabilidad y operacion.
@@ -210,7 +219,7 @@ Responsabilidades esperadas:
 - Separar comandos de consultas si aplica.
 - Publicar eventos educativos.
 
-Decisiones pendientes:
+Decisiones de evolucion sujetas a validacion externa:
 
 - Implementarlo como servicio nuevo.
 - Simularlo con un modulo minimo.
@@ -219,6 +228,8 @@ Decisiones pendientes:
 - Definir modelo de datos.
 
 Recomendacion: empezar con un ledger educativo pequeno, bien probado y con datos sinteticos. Mejor poco y correcto que grande y confuso.
+
+Para este cierre, `spotybank-core-ledger` no queda como deuda editorial abierta. Queda clasificado como pieza de evolucion tecnica: su implementacion requiere owner de arquitectura, modelo de datos, pruebas de consistencia, politica de idempotencia y validacion de alcance educativo antes de escribir codigo.
 
 ## 12.12 Eventos y arquitectura evolutiva
 
@@ -238,9 +249,9 @@ Por eso los eventos deben entrar despues de que los dominios y contratos esten c
 
 | Periodo | Foco | Entregable |
 |---|---|---|
-| Dias 1-30 | Cierre editorial post-tag | Capitulos desarrollados, status actualizado, pendientes claros |
-| Dias 31-60 | Producto docente | PDF/HTML piloto, guia docente, ejercicios resueltos iniciales |
-| Dias 61-90 | Laboratorio ejecutable | Servicio piloto, datos sinteticos, pruebas y ficha de despliegue |
+| Dias 1-30 | Cierre editorial post-tag | Capitulos cerrados tecnicamente, status actualizado, mejoras futuras clasificadas |
+| Dias 31-60 | Producto docente | Decision de formato, guia docente priorizada, ejercicios resueltos iniciales si el alcance lo exige |
+| Dias 61-90 | Laboratorio ejecutable | Servicio piloto candidato, datos sinteticos, pruebas y ficha de despliegue |
 
 Este roadmap es intencionalmente acotado. No intenta crear una plataforma bancaria. Intenta convertir la obra en un material mas usable, revisable y demostrable.
 
@@ -310,17 +321,19 @@ Mitigacion:
 - Versionar cambios.
 - Crear entregables pequenos.
 - Priorizar ejercicios reutilizables.
-- Mantener decisiones pendientes visibles.
+- Mantener validaciones externas y mejoras posteriores visibles.
 
 ## 12.18 Criterios de salida para `v0.2`
 
-Una `v0.2` razonable deberia tener:
+Una `v0.2` razonable no debe confundirse con el cierre de este capitulo. El cierre tecnico-editorial deja el contenido ordenado; la salida `v0.2` requiere una decision posterior de publicacion.
 
-- Capitulos 1 a 12 desarrollados editorialmente.
+Criterios recomendados para declarar lista `v0.2`:
+
+- Capitulos 1 a 12 en `CERRADO_TECNICO`.
 - Revision externa minima por al menos dos perfiles.
 - PDF/HTML piloto o decision explicita de mantener solo Markdown.
 - Portada grafica final o decision de diferir arte final.
-- Ejercicios resueltos de referencia.
+- Ejercicios resueltos de referencia si se prioriza salida docente.
 - Checklist de publicacion actualizado.
 - Release formal si se distribuyen artefactos.
 
@@ -364,7 +377,24 @@ Luego defender por que ese orden es mejor que intentar una modernizacion complet
 | Realismo | El alcance cabe en 90 dias |
 | Evidencia | Cada cierre tiene prueba o documento |
 | Prudencia | No confunde educativo con productivo |
-| Riesgo | Identifica dependencias y decisiones pendientes |
+| Riesgo | Identifica dependencias y validaciones externas |
+
+## Cierre tecnico-editorial del capitulo
+
+| Control | Estado de cierre |
+|---|---|
+| Narrativa de roadmap | Cerrado: organiza capacidades, fases, evidencia y limites |
+| Versiones | Cerrado: separa `v0.1-publicable`, `main`, `v0.2-editorial`, `v0.3-lab` y `v1.0-docente` |
+| Fases de evolucion | Cerrado: cubre base editorial, MVP educativo, version docente, ejecutable, cloud native, seguridad, performance y resiliencia |
+| `spotybank-core-ledger` | Cerrado: queda como pieza de evolucion tecnica, no como deuda editorial abierta |
+| Eventos | Cerrado: se tratan como evolucion posterior condicionada por dominios y contratos claros |
+| Roadmap 90 dias | Cerrado: propone secuencia acotada con entregables y foco educativo |
+| Version empresarial y academica | Cerrado: define usos posibles sin prometer venta, acreditacion ni sistema real |
+| Metricas y riesgos | Cerrado: declara indicadores, riesgos y mitigaciones |
+| Criterios `v0.2` | Cerrado: separa contenido cerrado de decisiones posteriores de release y formato |
+| Alcance editorial | Cerrado: no crea tag, release, producto comercial ni promesa productiva en este paso |
+
+Pendientes editoriales internos del capitulo: ninguno.
 
 ## Resumen del capitulo
 
@@ -382,6 +412,7 @@ Luego defender por que ese orden es mejor que intentar una modernizacion complet
 3. Por que `spotybank-core-ledger` requiere especial cuidado?
 4. Que riesgos aparecen si se agregan eventos demasiado pronto?
 5. Que indicadores usarias para saber si la obra esta lista para `v0.2`?
+6. Como separarias cierre del contenido, release formal y formato comercial?
 
 ## Referencias del capitulo
 

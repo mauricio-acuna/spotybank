@@ -25,7 +25,7 @@ La regla de trabajo es simple: un capitulo solo pasa a `CERRADO_TECNICO` cuando 
 | 9 - Performance, escalamiento y resiliencia | CERRADO_TECNICO | Define SLIs/SLOs educativos, bottlenecks, HPA, DLQ, resiliencia, pruebas de carga y backlog medible |
 | 10 - IA como acelerador | CERRADO_TECNICO | Define prompts seguros, evidencia/inferencia, backlog, refactor asistido, privacidad, antipatrones y definicion de done IA |
 | 11 - Spotybank como curso | CERRADO_TECNICO | Define producto educativo, rutas por perfil y duracion, fasciculos, laboratorios, rubricas, revision por pares y proyecto final |
-| 12 - Roadmap de evolucion | PENDIENTE_CIERRE | Siguiente capitulo a revisar |
+| 12 - Roadmap de evolucion | CERRADO_TECNICO | Define versiones, fases, ledger educativo, eventos, roadmap 90 dias, riesgos, metricas y criterios de salida sin promesas productivas |
 
 ## Checklist de cierre aplicado al capitulo 1
 
@@ -180,6 +180,21 @@ La regla de trabajo es simple: un capitulo solo pasa a `CERRADO_TECNICO` cuando 
 | Seguridad docente sin datos reales, secretos, dominios privados ni ambientes productivos | OK |
 | No deja pendientes editoriales internos | OK |
 
+## Checklist de cierre aplicado al capitulo 12
+
+| Control | Resultado |
+|---|---|
+| Roadmap tratado como narrativa tecnica, no lista de deseos | OK |
+| Versiones diferenciadas entre `v0.1-publicable`, `main`, `v0.2-editorial`, `v0.3-lab` y `v1.0-docente` | OK |
+| Fases con objetivo, capacidad, evidencia, riesgo y limite declarado | OK |
+| Version ejecutable separada del cierre editorial actual | OK |
+| `spotybank-core-ledger` clasificado como pieza de evolucion tecnica, no deuda editorial abierta | OK |
+| Eventos condicionados a dominios y contratos claros | OK |
+| Roadmap de 90 dias acotado y no productivo | OK |
+| Version empresarial y academica descritas sin prometer venta, acreditacion o operacion real | OK |
+| Criterios `v0.2` separados de release, tag y formato comercial | OK |
+| No deja pendientes editoriales internos | OK |
+
 ## Proximo paso
 
-Cerrar el capitulo 12 con el mismo criterio: roadmap de evolucion, criterios de salida, mejoras futuras, alcance editorial y cierre completo de la obra sin pendientes internos.
+Ejecutar una validacion integral de consistencia sobre los 12 capitulos cerrados y, recien despues, ordenar publicacion, formato de venta, release notes finales y tag `v0.2-editorial` si corresponde.

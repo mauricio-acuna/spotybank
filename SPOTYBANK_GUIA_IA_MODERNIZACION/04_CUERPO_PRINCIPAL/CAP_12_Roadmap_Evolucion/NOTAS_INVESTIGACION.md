@@ -29,11 +29,13 @@ La conclusion debe conectar con la tesis general: modernizar es decidir con evid
 
 - Separar versiones: `v0.1-publicable`, `main` post-tag, `v0.2-editorial`, `v0.3-lab` y `v1.0-docente`.
 - Incluir roadmap de 90 dias.
-- Mantener `spotybank-core-ledger` como pieza educativa pendiente.
+- Mantener `spotybank-core-ledger` como pieza de evolucion tecnica, no como deuda editorial abierta.
 - Definir criterios de salida para `v0.2`.
 - Mantener revision externa, PDF/HTML, portada final y ejercicios resueltos como mejoras posteriores.
+- Separar cierre del contenido, release formal, formato comercial y validaciones externas.
+- No quedan pendientes editoriales internos del capitulo.
 
-## Decisiones pendientes para versiones futuras
+## Mejoras futuras no bloqueantes
 
 - Definir fecha y alcance exacto de `v0.2-editorial`.
 - Resolver si PDF/HTML se genera con herramienta local o pipeline.

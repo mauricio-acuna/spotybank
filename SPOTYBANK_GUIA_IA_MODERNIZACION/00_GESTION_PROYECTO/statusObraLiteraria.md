@@ -17,7 +17,7 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 - Repo Git independiente de la obra: `Documentacion/ObraLiteraria`.
 - Repo remoto registrado: `https://github.com/mauricio-acuna/spotybank.git`.
 - Estado Git verificado: `main` sincronizada con `origin/main` para cierre `v0.1-publicable` al 2026-05-27.
-- Ciclo actual: cierre editorial ampliado de capitulos 1 a 12 y preparacion de mejoras para `v0.2`.
+- Ciclo actual: capitulos 1 a 12 cerrados tecnicamente y preparacion posterior de consistencia global para `v0.2`.
 
 ## Estados usados
 
@@ -57,7 +57,7 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 9 - Performance, escalamiento y resiliencia | CERRADO_TECNICO | `04_CUERPO_PRINCIPAL/CAP_09_Performance_Escalamiento_Resiliencia/CAP_09_BORRADOR.md` |
 | 10 - IA como acelerador | CERRADO_TECNICO | `04_CUERPO_PRINCIPAL/CAP_10_IA_Acelerador/CAP_10_BORRADOR.md` |
 | 11 - Spotybank como curso | CERRADO_TECNICO | `04_CUERPO_PRINCIPAL/CAP_11_Spotybank_Como_Curso/CAP_11_BORRADOR.md` |
-| 12 - Roadmap de evolucion | DONE_EDITORIAL | `04_CUERPO_PRINCIPAL/CAP_12_Roadmap_Evolucion/CAP_12_BORRADOR.md` |
+| 12 - Roadmap de evolucion | CERRADO_TECNICO | `04_CUERPO_PRINCIPAL/CAP_12_Roadmap_Evolucion/CAP_12_BORRADOR.md` |
 
 ## Fasciculos
 
@@ -127,12 +127,13 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-28 | Capitulo 9 - Performance, escalamiento y resiliencia | CERRADO_TECNICO | Cierre reforzado con SLIs/SLOs educativos, bottlenecks, HPA, DLQ, resiliencia, pruebas de carga y backlog medible |
 | 2026-05-28 | Capitulo 10 - IA como acelerador | CERRADO_TECNICO | Cierre reforzado con prompts seguros, definicion de done IA, backlog, refactor asistido, privacidad y antipatrones |
 | 2026-05-28 | Capitulo 11 - Spotybank como curso | CERRADO_TECNICO | Cierre reforzado con producto educativo, resultados observables, rutas, fasciculos, laboratorios, rubricas, revision por pares y proyecto final |
+| 2026-05-28 | Capitulo 12 - Roadmap de evolucion | CERRADO_TECNICO | Cierre reforzado con versiones, fases, ledger educativo, eventos, roadmap 90 dias, criterios v0.2 y limites de release/formato |
 
 ## Proximo bloque recomendado
 
-1. Cerrar tecnicamente el capitulo 12 para completar la revision capitulo por capitulo.
-2. Verificar consistencia global una vez que los 12 capitulos esten en `CERRADO_TECNICO`.
-3. Recien despues ordenar publicacion, formato de venta, release notes finales y tag `v0.2-editorial`.
+1. Verificar consistencia global de los 12 capitulos en `CERRADO_TECNICO`.
+2. Ordenar despues publicacion, formato de venta, release notes finales y tag `v0.2-editorial` si corresponde.
+3. No crear tag ni release hasta cerrar la validacion integral y el checklist de salida.
 
 ## Historial
 
@@ -175,3 +176,4 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-28 | Cerrado tecnicamente el capitulo 9 con criterios verificables de performance, escalamiento y resiliencia. |
 | 2026-05-28 | Cerrado tecnicamente el capitulo 10 con criterios verificables de uso responsable de IA. |
 | 2026-05-28 | Cerrado tecnicamente el capitulo 11 con criterios verificables de diseno docente, rutas, fasciculos, laboratorios y evaluacion. |
+| 2026-05-28 | Cerrado tecnicamente el capitulo 12 con criterios verificables de roadmap, fases, ledger educativo, v0.2 y limites de publicacion. |

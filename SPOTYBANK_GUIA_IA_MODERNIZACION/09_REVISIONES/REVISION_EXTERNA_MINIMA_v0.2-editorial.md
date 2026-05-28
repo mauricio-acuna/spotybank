@@ -8,7 +8,7 @@ La revision busca detectar bloqueantes tecnicos, editoriales o de publicacion an
 
 - Version revisada: `v0.2-editorial`.
 - Base documental: `main` posterior al tag `v0.1-publicable`.
-- Cuerpo principal: capitulos 1 a 12 en estado `DONE_EDITORIAL`.
+- Cuerpo principal: capitulos 1 a 12 en estado `CERRADO_TECNICO`.
 - Evidencia de gestion: `00_GESTION_PROYECTO/statusObraLiteraria.md`.
 - Criterio de salida: `10_PUBLICACION/CHECKLIST_SALIDA_v0.2-editorial.md`.
 
