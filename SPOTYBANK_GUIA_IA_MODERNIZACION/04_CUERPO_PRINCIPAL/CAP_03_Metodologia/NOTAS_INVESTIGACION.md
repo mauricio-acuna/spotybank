@@ -30,8 +30,10 @@ La estructura propuesta distingue limpieza cosmetica, anonimizacion y saneamient
 - Usar `api.spotybank.io` solo como dominio educativo de ejemplo.
 - Excluir o regenerar artefactos comprimidos heredados.
 - Mantener escaneo previo a publicacion con `Publicar_ObraLiteraria_Spotybank.ps1`.
+- Cerrar el capitulo con compuerta de publicacion segura, matriz de decision por superficie y control de artefactos de riesgo.
+- Registrar que no quedan pendientes editoriales internos para el capitulo 3 en el ciclo `v0.2-editorial`.
 
-## Decisiones pendientes para versiones futuras
+## Mejoras futuras no bloqueantes
 
 - Definir si se agregan ejemplos resueltos de saneamiento por microservicio.
 - Exportar figuras o tablas del flujo de saneamiento a formato grafico final.
