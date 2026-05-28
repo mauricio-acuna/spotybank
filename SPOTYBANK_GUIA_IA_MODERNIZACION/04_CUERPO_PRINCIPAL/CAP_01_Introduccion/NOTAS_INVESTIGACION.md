@@ -26,3 +26,6 @@ El capitulo 1 instala el pacto de lectura de la obra. No busca vender una tecnol
 - Declarar limites desde el comienzo: sin banco real, sin datos reales, sin SLAs productivos.
 - Introducir la tabla evidencia/inferencia/decision pendiente/recomendacion como lenguaje recurrente.
 - Agregar una actividad inicial para practicar el metodo antes de entrar al inventario tecnico.
+- Cerrar el capitulo con compuerta tecnica explicita: evidencia, riesgo, accion, validacion y reversibilidad.
+- Reforzar higiene de trabajo con IA: sin secretos, sin datos reales, con validacion humana y trazabilidad.
+- Registrar que no quedan pendientes editoriales internos para el capitulo 1 en el ciclo `v0.2-editorial`.

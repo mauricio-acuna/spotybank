@@ -1,5 +1,9 @@
 # Capitulo 01 - Introduccion
 
+Estado de cierre tecnico-editorial: `CERRADO_TECNICO`.
+
+Dictamen del capitulo: apto como apertura metodologica de la obra. El capitulo fija el pacto de lectura, declara los limites del caso, define el uso responsable de IA y establece el lenguaje de evidencia que se usara en los capitulos siguientes.
+
 Hay sistemas que no se entienden leyendo una sola clase, una sola pantalla de arquitectura o un README escrito al final de la prisa. Se entienden siguiendo rastros: nombres de servicios, dependencias que envejecieron junto con el negocio, configuraciones que sobrevivieron a varias generaciones de plataforma, pruebas incompletas, integraciones que nadie se atreve a tocar sin una reunion previa y decisiones que alguna vez fueron razonables, pero que hoy pesan.
 
 Spotybank nace para estudiar ese territorio.
@@ -19,6 +23,7 @@ Al finalizar este capitulo, el lector podra:
 - Diferenciar modernizacion asistida por IA de simple generacion automatica de codigo.
 - Reconocer los limites del caso y las decisiones que no deben presentarse como hechos.
 - Identificar como distintos perfiles pueden trabajar sobre el mismo material sin perder coherencia.
+- Aplicar una primera compuerta de cierre tecnico: evidencia, riesgo, accion, validacion y reversibilidad.
 
 ## 01.1 Que es Spotybank
 
@@ -41,6 +46,8 @@ En lugar de presentar una arquitectura idealizada, la obra propone recorrer un s
 - Que partes del sistema deben mantenerse como supuestos hasta que exista evidencia?
 
 La obra trabaja sobre una idea central: un sistema heredado no es basura tecnica. Es una concentracion de historia, decisiones, restricciones y aprendizaje. Modernizarlo exige respeto por esa historia, pero no obediencia ciega a ella.
+
+Esa postura evita dos extremos igualmente peligrosos. El primero es romantizar el legacy y aceptar cualquier deuda como si fuera inevitable. El segundo es despreciarlo y proponer una reescritura total antes de entender que comportamiento sostiene. Spotybank se ubica en el medio: estudiar con respeto, diagnosticar con precision y cambiar con criterio verificable.
 
 ## 01.2 Por que un sistema legacy es valioso para aprender
 
@@ -76,6 +83,18 @@ Esta tabla parece simple. No lo es. En proyectos reales, muchas discusiones se t
 
 Spotybank sirve para practicar exactamente lo contrario: pensar con disciplina.
 
+Para cerrar cualquier lectura tecnica del caso, cada propuesta debera poder atravesar cinco preguntas:
+
+| Compuerta | Pregunta de control | Resultado esperado |
+|---|---|---|
+| Evidencia | Que dato local sostiene la afirmacion? | Archivo, configuracion, tabla, dependencia o documento citado |
+| Riesgo | Que puede fallar si no se actua? | Riesgo tecnico, operativo, docente o de seguridad descrito |
+| Accion | Que cambio concreto se propone? | Tarea acotada, no slogan de modernizacion |
+| Validacion | Como se comprueba que mejoro? | Prueba, revision, escaneo, metrica o criterio observable |
+| Reversibilidad | Como se vuelve atras si algo sale mal? | Rollback, feature flag, versionado, backup o decision de no aplicar |
+
+Esta compuerta no convierte la modernizacion en burocracia. La vuelve defendible. Una propuesta que no puede responder esas cinco preguntas todavia no esta lista para ejecutarse ni para ensenarse como practica profesional.
+
 ## 01.3 El rol de la IA como copiloto de diagnostico y modernizacion
 
 La inteligencia artificial puede acelerar una modernizacion. Tambien puede amplificar una mala interpretacion si se usa sin control.
@@ -105,6 +124,16 @@ Por eso la regla de Spotybank es estricta: la IA acelera el trabajo, pero no fir
 Una modernizacion asistida por IA debe dejar rastros. Si la IA propone que un servicio pertenece a un dominio, el lector debe poder encontrar la evidencia que sostiene esa propuesta. Si la IA recomienda mover una configuracion a un gestor de secretos, debe existir un criterio para validar que el secreto ya no queda versionado. Si la IA resume un capitulo, debe conservar los limites del caso.
 
 El valor de la IA no esta en escribir mas rapido. Esta en ayudar a pensar mejor, siempre que el equipo conserve control sobre el razonamiento.
+
+En la practica, esto implica una higiene minima de trabajo con IA:
+
+- No pegar secretos, trazas reales, datos personales ni dominios privados en prompts.
+- Pedir siempre separacion entre evidencia observada, inferencia y recomendacion.
+- Exigir que toda propuesta indique pruebas o verificaciones.
+- Tratar respuestas ambiguas como hipotesis, no como cierre tecnico.
+- Revisar manualmente cualquier fragmento que afecte seguridad, arquitectura, datos o operacion.
+
+Este criterio sera especialmente importante en los capitulos de inventario, seguridad, despliegue y performance, donde una frase convincente puede ocultar una decision riesgosa.
 
 ## 01.4 Alcance, limites y supuestos del caso
 
@@ -137,6 +166,8 @@ Esta frontera permite usar el caso con libertad sin convertirlo en algo que no e
 
 Tambien hay supuestos de trabajo. A lo largo del libro, cuando falten owners, metricas, trazas, contratos o decisiones historicas, la obra no rellenara el vacio con seguridad artificial. Lo marcara como decision pendiente. Esa honestidad no debilita el texto; lo vuelve util.
 
+Para evitar ambiguedades, una decision pendiente no es un defecto del libro. Es una senal metodologica. Indica que el material disponible no autoriza una conclusion mas fuerte. En una obra educativa sobre sistemas heredados, declarar incertidumbre es parte del rigor.
+
 ## 01.5 Perfiles de lectura
 
 Spotybank puede leerse de varias maneras porque la modernizacion no pertenece a un solo rol.
@@ -155,6 +186,15 @@ La fuerza del caso esta en que todos miran el mismo sistema.
 | Docencia | Como se convierte el caso en aprendizaje? | Laboratorios, rubricas y plan de clase |
 
 Esta lectura por perfiles evita un problema frecuente en obras tecnicas amplias: intentar que todo lector lea todo con la misma profundidad. Aqui no hace falta. Lo importante es que cada perfil entienda su responsabilidad y pueda conversar con los demas usando el mismo mapa.
+
+La responsabilidad compartida no significa que todos decidan todo. Significa que cada perfil entrega una pieza verificable:
+
+- Backend debe demostrar que una modernizacion no rompe contratos ni pruebas existentes.
+- Arquitectura debe explicar por que una frontera de dominio es razonable.
+- Seguridad debe bloquear exposiciones y reducir superficie de ataque.
+- DevOps/SRE debe convertir despliegue y operacion en controles repetibles.
+- QA debe transformar riesgos en evidencia de regresion o aceptacion.
+- Docencia debe convertir complejidad tecnica en aprendizaje evaluable.
 
 ## 01.6 Como leer esta guia
 
@@ -184,6 +224,8 @@ La recomendacion practica es esta:
 - Si eres lider tecnico, usa cada capitulo como insumo de backlog.
 - Si eres revisor, marca cada observacion como evidencia, inferencia o decision pendiente.
 
+La lectura de cierre recomendada para `v0.2-editorial` es mas estricta: no basta con que el texto sea claro; cada capitulo debe terminar sin contradicciones internas, sin promesas productivas, sin referencias sensibles y con un criterio de evaluacion aplicable.
+
 ## 01.7 Actividad inicial: abrir el caso sin romperlo
 
 Antes de entrar al inventario tecnico, conviene practicar la postura que guiara el resto del libro. La actividad inicial no consiste en modificar codigo. Consiste en mirar con metodo.
@@ -211,6 +253,15 @@ Una tabla como la siguiente:
 | No se conocen SLOs productivos | Decision pendiente | No hay medicion real | Definir SLO educativo o pedir datos |
 | Externalizar secretos | Recomendacion | Riesgo de configuracion sensible | Escaneo sin secretos versionados |
 
+Para que la actividad quede cerrada, agrega una columna de validacion:
+
+| Recomendacion | Validacion minima | Riesgo si no se valida |
+|---|---|---|
+| Clasificar servicios y librerias | Tabla revisada contra archivos reales | Confundir libreria con servicio desplegable |
+| Validar responsabilidad de autenticacion | Revisar endpoints, dependencias y documentacion | Asignar dominio por nombre sin evidencia |
+| Definir SLO educativo | Explicitar que no es SLO productivo | Prometer rendimiento no comprobado |
+| Externalizar secretos | Escaneo sin secretos versionados | Publicar credenciales o placeholders ambiguos |
+
 ### Criterio de exito
 
 La entrega es correcta si ninguna afirmacion se presenta con mas certeza de la que permite la evidencia. Esta regla, aunque parezca modesta, es una de las competencias mas importantes de toda modernizacion.
@@ -223,12 +274,25 @@ La obra propone mirar el sistema con disciplina: separar evidencia, inferencia, 
 
 El libro puede leerse completo o por fasciculos. Cada perfil encuentra una ruta propia, pero todos trabajan sobre el mismo mapa. Esa es la promesa central de Spotybank: convertir un ecosistema tecnico complejo en aprendizaje aplicable, seguro y verificable.
 
+## Cierre tecnico-editorial del capitulo
+
+| Control | Dictamen |
+|---|---|
+| Alcance del caso | Cerrado: Spotybank queda definido como caso educativo, ficticio y no productivo |
+| Metodo de lectura | Cerrado: evidencia, inferencia, decision pendiente y recomendacion quedan definidos como lenguaje base |
+| Uso de IA | Cerrado: IA queda limitada a copiloto bajo validacion humana |
+| Riesgo de promesa productiva | Controlado: el capitulo excluye banco real, datos reales, SLAs productivos y auditoria formal |
+| Coherencia con capitulos siguientes | Cerrado: introduce inventario, saneamiento, documentacion, dominios, backend, seguridad, nube, performance, IA, curso y roadmap |
+| Actividad practica | Cerrada: incluye entregable, criterio de exito y validacion minima |
+
+Pendientes editoriales internos del capitulo: ninguno.
+
 ## Preguntas de revision
 
 1. Que diferencia a Spotybank de un ejemplo academico creado desde cero?
 2. Por que un sistema legacy puede ser mas valioso para aprender que una arquitectura idealizada?
 3. En que tareas puede ayudar la IA durante una modernizacion?
 4. Que riesgos aparecen si se usa IA sin distinguir evidencia, inferencia y decision pendiente?
-5. Que elementos quedan fuera del alcance de `v0.1-publicable`?
+5. Que elementos quedan fuera del alcance del caso educativo Spotybank?
 6. Que perfil de lectura se parece mas a tu trabajo actual y que entregable deberia producir?
-
+7. Que cinco preguntas debe responder una propuesta antes de considerarse tecnicamente defendible?

@@ -23,6 +23,7 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 
 - DONE: creado, revisado internamente y utilizable para `v0.1-publicable`.
 - DONE_EDITORIAL: desarrollado con voz editorial ampliada para el ciclo posterior a `v0.1-publicable`.
+- CERRADO_TECNICO: revisado capitulo por capitulo, reforzado tecnicamente y sin pendientes editoriales internos conocidos.
 - NEXT: bloque inmediato recomendado para cerrar `v0.2-editorial`.
 - LATER: mejora posterior, no bloqueante para `v0.1-publicable`.
 - OUT_OF_SCOPE_V01: requiere informacion externa o trabajo productivo real; no forma parte de esta version.
@@ -45,7 +46,7 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 
 | Capitulo | Estado | Archivo |
 |---|---|---|
-| 1 - Introduccion | DONE_EDITORIAL | `04_CUERPO_PRINCIPAL/CAP_01_Introduccion/CAP_01_BORRADOR.md` |
+| 1 - Introduccion | CERRADO_TECNICO | `04_CUERPO_PRINCIPAL/CAP_01_Introduccion/CAP_01_BORRADOR.md` |
 | 2 - Inventario tecnico inicial | DONE_EDITORIAL | `04_CUERPO_PRINCIPAL/CAP_02_Marco_Teorico/CAP_02_BORRADOR.md` |
 | 3 - Anonimizacion y rebranding seguro | DONE_EDITORIAL | `04_CUERPO_PRINCIPAL/CAP_03_Metodologia/CAP_03_BORRADOR.md` |
 | 4 - Documentacion viva de microservicios | DONE_EDITORIAL | `04_CUERPO_PRINCIPAL/CAP_04_Desarrollo/CAP_04_BORRADOR.md` |
@@ -115,13 +116,13 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-27 | Release notes draft `v0.2-editorial` | DONE | Preparado borrador de release notes con cambios, alcance, exclusiones y checklist previo a tag |
 | 2026-05-27 | Plan de exportacion PDF/HTML `v0.2-editorial` | DONE | Definido orden de archivos, comandos Pandoc y decision de formatos; herramientas no disponibles localmente |
 | 2026-05-27 | Dictamenes de revision externa por perfiles | NEXT | Recopilar observaciones por backend, arquitectura, seguridad, SRE, QA y docencia |
+| 2026-05-28 | Capitulo 1 - Introduccion | CERRADO_TECNICO | Cierre reforzado con dictamen, compuerta tecnica, higiene de IA, validacion de actividad y sin pendientes internos |
 
 ## Proximo bloque recomendado
 
-1. Recopilar dictamenes de revision externa por perfiles usando `09_REVISIONES/REVISION_EXTERNA_MINIMA_v0.2-editorial.md`.
-2. Resolver criterios obligatorios del checklist `10_PUBLICACION/CHECKLIST_SALIDA_v0.2-editorial.md`.
-3. Preparar release notes y tag `v0.2-editorial` cuando los obligatorios esten en `[ok]`.
-4. Instalar herramienta de exportacion y generar PDF/HTML si se desea release con artefactos.
+1. Cerrar tecnicamente el capitulo 2 antes de avanzar al capitulo 3.
+2. Continuar el cierre capitulo por capitulo hasta que los 12 esten en `CERRADO_TECNICO`.
+3. Recien despues ordenar publicacion, formato de venta, release notes finales y tag `v0.2-editorial`.
 
 ## Historial
 
@@ -153,3 +154,4 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-27 | Preparado paquete de revision externa minima para `v0.2-editorial` por perfiles. |
 | 2026-05-27 | Preparado borrador de release notes para `v0.2-editorial`. |
 | 2026-05-27 | Preparado plan de exportacion PDF/HTML para `v0.2-editorial`. |
+| 2026-05-28 | Cerrado tecnicamente el capitulo 1 y creado registro de cierre tecnico por capitulos. |
