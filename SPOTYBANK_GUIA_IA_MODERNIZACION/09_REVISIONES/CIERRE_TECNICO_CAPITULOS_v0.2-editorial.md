@@ -22,8 +22,8 @@ La regla de trabajo es simple: un capitulo solo pasa a `CERRADO_TECNICO` cuando 
 | 6 - Modernizacion de backend | CERRADO_TECNICO | Define oleadas backend, baseline, piloto, matrices Java/Spring, pruebas, observabilidad y rollback |
 | 7 - Seguridad y DevSecOps | CERRADO_TECNICO | Define amenaza, severidad, secretos, MFA, supply chain, pipeline, IA y backlog verificable |
 | 8 - Despliegue cloud native | CERRADO_TECNICO | Define escenarios, contrato runtime, unidad minima, probes, resources, HPA, GitOps, rollout y continuidad |
-| 9 - Performance, escalamiento y resiliencia | PENDIENTE_CIERRE | Siguiente capitulo a revisar |
-| 10 - IA como acelerador | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
+| 9 - Performance, escalamiento y resiliencia | CERRADO_TECNICO | Define SLIs/SLOs educativos, bottlenecks, HPA, DLQ, resiliencia, pruebas de carga y backlog medible |
+| 10 - IA como acelerador | PENDIENTE_CIERRE | Siguiente capitulo a revisar |
 | 11 - Spotybank como curso | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
 | 12 - Roadmap de evolucion | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
 
@@ -136,6 +136,20 @@ La regla de trabajo es simple: un capitulo solo pasa a `CERRADO_TECNICO` cuando 
 | Continuidad con backup, restore, RPO/RTO y runbook | OK |
 | No deja pendientes editoriales internos | OK |
 
+## Checklist de cierre aplicado al capitulo 9
+
+| Control | Resultado |
+|---|---|
+| SLIs/SLOs educativos con escenario y carga | OK |
+| Percentiles diferenciados de promedio | OK |
+| Bottlenecks por aplicacion, dependencia, plataforma, datos y codigo | OK |
+| HPA condicionado a requests, metricas y comportamiento entendido | OK |
+| DLQ operable con owner, alerta, clasificacion y reproceso | OK |
+| Pruebas de carga con hipotesis y criterios de salida | OK |
+| Pruebas de resiliencia con impacto, observabilidad y recuperacion | OK |
+| Backlog de performance medible | OK |
+| No deja pendientes editoriales internos | OK |
+
 ## Proximo paso
 
-Cerrar el capitulo 9 con el mismo criterio: performance, SLIs/SLOs educativos, escalamiento, resiliencia, colas, pruebas de carga, observabilidad y criterios de salida sin pendientes internos.
+Cerrar el capitulo 10 con el mismo criterio: IA como acelerador, prompts seguros, evidencia/inferencia, backlog, pruebas, seguridad, limites y antipatrones sin pendientes internos.

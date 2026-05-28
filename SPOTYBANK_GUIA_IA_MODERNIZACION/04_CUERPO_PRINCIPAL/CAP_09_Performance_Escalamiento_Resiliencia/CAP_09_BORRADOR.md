@@ -1,5 +1,9 @@
 # Capitulo 09 - Performance, Escalamiento y Resiliencia
 
+Estado de cierre tecnico-editorial: `CERRADO_TECNICO`.
+
+Dictamen del capitulo: apto como guia de performance, escalamiento y resiliencia educativa. El capitulo define SLIs/SLOs no productivos, percentiles, bottlenecks, pools, colas, HPA, pruebas de carga, resiliencia, observabilidad, capacity planning y backlog con criterios verificables.
+
 Performance no es una sensacion. No es decir que un servicio "va rapido" ni que "esta lento" porque alguien lo percibe asi. Performance es comportamiento medible bajo condiciones conocidas. En microservicios, esa medicion debe incluir el servicio, sus dependencias, sus colas, su base de datos, su runtime y la plataforma que lo ejecuta.
 
 Spotybank permite estudiar performance sin caer en promesas productivas. El objetivo no es inventar SLOs de un banco real. El objetivo es entrenar criterio: formular hipotesis, medir, encontrar limites, proponer mejoras y validar si funcionaron.
@@ -16,6 +20,7 @@ Al finalizar este capitulo, el lector podra:
 - Proponer estrategias de escalamiento horizontal y vertical con evidencia.
 - Disenar pruebas de carga y resiliencia sin usar datos reales.
 - Convertir hallazgos de performance en backlog medible.
+- Cerrar una hipotesis de performance con evidencia, decision y accion siguiente.
 
 ## 09.1 Performance como comportamiento observable
 
@@ -48,6 +53,19 @@ Para Spotybank, los SLOs no deben presentarse como compromisos productivos. Son 
 | MFA | Tiempo de generacion/validacion | 95% bajo 1 s sin proveedor externo real |
 
 Los numeros son ejemplos. La habilidad importante es justificar el objetivo, medirlo y revisarlo con evidencia.
+
+Cada SLO educativo debe declarar:
+
+| Campo | Criterio |
+|---|---|
+| Escenario | Laboratorio, staging educativo o produccion simulada |
+| Carga | Volumen, duracion y concurrencia |
+| SLI | Medicion principal |
+| Objetivo | Umbral esperado y razon |
+| Exclusiones | Lo que no se esta prometiendo |
+| Accion | Que ocurre si no se cumple |
+
+Sin escenario y carga, un SLO queda flotando. Con escenario y carga, se convierte en herramienta de aprendizaje.
 
 ## 09.3 Latencia, throughput y concurrencia
 
@@ -93,6 +111,16 @@ Muchos cuellos de botella aparecen en limites pequenos y poco visibles:
 - Payloads demasiado grandes.
 
 Una mejora responsable no empieza aumentando replicas. Primero identifica que recurso esta saturado y por que.
+
+Para diagnosticar un cuello de botella, el lector debe separar:
+
+| Plano | Evidencia |
+|---|---|
+| Aplicacion | Latencia por endpoint, errores, threads, heap, GC |
+| Dependencia | DB, broker, SOAP/REST externo, cache |
+| Plataforma | CPU, memoria, throttling, restarts, red |
+| Datos | Tamano de payload, indices, cardinalidad, volumen |
+| Codigo | Bloqueos, serializacion, retries, loops o locks |
 
 ## 09.6 Escalamiento horizontal
 
@@ -167,6 +195,17 @@ Cada flujo por cola deberia documentar:
 
 Una DLQ sin owner es solo un lugar donde los problemas se acumulan en silencio.
 
+Una DLQ operable queda definida con:
+
+| Campo | Criterio |
+|---|---|
+| Owner | Perfil responsable de revisar y decidir |
+| Alerta | Umbral por cantidad, edad o tasa de ingreso |
+| Clasificacion | Error funcional, tecnico, datos invalidos o dependencia |
+| Reproceso | Procedimiento seguro e idempotente |
+| Descarte | Criterio documentado para no reprocesar |
+| Evidencia | Log, payload saneado, correlation id o ticket |
+
 ## 09.10 Resiliencia y patrones
 
 Resiliencia es la capacidad de sostener comportamiento aceptable cuando algo falla. No significa que nada falle. Significa que el fallo fue previsto, limitado y observable.
@@ -211,6 +250,15 @@ Elementos minimos:
 
 La prueba debe ser repetible. Si no se puede repetir, no es evidencia fuerte.
 
+Una prueba de carga queda lista para ejecutarse cuando:
+
+- Usa datos sinteticos.
+- Declara version del servicio y ambiente.
+- Tiene warm-up y duracion.
+- Captura p50, p95, p99, tasa de error y recursos.
+- Incluye criterio de exito y criterio de abortar.
+- Deja resultados comparables para una repeticion posterior.
+
 ## 09.12 Pruebas de resiliencia
 
 Tambien hay que probar fallos. Un sistema parece estable hasta que una dependencia tarda, un broker corta conexion, una base responde lento o un proveedor externo devuelve errores.
@@ -225,6 +273,16 @@ Escenarios utiles:
 - Error intermitente en adapter.
 
 El objetivo no es provocar caos por espectaculo. Es comprobar que el sistema falla de forma controlada y observable.
+
+Cada prueba de resiliencia debe responder:
+
+| Pregunta | Criterio |
+|---|---|
+| Que falla? | Dependencia, broker, base, red, pod o adapter |
+| Como se limita el impacto? | Timeout, retry, circuit breaker, bulkhead o fallback |
+| Como se observa? | Metrica, log, trace, alerta o DLQ |
+| Como se recupera? | Reintento, replay, rollback o accion operativa |
+| Que no debe ocurrir? | Duplicacion, perdida silenciosa, fuga de datos o bloqueo indefinido |
 
 ## 09.13 Observabilidad para performance
 
@@ -299,6 +357,8 @@ Disenar una prueba de carga para `spotybank-auth` o `spotybank-accounts`.
 | Resiliencia | Considera timeout, retry o DLQ cuando aplica |
 | Accion | Termina en mejora verificable |
 
+El ejercicio queda cerrado si la prueba se puede ejecutar dos veces y comparar resultados sin cambiar la definicion del escenario.
+
 ## Resumen del capitulo
 
 - Performance debe medirse, no suponerse.
@@ -309,6 +369,21 @@ Disenar una prueba de carga para `spotybank-auth` o `spotybank-accounts`.
 - Resiliencia requiere timeouts, retries, idempotencia, DLQ y observabilidad.
 - Las pruebas de carga deben tener hipotesis, datos sinteticos y criterio de exito.
 
+## Cierre tecnico-editorial del capitulo
+
+| Control | Dictamen |
+|---|---|
+| SLIs/SLOs educativos | Cerrado: no se presentan como compromisos productivos y exigen escenario, carga, SLI, objetivo y accion |
+| Percentiles | Cerrado: p50, p95 y p99 se usan para evitar promedios engañosos |
+| Bottlenecks | Cerrado: aplicacion, dependencia, plataforma, datos y codigo quedan diferenciados |
+| Escalamiento | Cerrado: HPA requiere requests, metricas, probes y comprension del cuello |
+| Mensajeria | Cerrado: DLQ exige owner, alerta, clasificacion, reproceso y evidencia |
+| Resiliencia | Cerrado: fallos se prueban con impacto, observabilidad, recuperacion y limites |
+| Pruebas de carga | Cerrado: hipotesis, datos sinteticos, duracion, metricas y criterios de salida |
+| Backlog | Cerrado: hallazgos terminan en tareas medibles y verificables |
+
+Pendientes editoriales internos del capitulo: ninguno.
+
 ## Preguntas de revision
 
 1. Que diferencia hay entre latencia y throughput?
@@ -316,6 +391,7 @@ Disenar una prueba de carga para `spotybank-auth` o `spotybank-accounts`.
 3. Que riesgo tiene un retry sobre una operacion no idempotente?
 4. Que informacion minima debe tener una DLQ operable?
 5. Como justificarias un SLO educativo para `spotybank-accounts`?
+6. Que diferencia hay entre criterio de exito y criterio de abortar en una prueba de carga?
 
 ## Referencias del capitulo
 

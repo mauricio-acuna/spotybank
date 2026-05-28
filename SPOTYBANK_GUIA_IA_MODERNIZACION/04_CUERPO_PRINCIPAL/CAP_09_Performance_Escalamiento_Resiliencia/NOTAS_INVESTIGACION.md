@@ -33,8 +33,10 @@ La obra debe insistir en que escalar puede mover el problema a otra dependencia.
 - Conectar performance con mensajeria, DLQ, idempotencia y resiliencia.
 - Exigir hipotesis y criterio de exito en pruebas de carga.
 - Mantener datos sinteticos como regla en laboratorios.
+- Cerrar el capitulo con criterios verificables para SLO educativo, bottlenecks, DLQ, pruebas de carga, resiliencia y backlog medible.
+- Registrar que no quedan pendientes editoriales internos para el capitulo 9 en el ciclo `v0.2-editorial`.
 
-## Decisiones pendientes para versiones futuras
+## Mejoras futuras no bloqueantes
 
 - Crear plantilla de prueba de carga.
 - Agregar ejemplo resuelto con k6, JMeter o Gatling.
