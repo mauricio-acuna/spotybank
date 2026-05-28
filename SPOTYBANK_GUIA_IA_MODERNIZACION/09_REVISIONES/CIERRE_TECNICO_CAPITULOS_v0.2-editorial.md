@@ -15,8 +15,8 @@ La regla de trabajo es simple: un capitulo solo pasa a `CERRADO_TECNICO` cuando 
 | Capitulo | Estado | Dictamen |
 |---|---|---|
 | 1 - Introduccion | CERRADO_TECNICO | Define pacto de lectura, limites del caso, uso de IA, compuerta tecnica y actividad inicial validable |
-| 2 - Inventario tecnico inicial | PENDIENTE_CIERRE | Siguiente capitulo a revisar |
-| 3 - Anonimizacion y rebranding seguro | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
+| 2 - Inventario tecnico inicial | CERRADO_TECNICO | Define baseline reproducible, clasificacion de artefactos, matriz de riesgo, dependencias y uso controlado de IA |
+| 3 - Anonimizacion y rebranding seguro | PENDIENTE_CIERRE | Siguiente capitulo a revisar |
 | 4 - Documentacion viva de microservicios | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
 | 5 - Dominios bancarios y fronteras | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
 | 6 - Modernizacion de backend | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
@@ -39,6 +39,19 @@ La regla de trabajo es simple: un capitulo solo pasa a `CERRADO_TECNICO` cuando 
 | Mantiene continuidad con capitulos siguientes | OK |
 | No deja pendientes editoriales internos | OK |
 
+## Checklist de cierre aplicado al capitulo 2
+
+| Control | Resultado |
+|---|---|
+| Baseline reproducible definido | OK |
+| Conteos tratados como fotografia estatica, no certificacion productiva | OK |
+| Clasificacion de artefactos con senales minimas | OK |
+| Riesgos de configuracion tratados sin valores sensibles | OK |
+| Dependencias separadas por tipo | OK |
+| Uso de IA limitado por evidencia, confianza e incertidumbre | OK |
+| Actividad practica con controles minimos de cierre | OK |
+| No deja pendientes editoriales internos | OK |
+
 ## Proximo paso
 
-Cerrar el capitulo 2 con el mismo criterio: inventario verificable, limites de evidencia, clasificacion tecnica, riesgos de configuracion, uso controlado de IA y ejercicio sin pendientes internos.
+Cerrar el capitulo 3 con el mismo criterio: saneamiento verificable, rebranding seguro, placeholders, limites de publicacion, escaneo y ejercicio sin pendientes internos.

@@ -1,5 +1,9 @@
 # Capitulo 02 - Inventario Tecnico Inicial
 
+Estado de cierre tecnico-editorial: `CERRADO_TECNICO`.
+
+Dictamen del capitulo: apto como baseline tecnico inicial de la obra. El capitulo define que se puede afirmar desde evidencia estatica, como clasificar artefactos, donde aparecen riesgos de configuracion y que decisiones requieren validacion externa antes de convertirse en roadmap.
+
 Modernizar sin inventariar es caminar sobre un puente de noche: tal vez se llegue al otro lado, pero cada paso depende mas de la suerte que de la ingenieria. En un ecosistema de microservicios, el inventario no es una planilla burocratica. Es el primer mecanismo de control tecnico. Permite saber que existe, que se puede tocar, que no se entiende todavia y que no debe publicarse sin saneamiento.
 
 Spotybank empieza aqui porque toda decision posterior depende de esta lectura inicial. Antes de hablar de nube, seguridad, performance o IA, hay que responder una pregunta menos vistosa y mas decisiva: cual es el mapa real del sistema?
@@ -16,6 +20,7 @@ Al finalizar este capitulo, el lector podra:
 - Distinguir dependencia de compilacion, dependencia runtime y dependencia funcional.
 - Usar IA para acelerar lectura y clasificacion sin perder control sobre la evidencia.
 - Entender por que el inventario es una herramienta de gobierno tecnico, no un tramite documental.
+- Definir un baseline reproducible que pueda revisarse antes de cualquier modernizacion posterior.
 
 ## 02.1 Por que empezar por inventario
 
@@ -35,6 +40,17 @@ Un buen inventario inicial responde cinco preguntas:
 
 La quinta pregunta es tan importante como las cuatro primeras. Un inventario honesto no finge saberlo todo. Marca la frontera entre lo observado y lo pendiente.
 
+Para que el inventario sea util, debe ser reproducible. No alcanza con que una persona diga "revise el repositorio". Otro lector debe poder entender que fuentes se inspeccionaron, que patrones se buscaron, que conteos se obtuvieron y que se decidio no afirmar. En Spotybank, ese baseline inicial cumple cuatro funciones:
+
+| Funcion del baseline | Pregunta que responde | Riesgo que reduce |
+|---|---|---|
+| Alcance | Que entra y que queda fuera del analisis? | Cambios sobre componentes no identificados |
+| Clasificacion | Que rol cumple cada artefacto? | Confundir librerias, mocks o parents con servicios |
+| Priorizacion | Donde hay mayor riesgo visible? | Modernizar por moda o intuicion |
+| Trazabilidad | Que evidencia sostiene cada conclusion? | Convertir inferencias en hechos |
+
+Sin baseline, la modernizacion se vuelve una conversacion de opiniones. Con baseline, todavia puede haber desacuerdo, pero el desacuerdo se ancla en evidencia.
+
 ## 02.2 Evidencia disponible en Spotybank
 
 La evidencia usada para este capitulo proviene de inspeccion estatica del workspace local. Eso significa que se analizaron archivos, nombres de artefactos, configuraciones, manifiestos, dependencias y patrones de codigo. No se usaron ambientes productivos, trazas reales, credenciales ni datos de clientes.
@@ -51,6 +67,8 @@ La fotografia inicial muestra un ecosistema amplio:
 | YAML/OpenShift/Kubernetes | 336 | Despliegue declarativo con objetos de plataforma y configuracion externa. |
 
 Estos numeros no son un trofeo. Son un aviso. Un sistema con decenas de POMs, cientos de manifiestos y miles de archivos Java no se moderniza con una decision global. Se moderniza por oleadas, con priorizacion, pruebas y criterios claros.
+
+Tambien son una fotografia estatica. Los conteos sirven para dimensionar el caso y orientar la revision, pero no certifican uso productivo, criticidad real ni vigencia de cada componente. Un archivo puede existir y no desplegarse. Un manifiesto puede estar versionado y no usarse. Una prueba puede compilar y no cubrir el riesgo que importa. El inventario debe conservar esa cautela.
 
 La evidencia tambien muestra que Spotybank combina varios estilos tecnologicos:
 
@@ -87,6 +105,8 @@ Una clasificacion inicial puede usar estas categorias:
 La presencia de padres Maven como `spotybank-parent-springboot`, `spotybank-parent-fuse` y `spotybank-parent-commons` sugiere una organizacion historica por familias tecnologicas. Eso puede ser util para centralizar dependencias. Tambien puede dificultar una modernizacion si las versiones quedan amarradas a demasiados modulos a la vez.
 
 En una obra educativa, esta tension es perfecta: permite discutir el equilibrio entre estandarizacion y autonomia. Un parent Maven da orden; un parent Maven mal gobernado puede convertir cada upgrade en una negociacion con medio sistema.
+
+Para evitar clasificaciones fragiles, Spotybank usa una regla conservadora: un artefacto solo debe tratarse como servicio desplegable cuando exista mas de una senal compatible, por ejemplo clase de arranque, endpoint o worker, configuracion runtime, Dockerfile y manifiesto. Una sola senal puede iniciar una hipotesis; no deberia cerrar la clasificacion.
 
 ## 02.4 Stack tecnologico detectado
 
@@ -154,6 +174,19 @@ La configuracion tambien permite detectar deuda operacional. Si un manifiesto no
 
 El inventario no resuelve esos problemas, pero los vuelve visibles. Esa visibilidad ya es una forma de progreso.
 
+La revision de configuracion debe producir, como minimo, una matriz de riesgo:
+
+| Riesgo visible | Severidad inicial | Evidencia minima | Accion segura |
+|---|---|---|---|
+| Secreto o credencial en texto plano | Alta | Propiedad, variable o manifiesto saneado | Retirar del material publicable y reemplazar por placeholder |
+| Endpoint privado no saneado | Alta | URL, host, namespace o dominio interno | Generalizar como dependencia externa |
+| Sin probes de readiness/liveness | Media | Manifiesto sin probes | Registrar deuda cloud native para capitulo 8 |
+| `resources: {}` o limites ausentes | Media | YAML de despliegue | Registrar deuda de capacity planning para capitulo 9 |
+| Version legacy de framework | Media | POM, parent o dependencia | Llevar a matriz de compatibilidad del capitulo 6 |
+| Prueba existente sin criterio claro | Baja/media | Suite o reporte historico | Evaluar si protege flujo relevante |
+
+Esta matriz no debe copiar valores sensibles. Debe documentar el tipo de riesgo, su evidencia saneada y la accion siguiente.
+
 ## 02.6 Dependencias entre servicios
 
 Una dependencia no siempre significa lo mismo. Esta distincion evita diagnosticos superficiales.
@@ -171,6 +204,8 @@ Un inventario limitado al build puede dar una vision falsa. Dos servicios pueden
 Por eso Spotybank propone mirar dependencias desde varios planos. La matriz de relaciones no debe responder solo "quien importa a quien", sino "que tipo de consecuencia tiene ese vinculo".
 
 Esta mirada es especialmente importante para modernizar por oleadas. Si se actualiza primero una libreria comun usada por muchos servicios, el radio de impacto puede ser grande. Si se moderniza un adapter con buen contrato, el impacto puede ser menor y mas controlable. Si se toca autenticacion sin pruebas suficientes, el impacto puede alcanzar a todo el ecosistema.
+
+La salida esperada de esta seccion no es un diagrama perfecto. Es una lista de dependencias con tipo, evidencia y riesgo. Un mapa incompleto pero honesto permite avanzar mejor que un diagrama elegante que mezcla build, runtime, negocio y plataforma sin distinguirlos.
 
 ## 02.7 Evidencia local contra validacion externa
 
@@ -225,6 +260,19 @@ No asumas runtime productivo si no hay evidencia.
 
 La IA, en este contexto, es una lupa y una mesa de orden. No es el owner del sistema.
 
+Una salida de IA aceptable para inventario debe tener esta forma minima:
+
+| Bloque | Contenido requerido |
+|---|---|
+| Evidencia citada | Archivos, patrones o fragmentos saneados que sostienen la clasificacion |
+| Clasificacion propuesta | Servicio, worker, adapter, libreria, parent, mock o soporte |
+| Nivel de confianza | Alto, medio o bajo, segun cantidad y calidad de senales |
+| Incertidumbres | Lo que no puede confirmar con evidencia estatica |
+| Pregunta para owner | Una pregunta concreta que desbloquee la decision |
+| Riesgo inicial | Riesgo tecnico, seguridad, operacion, pruebas o datos |
+
+Si una respuesta de IA no declara incertidumbre, debe revisarse con mas cuidado, no con menos.
+
 ## 02.9 Ejercicio practico
 
 Elegir tres componentes de categorias distintas:
@@ -249,6 +297,15 @@ Para cada componente, completar:
 
 El ejercicio es correcto si el lector no mezcla evidencia con interpretacion. Una responsabilidad puede estar bien inferida y aun asi seguir pendiente de confirmacion. Esa prudencia es una competencia profesional, no una debilidad.
 
+Para cerrar el ejercicio, cada componente debe incluir:
+
+- Al menos dos senales de evidencia local.
+- Una clasificacion con nivel de confianza.
+- Una dependencia visible separada por tipo: build, runtime, funcional, operacional u organizacional.
+- Un riesgo inicial con severidad.
+- Una pregunta concreta para owner o revisor.
+- Una accion siguiente que pueda verificarse.
+
 ## Resumen del capitulo
 
 Modernizar empieza por inventariar. En Spotybank, la evidencia inicial muestra un ecosistema amplio: 63 POMs, 2604 archivos Java, 132 properties, 47 Dockerfiles, 47 Docker Compose y 336 YAML/OpenShift/Kubernetes. Esa escala exige orden antes de cualquier cambio.
@@ -256,6 +313,20 @@ Modernizar empieza por inventariar. En Spotybank, la evidencia inicial muestra u
 El inventario permite distinguir servicios, workers, adapters, librerias, parents Maven, mocks y manifiestos. Tambien permite reconocer un stack mixto: Spring Boot, Camel/Fuse, SOAP/CXF, JMS, persistencia mixta, pruebas funcionales, Docker y OpenShift.
 
 La clave no es listar por listar. La clave es convertir la evidencia en decisiones prudentes. Lo observado se documenta. Lo inferido se marca. Lo pendiente se valida. Lo recomendado se acompana con un criterio de exito.
+
+## Cierre tecnico-editorial del capitulo
+
+| Control | Dictamen |
+|---|---|
+| Baseline reproducible | Cerrado: el capitulo define fuentes, conteos, alcance y cautela sobre evidencia estatica |
+| Clasificacion de artefactos | Cerrado: servicios, workers, adapters, librerias, parents, mocks y manifiestos quedan diferenciados |
+| Riesgos de configuracion | Cerrado: se incorpora matriz de riesgo sin copiar valores sensibles |
+| Dependencias | Cerrado: build, runtime, funcional, operacional y organizacional quedan separadas |
+| Uso de IA | Cerrado: se exige evidencia, confianza, incertidumbre, pregunta para owner y riesgo inicial |
+| Actividad practica | Cerrada: incluye entregable, criterio de exito y controles minimos de cierre |
+| Promesas productivas | Controlado: los conteos no se presentan como certificacion productiva |
+
+Pendientes editoriales internos del capitulo: ninguno.
 
 ## Preguntas de revision
 
@@ -265,6 +336,7 @@ La clave no es listar por listar. La clave es convertir la evidencia en decision
 4. Que informacion no puede confirmarse sin owners o ambientes?
 5. Por que estar containerizado no equivale a estar preparado para operar cloud native?
 6. Como puede ayudar la IA en inventario sin reemplazar la validacion tecnica?
+7. Que controles minimos debe cumplir un baseline antes de iniciar una modernizacion?
 
 ## Referencias del capitulo
 

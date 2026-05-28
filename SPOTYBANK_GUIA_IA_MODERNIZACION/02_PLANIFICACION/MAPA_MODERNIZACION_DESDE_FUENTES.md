@@ -83,7 +83,7 @@ Opcion recomendada para la obra: explicar Hystrix como deuda historica y Resilie
 | Versionar contratos | Multiples microservicios consumidores | Cambios compatibles y gobernados. |
 | Agregar pruebas de compatibilidad | APIs y mensajes | Evitar regresiones en integraciones. |
 
-La obra puede usar esta oleada para enseñar que documentar APIs no es decorar endpoints: es definir contratos operables.
+La obra puede usar esta oleada para ensenar que documentar APIs no es decorar endpoints: es definir contratos operables.
 
 ## Oleada 7: despliegue cloud native
 
@@ -134,6 +134,4 @@ La obra debe evitar prometer mejoras de performance sin medicion. Lo correcto es
 - Camino Spring Boot 3.x o 4.x segun compatibilidad Jakarta y librerias.
 - Plataforma final: Kubernetes generico, OpenShift, nube publica, nube privada o hibrida.
 - Estrategia de secretos: Kubernetes Secrets endurecidos, vault externo o servicio gestionado.
-- Licencia final de la obra.
 - Release/tag publico de version estable.
-

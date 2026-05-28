@@ -30,3 +30,4 @@
 | 2026-05-27 | v0.2-editorial | Publicacion | Preparado borrador de release notes con alcance, cambios principales, exclusiones y checklist previo a tag. |
 | 2026-05-27 | v0.2-editorial | Formatos | Preparado plan de exportacion PDF/HTML con orden de archivos, comandos y criterio de versionado de artefactos. |
 | 2026-05-28 | v0.2-cierre-tecnico | Cuerpo principal | Cerrado tecnicamente el capitulo 1 con dictamen, compuerta de validacion, higiene de IA y registro de cierre por capitulos. |
+| 2026-05-28 | v0.2-cierre-tecnico | Cuerpo principal | Cerrado tecnicamente el capitulo 2 con baseline reproducible, matriz de riesgo, clasificacion de artefactos y controles de IA. |

@@ -35,3 +35,5 @@ El capitulo 2 debe convencer al lector de que inventariar no es una tarea admini
 - Usar los conteos observados como fotografia estatica, no como certificacion productiva.
 - Organizar el capitulo por evidencia, clasificacion, stack, configuracion, dependencias y validacion externa.
 - Mantener una actividad practica centrada en clasificar componentes y formular preguntas para owners.
+- Cerrar el capitulo con baseline reproducible, matriz de riesgo, salida minima esperada de IA y controles de ejercicio.
+- Registrar que no quedan pendientes editoriales internos para el capitulo 2 en el ciclo `v0.2-editorial`.
