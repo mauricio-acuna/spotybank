@@ -15,7 +15,9 @@ Mauricio Acuña, Ingeniero en Informatica
 
 Edicion independiente para uso educativo, academico y empresarial
 
-Version preliminar publicable
+Version base publicada: `v0.1-publicable`
+
+Ciclo actual: `v0.2-editorial` en preparacion, con cierre tecnico completado
 
 2026
 

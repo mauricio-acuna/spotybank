@@ -33,6 +33,8 @@
 - [ok] Matriz de revision por perfil.
 - [ok] Acta de cierre tecnica/editorial.
 - [ok] Registro de cambios.
+- [ok] Cierre tecnico capitulo por capitulo para `v0.2-editorial`.
+- [ok] Validacion integral de cierre tecnico global.
 
 ## FASE 5 - Revision externa
 
@@ -41,6 +43,7 @@
 - [later] Segunda ronda si se prepara `v0.2`.
 
 La revision externa queda recomendada para `v0.2`; no bloquea la version preliminar `v0.1-publicable`.
+Para crear tag `v0.2-editorial`, la decision sobre revision externa debe quedar registrada en el checklist de salida.
 
 ## FASE 6 - Maquetacion
 
@@ -59,6 +62,7 @@ La revision externa queda recomendada para `v0.2`; no bloquea la version prelimi
 - [ok] Checklist de tag/release preparado.
 - [ok] Ejecutar script de publicacion segura.
 - [ok] Crear tag `v0.1-publicable`.
+- [later] Crear tag `v0.2-editorial` solo despues del checklist final.
 - [later] Publicar release con PDF/HTML si se exportan artefactos.
 - [later] Ejecutar acciones ampliadas de difusion.
 
@@ -75,5 +79,7 @@ La revision externa queda recomendada para `v0.2`; no bloquea la version prelimi
 | Acta de cierre v0.1 | 2026-05-12 | 2026-05-12 | DONE |
 | Tag `v0.1-publicable` | posterior al commit | 2026-05-27 | DONE |
 | Desarrollo editorial ampliado capitulos 1 a 12 | v0.2 | 2026-05-27 | DONE |
+| Cierre tecnico capitulos 1 a 12 | v0.2 | 2026-05-28 | DONE |
+| Validacion integral de cierre tecnico | v0.2 | 2026-05-28 | DONE |
 | Peer review externo | v0.2 | | LATER |
 | Maqueta PDF/HTML | v0.2 | | LATER |

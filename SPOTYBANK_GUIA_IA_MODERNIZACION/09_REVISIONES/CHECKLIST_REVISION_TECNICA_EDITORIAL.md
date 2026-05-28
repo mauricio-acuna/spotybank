@@ -1,6 +1,6 @@
 # Checklist de revision tecnica y editorial
 
-Este checklist prepara la obra Spotybank para una version publicable.
+Este checklist registra controles tecnicos y editoriales internos. Para `v0.2-editorial`, el estado actual se complementa con `CIERRE_TECNICO_CAPITULOS_v0.2-editorial.md` y `VALIDACION_INTEGRAL_CIERRE_TECNICO_v0.2-editorial.md`.
 
 ## Revision de identidad
 
@@ -13,7 +13,8 @@ Este checklist prepara la obra Spotybank para una version publicable.
 
 ## Revision tecnica
 
-- [ok] Cada capitulo diferencia evidencia, inferencia y decision pendiente.
+- [ok] Cada capitulo diferencia evidencia, inferencia, decision pendiente metodologica y validacion externa.
+- [ok] Cada capitulo del cuerpo principal esta marcado como `CERRADO_TECNICO`.
 - [ok] Las recomendaciones tienen criterio de validacion.
 - [ok] Los capitulos no prometen SLAs reales.
 - [ok] `spotybank-core-ledger` se presenta como pieza de diseno educativo, no como modulo productivo ya cerrado.
@@ -46,16 +47,16 @@ Este checklist prepara la obra Spotybank para una version publicable.
 - [ok] Version o tag definido.
 - [ok] Repo remoto actualizado.
 - [ok] Escaneo de referencias sensibles ejecutado.
-- [ok] Formato final definido: Markdown, PDF, HTML o fasciculos.
-- [ok] Se decidio si se publica libro unico, fasciculos o ambos.
+- [ok] Formato fuente definido: Markdown versionado.
+- [later] PDF, HTML, fasciculos exportados y formato de venta quedan para la etapa de salida.
 
 ## Criterio de salida
 
 La obra puede considerarse apta para salida tecnica/editorial cuando:
 
-- El cuerpo principal esta completo.
+- El cuerpo principal esta completo y en `CERRADO_TECNICO`.
 - Los apendices docentes estan completos.
 - La licencia esta definida.
 - El escaneo de seguridad no encuentra coincidencias.
-- Al menos una persona revisa desde perfil tecnico.
-- Al menos una persona revisa desde perfil docente/editorial.
+- Existe cierre interno tecnico/editorial documentado.
+- La revision externa queda como criterio de salida si se decide crear tag `v0.2-editorial`.

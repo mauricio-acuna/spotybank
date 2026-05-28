@@ -11,8 +11,9 @@
 | Publico objetivo | Estudiantes avanzados, docentes, arquitectos, desarrolladores, QA, DevOps/SRE, seguridad y lideres tecnicos |
 | Idioma principal | Espanol |
 | Extension estimada | Libro base: 180-260 paginas. Fasciculos: 25-45 paginas cada uno |
-| Version actual | v0.1-publicable |
-| Estado | CIERRE EDITORIAL Y TECNICO COMPLETADO PARA VERSION PRELIMINAR PUBLICABLE |
+| Ultimo tag publicado | v0.1-publicable |
+| Version en preparacion | v0.2-editorial |
+| Estado | CAPITULOS 1 A 12 EN CERRADO_TECNICO; VALIDACION INTEGRAL DE CIERRE COMPLETADA |
 | Licencia textual | CC BY-NC-SA 4.0 |
 | Licencia de ejemplos de codigo propios | Apache License 2.0 |
 
@@ -27,6 +28,6 @@ Esta obra usa Spotybank como caso de estudio para explicar como diagnosticar, an
 ## Criterio editorial
 
 - Mantener lenguaje tecnico claro, orientado a aprendizaje y toma de decisiones.
-- Separar evidencia local, inferencias y decisiones pendientes.
+- Separar evidencia local, inferencias, validaciones externas y decisiones pendientes metodologicas.
 - No incluir secretos, nombres de entidades reales, dominios corporativos ni autores previos.
 - Convertir cada capitulo en una unidad aplicable: diagnostico, criterio, ejemplo Spotybank y ejercicios.

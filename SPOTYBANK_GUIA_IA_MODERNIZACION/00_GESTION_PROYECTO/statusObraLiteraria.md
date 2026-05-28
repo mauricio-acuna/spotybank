@@ -6,8 +6,8 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 
 ## Resumen de cierre
 
-- Avance global estimado: 100% para `v0.1-publicable` preliminar.
-- Estado editorial: CIERRE TECNICO Y EDITORIAL COMPLETADO.
+- Avance global estimado: 100% para `v0.1-publicable` y 100% de cierre tecnico de capitulos para preparacion `v0.2-editorial`.
+- Estado editorial: CAPITULOS 1 A 12 EN CERRADO_TECNICO; VALIDACION INTEGRAL DE CIERRE COMPLETADA.
 - Autor: Mauricio Acuña, Ingeniero en Informatica.
 - Version base publicada: `v0.1-publicable`.
 - Version objetivo del ciclo actual: `v0.2-editorial`.
@@ -16,8 +16,8 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 - Licencia de ejemplos de codigo propios: Apache License 2.0.
 - Repo Git independiente de la obra: `Documentacion/ObraLiteraria`.
 - Repo remoto registrado: `https://github.com/mauricio-acuna/spotybank.git`.
-- Estado Git verificado: `main` sincronizada con `origin/main` para cierre `v0.1-publicable` al 2026-05-27.
-- Ciclo actual: capitulos 1 a 12 cerrados tecnicamente y preparacion posterior de consistencia global para `v0.2`.
+- Estado Git verificado: `main` sincronizada con `origin/main` para cierre tecnico global al 2026-05-28.
+- Ciclo actual: cierre tecnico global completado; siguiente bloque es ordenar salida `v0.2-editorial` sin crear tag ni release antes del checklist final.
 
 ## Estados usados
 
@@ -128,12 +128,13 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-28 | Capitulo 10 - IA como acelerador | CERRADO_TECNICO | Cierre reforzado con prompts seguros, definicion de done IA, backlog, refactor asistido, privacidad y antipatrones |
 | 2026-05-28 | Capitulo 11 - Spotybank como curso | CERRADO_TECNICO | Cierre reforzado con producto educativo, resultados observables, rutas, fasciculos, laboratorios, rubricas, revision por pares y proyecto final |
 | 2026-05-28 | Capitulo 12 - Roadmap de evolucion | CERRADO_TECNICO | Cierre reforzado con versiones, fases, ledger educativo, eventos, roadmap 90 dias, criterios v0.2 y limites de release/formato |
+| 2026-05-28 | Validacion integral de cierre tecnico | CERRADO_TECNICO | README, ficha, leeme primero, indice, checklist de salida y release notes draft alineados con los 12 capitulos cerrados |
 
 ## Proximo bloque recomendado
 
-1. Verificar consistencia global de los 12 capitulos en `CERRADO_TECNICO`.
-2. Ordenar despues publicacion, formato de venta, release notes finales y tag `v0.2-editorial` si corresponde.
-3. No crear tag ni release hasta cerrar la validacion integral y el checklist de salida.
+1. Ordenar checklist de salida `v0.2-editorial`.
+2. Decidir formato de entrega: Markdown, PDF, HTML o paquete mixto.
+3. No crear tag ni release hasta cerrar checklist final, escaneo seguro y decision de revision externa.
 
 ## Historial
 
@@ -177,3 +178,4 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-28 | Cerrado tecnicamente el capitulo 10 con criterios verificables de uso responsable de IA. |
 | 2026-05-28 | Cerrado tecnicamente el capitulo 11 con criterios verificables de diseno docente, rutas, fasciculos, laboratorios y evaluacion. |
 | 2026-05-28 | Cerrado tecnicamente el capitulo 12 con criterios verificables de roadmap, fases, ledger educativo, v0.2 y limites de publicacion. |
+| 2026-05-28 | Completada validacion integral de cierre tecnico global posterior a los 12 capitulos. |

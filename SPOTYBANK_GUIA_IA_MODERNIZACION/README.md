@@ -7,8 +7,8 @@ Este directorio contiene la base editorial de una obra tecnica y educativa basad
 - Titulo: `Spotybank: guia IA de modernizacion de microservicios bancarios`.
 - Subtitulo: `De sistema legacy anonimizado a laboratorio educativo de arquitectura, nube, seguridad y performance`.
 - Autor: Mauricio Acuña, Ingeniero en Informatica.
-- Version: `v0.1-publicable`.
-- Estado: version preliminar publicable.
+- Ultimo tag publicado: `v0.1-publicable`.
+- Estado actual en `main`: capitulos 1 a 12 en `CERRADO_TECNICO`, con validacion integral documentada para `v0.2-editorial`.
 - Licencia textual: CC BY-NC-SA 4.0.
 - Ejemplos de codigo propios: Apache License 2.0.
 - Archivo de licencia: `../LICENSE.md`.
@@ -59,14 +59,16 @@ SPOTYBANK_GUIA_IA_MODERNIZACION/
 ## Punto de partida
 
 1. Abrir `00_GESTION_PROYECTO/statusObraLiteraria.md`.
-2. Revisar `00_GESTION_PROYECTO/FICHA_PROYECTO.md`.
-3. Revisar `02_PLANIFICACION/INDICE_PROVISIONAL.md`.
-4. Usar `02_PLANIFICACION/PLAN_FASCICULOS_PERFILES.md` para decidir si se publica como libro unico o por entregas.
-5. Revisar la evidencia directa de fuentes:
+2. Revisar `09_REVISIONES/CIERRE_TECNICO_CAPITULOS_v0.2-editorial.md`.
+3. Revisar `09_REVISIONES/VALIDACION_INTEGRAL_CIERRE_TECNICO_v0.2-editorial.md`.
+4. Revisar `00_GESTION_PROYECTO/FICHA_PROYECTO.md`.
+5. Revisar `02_PLANIFICACION/INDICE_PROVISIONAL.md`.
+6. Usar `02_PLANIFICACION/PLAN_FASCICULOS_PERFILES.md` para decidir si se publica como libro unico o por entregas.
+7. Revisar la evidencia directa de fuentes:
    - `01_INVESTIGACION/notas_campo/EVIDENCIA_FUENTES_MICROSERVICIOS_2026-05-11.md`
    - `01_INVESTIGACION/referencias_bibliograficas/REFERENCIAS_MODERNIZACION_2026.md`
    - `02_PLANIFICACION/MAPA_MODERNIZACION_DESDE_FUENTES.md`
-6. Leer los borradores iniciales:
+8. Leer los capitulos cerrados tecnicamente:
    - `04_CUERPO_PRINCIPAL/CAP_01_Introduccion/CAP_01_BORRADOR.md`
    - `04_CUERPO_PRINCIPAL/CAP_02_Marco_Teorico/CAP_02_BORRADOR.md`
    - `04_CUERPO_PRINCIPAL/CAP_03_Metodologia/CAP_03_BORRADOR.md`
@@ -93,6 +95,8 @@ SPOTYBANK_GUIA_IA_MODERNIZACION/
 ## Preparacion de publicacion
 
 - `09_REVISIONES/CHECKLIST_REVISION_TECNICA_EDITORIAL.md`
+- `09_REVISIONES/CIERRE_TECNICO_CAPITULOS_v0.2-editorial.md`
+- `09_REVISIONES/VALIDACION_INTEGRAL_CIERRE_TECNICO_v0.2-editorial.md`
 - `09_REVISIONES/REVISION_INTERNA_IA_2026-05-11.md`
 - `09_REVISIONES/MATRIZ_REVISION_POR_PERFIL.md`
 - `10_PUBLICACION/PROPUESTA_LICENCIA_Y_USO.md`

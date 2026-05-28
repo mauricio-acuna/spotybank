@@ -6,7 +6,8 @@ Indice del material editorial de Spotybank.
 
 - Titulo: `Spotybank: guia IA de modernizacion de microservicios bancarios`.
 - Autor: Mauricio Acuña, Ingeniero en Informatica.
-- Version actual: `v0.1-publicable`.
+- Ultimo tag publicado: `v0.1-publicable`.
+- Estado actual en `main`: cierre tecnico-editorial de capitulos 1 a 12 completado para preparacion de `v0.2-editorial`.
 - Licencia textual: CC BY-NC-SA 4.0.
 - Ejemplos de codigo propios: Apache License 2.0.
 - Archivo de licencia: [LICENSE.md](LICENSE.md)
@@ -15,6 +16,8 @@ Indice del material editorial de Spotybank.
 
 - [Spotybank - Guia IA de Modernizacion de Microservicios](SPOTYBANK_GUIA_IA_MODERNIZACION/README.md)
 - [Status de obra literaria](SPOTYBANK_GUIA_IA_MODERNIZACION/00_GESTION_PROYECTO/statusObraLiteraria.md)
+- [Cierre tecnico de capitulos v0.2-editorial](SPOTYBANK_GUIA_IA_MODERNIZACION/09_REVISIONES/CIERRE_TECNICO_CAPITULOS_v0.2-editorial.md)
+- [Validacion integral de cierre tecnico](SPOTYBANK_GUIA_IA_MODERNIZACION/09_REVISIONES/VALIDACION_INTEGRAL_CIERRE_TECNICO_v0.2-editorial.md)
 - [Acta de cierre tecnico/editorial](SPOTYBANK_GUIA_IA_MODERNIZACION/09_REVISIONES/ACTA_CIERRE_REVISION_TECNICA_EDITORIAL_2026-05-12.md)
 - [Instrucciones de descarga y aportes](INSTRUCCIONES_DESCARGA_Y_APORTES.md)
 - [Evidencia desde fuentes de microservicios](SPOTYBANK_GUIA_IA_MODERNIZACION/01_INVESTIGACION/notas_campo/EVIDENCIA_FUENTES_MICROSERVICIOS_2026-05-11.md)
@@ -67,3 +70,5 @@ La agenda sugerida publica 3 veces al dia: 09:00, 14:00 y 19:00 hora local de la
 22. `SPOTYBANK_GUIA_IA_MODERNIZACION/09_REVISIONES/CHECKLIST_REVISION_TECNICA_EDITORIAL.md`
 23. `SPOTYBANK_GUIA_IA_MODERNIZACION/09_REVISIONES/MATRIZ_REVISION_POR_PERFIL.md`
 24. `SPOTYBANK_GUIA_IA_MODERNIZACION/10_PUBLICACION/RELEASE_NOTES_v0.1-publicable_DRAFT.md`
+25. `SPOTYBANK_GUIA_IA_MODERNIZACION/09_REVISIONES/CIERRE_TECNICO_CAPITULOS_v0.2-editorial.md`
+26. `SPOTYBANK_GUIA_IA_MODERNIZACION/09_REVISIONES/VALIDACION_INTEGRAL_CIERRE_TECNICO_v0.2-editorial.md`

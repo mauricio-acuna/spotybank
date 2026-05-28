@@ -30,6 +30,7 @@ Preparar una salida editorial mas completa, revisable y exportable, sin converti
 |---|---|---|
 | Rama `main` sincronizada con `origin/main` | [next] | `git status -sb` sin divergencias |
 | Capitulos 1 a 12 en estado `CERRADO_TECNICO` | [ok] | `00_GESTION_PROYECTO/statusObraLiteraria.md` |
+| Validacion integral de cierre tecnico completada | [ok] | `09_REVISIONES/VALIDACION_INTEGRAL_CIERRE_TECNICO_v0.2-editorial.md` |
 | Registro de cambios actualizado | [ok] | `00_GESTION_PROYECTO/REGISTRO_CAMBIOS.md` |
 | Checklist de etapas alineado con el cierre editorial | [ok] | `00_GESTION_PROYECTO/CHECKLIST_ETAPAS.md` |
 | Revision externa minima por perfiles | [next] | Dictamenes guiados por `09_REVISIONES/REVISION_EXTERNA_MINIMA_v0.2-editorial.md` |
@@ -41,7 +42,7 @@ Preparar una salida editorial mas completa, revisable y exportable, sin converti
 
 | Revision | Estado | Criterio |
 |---|---|---|
-| Indice, README y portada apuntan al mismo alcance | [next] | No hay promesas fuera de `v0.2-editorial` |
+| Indice, README y portada apuntan al mismo alcance | [ok] | No hay promesas fuera de `v0.2-editorial` |
 | Capitulos mantienen nombres y orden estables | [ok] | Capitulos 1 a 12 completos |
 | Glosario y acronimos cubren terminos centrales | [next] | Terminos de seguridad, IA, SRE, arquitectura y docencia revisados |
 | Figuras y tablas no contradicen el texto | [next] | Tablas ejecutivas y Mermaid revisadas |
@@ -79,7 +80,7 @@ Usar `09_REVISIONES/REVISION_EXTERNA_MINIMA_v0.2-editorial.md` y `09_REVISIONES/
 | PDF unico de la obra | [next] | Plan de exportacion preparado; falta herramienta local y generacion |
 | HTML navegable | [later] | Util si se publica como sitio |
 | Fasciculos PDF por perfil | [later] | Util para talleres especificos |
-| Release notes de `v0.2-editorial` | [next] | Draft creado; revisar y cerrar antes de tag/release |
+| Release notes de `v0.2-editorial` | [ok] | Draft creado y alineado con cierre tecnico; cerrar antes de tag/release |
 | Arte final de portada | [later] | No bloquea el contenido tecnico |
 | Release de GitHub con artefactos | [later] | Solo si se generan PDF/HTML descargables |
 
