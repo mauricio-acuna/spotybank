@@ -128,7 +128,7 @@ La obra debe evitar prometer mejoras de performance sin medicion. Lo correcto es
 | QA | Oleada 2 | Suite Karate/JUnit 5 y fixtures saneados. |
 | Docencia | Todas por fasciculos | Guia de clase, laboratorio y rubrica. |
 
-## Pendientes que no conviene cerrar sin decision
+## Validaciones externas que no se cierran desde evidencia estatica
 
 - Version objetivo final: Java 17 o Java 21 como runtime principal.
 - Camino Spring Boot 3.x o 4.x segun compatibilidad Jakarta y librerias.

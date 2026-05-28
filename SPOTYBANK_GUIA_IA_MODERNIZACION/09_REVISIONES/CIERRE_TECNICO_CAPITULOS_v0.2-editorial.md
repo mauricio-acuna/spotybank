@@ -19,8 +19,8 @@ La regla de trabajo es simple: un capitulo solo pasa a `CERRADO_TECNICO` cuando 
 | 3 - Anonimizacion y rebranding seguro | CERRADO_TECNICO | Define saneamiento, rebranding, placeholders, artefactos no publicables y compuerta segura antes de publicar |
 | 4 - Documentacion viva de microservicios | CERRADO_TECNICO | Define README, fichas vivas, catalogos, matriz de relaciones, runbooks, gobernanza e IA documental |
 | 5 - Dominios bancarios y fronteras | CERRADO_TECNICO | Define dominios, fronteras, adapters, commons, ledger educativo y criterios para mover responsabilidades |
-| 6 - Modernizacion de backend | PENDIENTE_CIERRE | Siguiente capitulo a revisar |
-| 7 - Seguridad y DevSecOps | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
+| 6 - Modernizacion de backend | CERRADO_TECNICO | Define oleadas backend, baseline, piloto, matrices Java/Spring, pruebas, observabilidad y rollback |
+| 7 - Seguridad y DevSecOps | PENDIENTE_CIERRE | Siguiente capitulo a revisar |
 | 8 - Despliegue cloud native | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
 | 9 - Performance, escalamiento y resiliencia | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
 | 10 - IA como acelerador | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
@@ -93,6 +93,20 @@ La regla de trabajo es simple: un capitulo solo pasa a `CERRADO_TECNICO` cuando 
 | Movimiento de fronteras condicionado a pruebas, contratos y trazabilidad | OK |
 | No deja pendientes editoriales internos | OK |
 
+## Checklist de cierre aplicado al capitulo 6
+
+| Control | Resultado |
+|---|---|
+| Rechaza migracion Big Bang | OK |
+| Separa build, runtime, framework, dominio, plataforma, observabilidad y seguridad | OK |
+| Baseline minimo definido | OK |
+| Oleadas con entrada, cambio, validacion, salida y abortaje | OK |
+| Java/Spring tratados con matriz de compatibilidad | OK |
+| Pruebas y contratos como red de seguridad obligatoria | OK |
+| Observabilidad antes/despues definida | OK |
+| Rollback y criterio de salida incluidos | OK |
+| No deja pendientes editoriales internos | OK |
+
 ## Proximo paso
 
-Cerrar el capitulo 6 con el mismo criterio: estrategia backend incremental, upgrades Java/Spring/Maven, pruebas, contratos, resiliencia, observabilidad y rollback sin pendientes internos.
+Cerrar el capitulo 7 con el mismo criterio: seguridad, DevSecOps, saneamiento, threat model, secretos, supply chain, pipeline y controles sin pendientes internos.

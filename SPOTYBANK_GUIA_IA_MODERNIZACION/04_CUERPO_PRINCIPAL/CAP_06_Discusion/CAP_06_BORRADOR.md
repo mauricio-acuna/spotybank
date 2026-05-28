@@ -1,5 +1,9 @@
 # Capitulo 06 - Modernizacion de Backend
 
+Estado de cierre tecnico-editorial: `CERRADO_TECNICO`.
+
+Dictamen del capitulo: apto como guia de modernizacion backend incremental. El capitulo evita la migracion Big Bang, separa capas de cambio, define baseline, oleadas, piloto, pruebas, contratos, observabilidad y rollback; y deja las decisiones Java/Spring/Camel como validaciones externas gobernadas, no como vacios editoriales.
+
 Modernizar backend no es cambiar versiones por deporte. Tampoco es reescribir todo cuando el sistema se vuelve dificil de leer. En un ecosistema como Spotybank, modernizar significa mover una pieza con suficiente conocimiento para no romper las demas, reducir riesgo visible y dejar una base mas facil de probar, operar y explicar.
 
 La tentacion de una migracion grande aparece rapido: subir Java, cambiar Spring Boot, reemplazar Swagger, retirar Hystrix, actualizar Camel, limpiar Maven, mover manifiestos a Kubernetes moderno, rehacer pruebas y ordenar paquetes. Todo eso puede ser necesario. El problema es hacerlo como una sola apuesta.
@@ -16,6 +20,7 @@ Al finalizar este capitulo, el lector podra:
 - Usar pruebas, contratos y observabilidad como red de seguridad.
 - Definir pilotos de bajo riesgo antes de tocar dominios criticos.
 - Documentar decisiones tecnicas sin presentar como cerrado lo que requiere validacion externa.
+- Aplicar una compuerta de modernizacion antes de promover cualquier cambio a otros servicios.
 
 ## 06.1 Modernizar no es reescribir
 
@@ -32,6 +37,16 @@ La modernizacion responsable busca evolucionar por cortes controlados. Cada cort
 - Crear una base mas verificable.
 
 Si un cambio no se puede explicar con uno de esos objetivos, probablemente sea solo movimiento tecnico.
+
+Una modernizacion backend queda justificada cuando responde cinco preguntas:
+
+| Pregunta | Criterio |
+|---|---|
+| Que riesgo reduce? | Seguridad, soporte, mantenimiento, performance, operacion o deuda de compatibilidad |
+| Que comportamiento preserva? | Flujo, contrato, prueba o metrica conocida |
+| Que capa cambia? | Build, runtime, framework, dominio, plataforma, observabilidad o seguridad |
+| Como se valida? | Prueba, contrato, comparacion de metricas o revision controlada |
+| Como se revierte? | Rollback, version anterior, flag, despliegue paralelo o decision de abortar |
 
 ## 06.2 Punto de partida tecnologico
 
@@ -67,6 +82,8 @@ Para Spotybank conviene separar capas:
 
 Separar capas no significa trabajarlas aisladas para siempre. Significa que cada paso debe tener una hipotesis, una validacion y una forma de volver atras.
 
+Esta separacion tambien ayuda a revisar PRs. Un cambio que actualiza Java, reescribe DTOs, migra Spring Security y modifica manifiestos al mismo tiempo no permite saber que rompio el sistema si algo falla. La disciplina de capas reduce incertidumbre.
+
 ## 06.4 Baseline antes del upgrade
 
 Antes de modernizar, hay que congelar una foto tecnica. Sin baseline, no se sabe si el cambio mejoro o empeoro.
@@ -83,6 +100,18 @@ Un baseline minimo incluye:
 - Riesgos y decisiones pendientes.
 
 En Spotybank, este baseline se apoya en el inventario inicial: POMs, archivos Java, properties, Dockerfiles, Docker Compose y YAML/OpenShift/Kubernetes. La modernizacion empieza convirtiendo esa evidencia en control.
+
+El baseline queda cerrado solo si incluye:
+
+| Control | Evidencia esperada |
+|---|---|
+| Inventario | Servicios, workers, adapters, commons y mocks clasificados |
+| Build | Parents, plugins y dependencias relevantes identificados |
+| Runtime | Java, imagen base y parametros JVM conocidos o marcados para validacion |
+| Contratos | APIs, SOAP, eventos o colas principales listados |
+| Pruebas | Suites disponibles y brechas visibles |
+| Operacion | Manifiestos, probes, resources, logs y metricas detectadas |
+| Riesgo | Riesgos de upgrade priorizados por impacto |
 
 ## 06.5 Estrategia de oleadas
 
@@ -101,6 +130,14 @@ Una ruta prudente puede organizarse por oleadas:
 | 9. Extension por dominio | Repetir con servicios criticos | Aprendizaje escalable |
 
 La clave no es seguir la tabla de manera rigida. La clave es evitar saltar a la oleada 5 sin haber construido red de seguridad en la oleada 2.
+
+Para cada oleada se debe declarar:
+
+- Entrada: que evidencia habilita empezar.
+- Cambio: que se modifica y que no se modifica.
+- Validacion: que prueba, contrato o metrica se compara.
+- Salida: que condicion permite avanzar.
+- Abortaje: que senal obliga a detener o revertir.
 
 ## 06.6 Elegir un piloto
 
@@ -163,6 +200,16 @@ Una ruta posible:
 
 Java 17 o Java 21 deben decidirse con evidencia: soporte de plataforma, librerias, compatibilidad Jakarta, politica de soporte y capacidad del equipo. La obra puede proponer escenarios, pero no cerrar una decision productiva sin contexto.
 
+Para el caso educativo, la decision puede prepararse con una matriz:
+
+| Opcion | Cuando conviene | Riesgo a validar |
+|---|---|---|
+| Java 17 | Ruta conservadora, ecosistema empresarial amplio, compatibilidad mayor | Soporte de librerias y plataforma objetivo |
+| Java 21 | Ruta moderna, soporte LTS reciente, mejoras de runtime | Compatibilidad de frameworks, agentes, drivers y tooling |
+| Doble matriz 17/21 | Cuando se quiere ensenar decision tecnica basada en evidencia | Costo de mantener pruebas en dos runtimes |
+
+El cierre del capitulo no exige elegir una version final. Exige dejar claro como se decide sin adivinar.
+
 ## 06.9 Spring Boot, Spring MVC y configuracion
 
 Spring Boot merece el mismo cuidado que Java. Saltar varias versiones puede requerir cambios en properties, Actuator, seguridad, validacion, serializacion, path matching, dependencias transitivas y tests.
@@ -178,6 +225,17 @@ Riesgos frecuentes:
 - Dependencias transitivas duplicadas.
 
 Una migracion sana no empieza editando todo el repositorio. Empieza con un servicio piloto, una matriz de compatibilidad y una lista de errores reproducibles.
+
+Para Spring Boot, la matriz minima debe revisar:
+
+| Tema | Pregunta |
+|---|---|
+| Namespace | Hay migracion `javax.*` a `jakarta.*`? |
+| Seguridad | Cambian filtros, configuracion o defaults de Spring Security? |
+| Actuator | Cambian endpoints, exposure o formato de metricas? |
+| Configuracion | Hay properties obsoletas o renombradas? |
+| Serializacion | Cambia Jackson, validacion o manejo de fechas? |
+| Tests | Las pruebas actuales detectan regresiones reales? |
 
 ## 06.10 Camel, Fuse, SOAP y adapters
 
@@ -231,6 +289,8 @@ Sin pruebas, la modernizacion es una apuesta. Spotybank necesita una red de segu
 
 No hace falta cubrir todo antes de empezar. Pero cada servicio que se moderniza debe dejar mas pruebas que antes. Esa es una regla practica y honesta.
 
+Regla de cierre para backend: ningun upgrade se considera completado si deja menos capacidad de prueba, menos observabilidad o menos trazabilidad que antes.
+
 ## 06.13 Resiliencia y retiro de deuda
 
 La modernizacion tambien implica retirar patrones obsoletos. Hystrix, por ejemplo, puede tratarse como deuda historica si aparece en el ecosistema. El reemplazo no deberia ser solo "cambiar libreria". Debe revisar el comportamiento esperado:
@@ -272,6 +332,16 @@ Todo cambio de modernizacion necesita salida clara. Antes de ejecutar una oleada
 - Evidencia que quedara documentada.
 
 Un rollback no es fracaso. Es parte de una modernizacion adulta. Permite aprender sin convertir cada intento en una apuesta irreversible.
+
+La tabla de salida de una oleada debe quedar asi:
+
+| Campo | Contenido |
+|---|---|
+| Criterio de exito | Resultado medible o verificable |
+| Criterio de abortar | Error, degradacion o incertidumbre que detiene el avance |
+| Rollback | Paso concreto para volver al estado anterior |
+| Evidencia | Logs, pruebas, metricas, diff o acta tecnica |
+| Decision | Continuar, repetir, ajustar o descartar la oleada |
 
 ## 06.16 Roadmap recomendado para Spotybank
 
@@ -318,6 +388,8 @@ Elegir un servicio de soporte de Spotybank y disenar su plan de modernizacion.
 | Reversibilidad | Tiene criterio de abortar y rollback |
 | Documentacion | Deja guia reutilizable para otros servicios |
 
+El ejercicio queda cerrado si el plan puede revisarse sin conversacion oral adicional: alcance, riesgo, pruebas, metricas y rollback deben estar escritos.
+
 ## Resumen del capitulo
 
 - Modernizar no es reescribir.
@@ -328,6 +400,21 @@ Elegir un servicio de soporte de Spotybank y disenar su plan de modernizacion.
 - Un piloto bien elegido reduce riesgo y crea una guia repetible.
 - Todo cambio serio necesita criterio de exito, criterio de abortar y rollback.
 
+## Cierre tecnico-editorial del capitulo
+
+| Control | Dictamen |
+|---|---|
+| Enfoque incremental | Cerrado: rechaza Big Bang y reescritura sin evidencia |
+| Capas de cambio | Cerrado: build, runtime, framework, dominio, plataforma, observabilidad y seguridad quedan separadas |
+| Baseline | Cerrado: define inventario, build, runtime, contratos, pruebas, operacion y riesgos |
+| Piloto | Cerrado: prioriza bajo riesgo, valor de aprendizaje y guia repetible |
+| Java/Spring/Camel | Cerrado: se tratan con matrices de compatibilidad y validacion externa, no como decisiones productivas inventadas |
+| Pruebas y contratos | Cerrado: cada modernizacion debe dejar mayor red de seguridad |
+| Observabilidad | Cerrado: compara antes/despues con metricas y correlacion |
+| Rollback | Cerrado: cada oleada exige criterio de exito, abortaje y vuelta atras |
+
+Pendientes editoriales internos del capitulo: ninguno.
+
 ## Preguntas de revision
 
 1. Por que una migracion Big Bang es riesgosa en Spotybank?
@@ -335,6 +422,7 @@ Elegir un servicio de soporte de Spotybank y disenar su plan de modernizacion.
 3. Por que los contract tests son importantes antes de cambiar framework?
 4. Que servicio elegirias como piloto y por que?
 5. Que metrica usarias para demostrar que una migracion mejoro el sistema?
+6. Que campos debe incluir la tabla de salida de una oleada?
 
 ## Referencias del capitulo
 

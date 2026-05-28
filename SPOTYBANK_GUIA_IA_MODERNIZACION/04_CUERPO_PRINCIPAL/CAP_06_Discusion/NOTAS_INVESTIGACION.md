@@ -15,7 +15,7 @@
 
 - Modernizar backend no equivale a reescribir ni a subir versiones de forma masiva.
 - La ruta debe separar build, runtime, framework, dominio, plataforma, observabilidad y seguridad.
-- Java 17/21 y Spring Boot 3/4 son decisiones pendientes que dependen de compatibilidad y soporte.
+- Java 17/21 y Spring Boot 3/4 son validaciones externas que dependen de compatibilidad y soporte.
 - Los parents Maven deben tratarse como plataforma interna.
 - Pruebas, contratos y observabilidad son la red minima antes de tocar servicios criticos.
 - Hystrix/Springfox/JUnit 4 pueden presentarse como deuda historica y camino de migracion.
@@ -34,8 +34,10 @@ La obra debe insistir en que no todas las decisiones tecnicas pueden cerrarse de
 - Recomendar piloto de bajo riesgo antes de dominios criticos.
 - Exigir pruebas de caracterizacion y contratos como red de seguridad.
 - Incluir rollback y criterios de salida como parte de la modernizacion.
+- Cerrar el capitulo con compuertas de baseline, oleada, matriz Java/Spring, pruebas, observabilidad y rollback.
+- Registrar que no quedan pendientes editoriales internos para el capitulo 6 en el ciclo `v0.2-editorial`.
 
-## Decisiones pendientes para versiones futuras
+## Mejoras futuras no bloqueantes
 
 - Definir laboratorio resuelto de migracion de un servicio piloto.
 - Crear matriz comparativa Java 17 vs Java 21 para el caso educativo.
