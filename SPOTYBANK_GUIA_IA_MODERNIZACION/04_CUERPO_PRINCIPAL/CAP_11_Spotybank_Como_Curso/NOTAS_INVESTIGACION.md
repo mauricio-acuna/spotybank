@@ -18,7 +18,7 @@
 
 ## Argumento editorial
 
-El capitulo debe convertir la obra en herramienta docente util. El punto central es que Spotybank no se ensena como tutorial lineal, sino como caso realista con incertidumbre, deuda, decisiones pendientes y tradeoffs.
+El capitulo debe convertir la obra en herramienta docente util. El punto central es que Spotybank no se ensena como tutorial lineal, sino como caso realista con incertidumbre, deuda, decisiones a justificar y tradeoffs.
 
 La ruta docente debe evitar prometer ambientes reales o resolver todas las decisiones. Su valor esta en hacer que cada equipo produzca evidencia revisable.
 
@@ -29,8 +29,12 @@ La ruta docente debe evitar prometer ambientes reales o resolver todas las decis
 - Mantener laboratorios progresivos por dificultad.
 - Agregar revision por pares como dinamica de aprendizaje.
 - Mantener proyecto final por equipos como cierre recomendado.
+- Cerrar resultados de aprendizaje con verbo observable, evidencia, criterio de evaluacion, seguridad y tiempo.
+- Declarar definicion de listo para fasciculos, laboratorios, rubricas, revision por pares y proyecto final.
+- Mantener el alcance educativo sin prometer acreditacion formal ni ambientes productivos.
+- No quedan pendientes editoriales internos del capitulo.
 
-## Decisiones pendientes para versiones futuras
+## Mejoras futuras no bloqueantes
 
 - Crear agendas detalladas por sesion para 12, 24, 40 y 80 horas.
 - Agregar ejercicios resueltos de referencia.

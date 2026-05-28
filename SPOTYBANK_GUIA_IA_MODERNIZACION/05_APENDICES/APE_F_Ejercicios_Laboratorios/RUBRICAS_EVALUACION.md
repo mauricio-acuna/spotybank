@@ -15,7 +15,7 @@ Las rubricas permiten evaluar entregas de Spotybank con criterios visibles. Cada
 
 | Criterio | 1 | 2 | 3 | 4 |
 |---|---|---|---|---|
-| Evidencia | No cita fuentes | Cita fuentes parciales | Cita evidencia suficiente | Conecta evidencia, inferencia y decision pendiente |
+| Evidencia | No cita fuentes | Cita fuentes parciales | Cita evidencia suficiente | Conecta evidencia, inferencia y validacion externa |
 | Seguridad | Expone o ignora riesgos | Menciona riesgos sin control | Evita datos sensibles y propone controles | Integra controles verificables y criterio de cierre |
 | Claridad | Es dificil de seguir | Tiene estructura irregular | Es claro y navegable | Otro equipo puede continuar sin explicacion oral |
 | Priorizacion | Lista sin orden | Orden parcial | Prioriza por riesgo o valor | Justifica impacto, esfuerzo y dependencias |

@@ -1,5 +1,9 @@
 # Capitulo 11 - Spotybank como Curso
 
+Estado de cierre tecnico-editorial: `CERRADO_TECNICO`.
+
+Dictamen del capitulo: apto como guia docente para convertir Spotybank en experiencia formativa. El capitulo define rutas por perfil, fasciculos, duraciones, laboratorios, revision por pares, rubricas y proyecto final, con evaluacion basada en evidencia y sin prometer acreditacion formal ni ambientes productivos.
+
 Un repositorio no es automaticamente un curso. Tampoco lo es un libro tecnico. Para convertirse en experiencia formativa, Spotybank necesita recorrido, objetivos, consignas, criterios de evaluacion, evidencias y momentos de discusion.
 
 La fuerza del caso esta en que todos trabajan sobre el mismo sistema, pero no todos miran lo mismo. Un perfil backend se concentra en codigo, pruebas y refactor. Un perfil de arquitectura mira dominios, contratos y dependencias. Un perfil DevOps/SRE mira despliegue, observabilidad y continuidad. Un perfil de seguridad mira secretos, amenazas y controles. Un perfil QA convierte riesgos en escenarios de prueba. Un docente convierte todo eso en secuencias de aprendizaje.
@@ -16,6 +20,7 @@ Al finalizar este capitulo, el lector podra:
 - Proponer un proyecto final por equipos.
 - Adaptar el caso a universidades, institutos, empresas y centros de formacion profesional.
 - Definir rutas de 12, 24, 40 y 80 horas con entregables revisables.
+- Cerrar una unidad didactica con objetivo observable, evidencia, rubrica, seguridad y tiempo verificable.
 
 ## 11.1 De repositorio a producto educativo
 
@@ -41,7 +46,7 @@ Spotybank ensena mejor cuando el estudiante trabaja sobre problemas realistas:
 - Hay incertidumbre.
 - Hay documentacion incompleta.
 - Hay riesgos de seguridad.
-- Hay decisiones pendientes.
+- Hay decisiones a justificar.
 - Hay tradeoffs.
 - Hay limitaciones de plataforma.
 - Hay que comunicar a otros perfiles.
@@ -55,7 +60,7 @@ Una ruta formativa deberia producir resultados observables:
 | Resultado | Evidencia esperada |
 |---|---|
 | Leer un sistema heredado | Inventario con evidencia local |
-| Separar hechos e inferencias | Matriz evidencia/inferencia/pendiente |
+| Separar hechos e inferencias | Matriz evidencia/inferencia/validacion externa |
 | Proponer modernizacion | Roadmap incremental con rollback |
 | Documentar microservicios | README y catalogos revisables |
 | Pensar seguridad | Threat model y backlog DevSecOps |
@@ -64,6 +69,16 @@ Una ruta formativa deberia producir resultados observables:
 | Usar IA responsablemente | Prompt, salida clasificada y validacion |
 
 La evaluacion no deberia premiar cantidad de texto. Deberia premiar trazabilidad, criterio y claridad.
+
+Para que un resultado de aprendizaje quede cerrado debe tener verbo observable, evidencia de entrega, criterio de evaluacion y restriccion de seguridad.
+
+| Elemento | Criterio de cierre |
+|---|---|
+| Verbo observable | Permite revisar una accion concreta: inventariar, clasificar, justificar, disenar, validar o defender |
+| Evidencia | Apunta a archivo, tabla, checklist, prueba, decision registrada o entregable revisable |
+| Evaluacion | Declara como se diferencia una entrega suficiente de una insuficiente |
+| Seguridad | No requiere secretos, datos reales, dominios privados ni ambientes productivos |
+| Tiempo | Cabe dentro de la duracion declarada para la ruta |
 
 ## 11.4 Rutas por perfil
 
@@ -104,6 +119,8 @@ La estrategia por fasciculos permite publicar, ensenar y reutilizar el material 
 | 7 - Performance | Definir SLO y prueba de carga | SRE/performance |
 | 8 - Diseno curricular | Crear programa de curso | Docencia |
 
+Un fasciculo queda listo cuando declara perfil destinatario, prerrequisitos, lectura base, actividad central, entregable, rubrica, evidencia minima, tiempo estimado y riesgos de facilitacion. Si alguno de esos elementos falta, el fasciculo puede ser una buena idea, pero todavia no es una unidad docente cerrada.
+
 ## 11.6 Rutas por duracion
 
 | Formato | Fasciculos recomendados | Resultado |
@@ -116,6 +133,8 @@ La estrategia por fasciculos permite publicar, ensenar y reutilizar el material 
 
 El error habitual es comprimir un programa de 40 horas en un taller de un dia. Spotybank permite modularizar: primero metodo y seguridad, despues arquitectura, luego modernizacion, nube, QA y performance.
 
+Cada ruta debe declarar prerrequisitos, profundidad, entregable final, criterio de aprobacion y aquello que queda fuera. Un taller de un dia puede abrir criterio tecnico; no deberia prometer dominio completo de modernizacion, seguridad, nube y performance.
+
 ## 11.7 Laboratorios por dificultad
 
 La obra puede organizar practicas en tres niveles.
@@ -127,6 +146,8 @@ La obra puede organizar practicas en tres niveles.
 | Avanzado | Implementar, medir y defender | Crear prueba de carga y plan de mitigacion |
 
 Esta progresion evita que un estudiante nuevo quede bloqueado por complejidad excesiva, y permite que perfiles avanzados encuentren retos reales.
+
+Un laboratorio queda cerrado cuando la consigna, el entregable, el criterio de evaluacion, los limites de seguridad y la evidencia esperada son visibles antes de comenzar. La dificultad puede variar, pero la regla de revision debe estar definida desde el inicio.
 
 ## 11.8 Laboratorio 1: inventario de microservicio
 
@@ -230,6 +251,8 @@ Preguntas de revision:
 
 La revision por pares ensena comunicacion tecnica. No se trata de ganar la discusion; se trata de mejorar la decision.
 
+Una revision por pares queda cerrada cuando cada observacion termina en una de cuatro decisiones: aceptar, ajustar, descartar con justificacion o pasar a mejora posterior no bloqueante. Las observaciones abiertas no deben quedar como ruido; deben convertirse en accion, explicacion o limite declarado.
+
 ## 11.14 Rubrica general
 
 | Criterio | Excelente | A mejorar |
@@ -242,6 +265,8 @@ La revision por pares ensena comunicacion tecnica. No se trata de ganar la discu
 | Comunicacion | Adapta mensaje al perfil lector | Usa jerga sin contexto |
 
 La rubrica debe valorar pensamiento tecnico, no solo cantidad de archivos.
+
+Una rubrica docente de Spotybank no debe evaluar opiniones generales. Debe evaluar evidencia, seguridad, validacion, claridad, trazabilidad y capacidad de comunicar tradeoffs a otro perfil.
 
 ## 11.15 Proyecto final por equipos
 
@@ -267,6 +292,8 @@ Entregables:
 - Presentacion ejecutiva.
 
 La defensa oral debe explicar tradeoffs. No alcanza con decir que algo es mejor; hay que justificar por que, cuando y con que riesgo.
+
+El proyecto final queda cerrado cuando el equipo entrega evidencia escrita, defensa oral, backlog priorizado, criterios de validacion y limites explicitos. La presentacion no reemplaza la evidencia; la ordena para una audiencia tecnica o ejecutiva.
 
 ## 11.16 Uso en universidad
 
@@ -334,6 +361,25 @@ Luego explicar que se simplificaria para un grupo inicial y que se agregaria par
 | Perfil | La actividad coincide con nivel y rol |
 | Evaluacion | La rubrica no depende de opinion vaga |
 
+La unidad practica queda lista cuando puede ejecutarse sin datos reales, puede revisarse con la rubrica declarada y produce una decision docente: aprobado, requiere ajuste o pasa a mejora posterior no bloqueante.
+
+## Cierre tecnico-editorial del capitulo
+
+| Control | Estado de cierre |
+|---|---|
+| Producto educativo | Cerrado: diferencia repositorio, libro, taller, curso, laboratorio y proyecto final |
+| Rutas por perfil | Cerrado: backend, arquitectura, seguridad, DevOps/SRE, QA, docencia y gestion tecnica tienen entradas diferenciadas |
+| Rutas por duracion | Cerrado: taller 1 dia, 12 h, 24 h, 40 h y 80 h tienen alcance y resultado esperado |
+| Fasciculos | Cerrado: cada modulo exige objetivo, lectura, laboratorio, checklist, rubrica, preguntas y evidencia |
+| Laboratorios | Cerrado: progresan por dificultad y declaran entregables revisables |
+| Rubricas | Cerrado: evaluan evidencia, seguridad, claridad, priorizacion, validacion y comunicacion |
+| Proyecto final | Cerrado: integra documentacion, arquitectura, seguridad, despliegue, pruebas, performance y roadmap |
+| Revision por pares | Cerrado: convierte observaciones en aceptar, ajustar, descartar o mejora posterior |
+| Seguridad docente | Cerrado: prohibe datos reales, secretos, dominios privados y dependencia de ambientes productivos |
+| Alcance editorial | Cerrado: no promete acreditacion formal, certificacion profesional ni operacion bancaria real |
+
+Pendientes editoriales internos del capitulo: ninguno.
+
 ## Resumen del capitulo
 
 - Spotybank se convierte en curso cuando agrega objetivos, laboratorios, rubricas y evidencias.
@@ -350,6 +396,7 @@ Luego explicar que se simplificaria para un grupo inicial y que se agregaria par
 3. Como evaluarias que un estudiante distingue evidencia de inferencia?
 4. Que entregables pedirias en un proyecto final?
 5. Como adaptarias Spotybank a un taller empresarial de un dia?
+6. Que criterios usarias para declarar cerrada una unidad didactica?
 
 ## Referencias del capitulo
 

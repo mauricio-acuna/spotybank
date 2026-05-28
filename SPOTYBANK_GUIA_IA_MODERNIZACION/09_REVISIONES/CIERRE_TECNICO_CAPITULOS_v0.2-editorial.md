@@ -24,8 +24,8 @@ La regla de trabajo es simple: un capitulo solo pasa a `CERRADO_TECNICO` cuando 
 | 8 - Despliegue cloud native | CERRADO_TECNICO | Define escenarios, contrato runtime, unidad minima, probes, resources, HPA, GitOps, rollout y continuidad |
 | 9 - Performance, escalamiento y resiliencia | CERRADO_TECNICO | Define SLIs/SLOs educativos, bottlenecks, HPA, DLQ, resiliencia, pruebas de carga y backlog medible |
 | 10 - IA como acelerador | CERRADO_TECNICO | Define prompts seguros, evidencia/inferencia, backlog, refactor asistido, privacidad, antipatrones y definicion de done IA |
-| 11 - Spotybank como curso | PENDIENTE_CIERRE | Siguiente capitulo a revisar |
-| 12 - Roadmap de evolucion | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
+| 11 - Spotybank como curso | CERRADO_TECNICO | Define producto educativo, rutas por perfil y duracion, fasciculos, laboratorios, rubricas, revision por pares y proyecto final |
+| 12 - Roadmap de evolucion | PENDIENTE_CIERRE | Siguiente capitulo a revisar |
 
 ## Checklist de cierre aplicado al capitulo 1
 
@@ -164,6 +164,22 @@ La regla de trabajo es simple: un capitulo solo pasa a `CERRADO_TECNICO` cuando 
 | Antipatrones explicitados | OK |
 | No deja pendientes editoriales internos | OK |
 
+## Checklist de cierre aplicado al capitulo 11
+
+| Control | Resultado |
+|---|---|
+| Producto educativo diferenciado de repositorio o libro tecnico | OK |
+| Resultados de aprendizaje con verbo observable, evidencia, evaluacion, seguridad y tiempo | OK |
+| Rutas por perfil definidas para backend, arquitectura, seguridad, DevOps/SRE, QA, docencia y gestion tecnica | OK |
+| Rutas por duracion con alcance, profundidad y entregable esperado | OK |
+| Fasciculos con objetivo, lectura, laboratorio, checklist, rubrica, preguntas y evidencia | OK |
+| Laboratorios progresivos con consignas, entregables y criterios de evaluacion | OK |
+| Revision por pares con decisiones de aceptar, ajustar, descartar o pasar a mejora posterior | OK |
+| Rubricas centradas en evidencia, seguridad, claridad, priorizacion, validacion y comunicacion | OK |
+| Proyecto final con evidencia escrita, defensa oral, backlog, validacion y limites | OK |
+| Seguridad docente sin datos reales, secretos, dominios privados ni ambientes productivos | OK |
+| No deja pendientes editoriales internos | OK |
+
 ## Proximo paso
 
-Cerrar el capitulo 11 con el mismo criterio: rutas de aprendizaje, fasciculos, laboratorios, rubricas, evaluacion, docencia y uso por perfiles sin pendientes internos.
+Cerrar el capitulo 12 con el mismo criterio: roadmap de evolucion, criterios de salida, mejoras futuras, alcance editorial y cierre completo de la obra sin pendientes internos.

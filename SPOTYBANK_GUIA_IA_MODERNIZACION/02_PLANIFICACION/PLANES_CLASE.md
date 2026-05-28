@@ -65,7 +65,7 @@ Objetivo: convertir Spotybank en proyecto final por equipos.
 - Exigir evidencias dentro del workspace.
 - Prohibir secretos o datos reales en entregas.
 - Asignar roles rotativos.
-- Cerrar cada clase con decisiones y pendientes.
+- Cerrar cada clase con decisiones, evidencias y validaciones externas.
 - Mantener el status de obra como tablero visible.
 
 ## Evaluacion sugerida
