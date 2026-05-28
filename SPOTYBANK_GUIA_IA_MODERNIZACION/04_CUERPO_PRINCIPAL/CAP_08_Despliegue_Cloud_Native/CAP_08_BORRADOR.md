@@ -1,5 +1,9 @@
 # Capitulo 08 - Despliegue Cloud Native
 
+Estado de cierre tecnico-editorial: `CERRADO_TECNICO`.
+
+Dictamen del capitulo: apto como guia de despliegue cloud native educativo. El capitulo diferencia contenedores de operacion cloud native, define contrato runtime, unidad minima de despliegue, configuracion, secretos, probes, recursos, HPA, GitOps, rollout, red y continuidad sin prometer produccion bancaria real.
+
 Desplegar microservicios no es levantar muchos contenedores. Es crear un entorno donde cada servicio tenga un contrato de runtime claro: que imagen ejecuta, que configuracion recibe, que secretos consume, como declara que esta listo, que recursos necesita, como se comunica, como se observa y como se recupera cuando falla.
 
 Spotybank es util para estudiar esta transicion porque muestra una realidad frecuente: hay Dockerfiles, Docker Compose y manifiestos OpenShift/Kubernetes, pero eso no significa automaticamente que el sistema opere de forma cloud native. Estar containerizado es un punto de partida. Operar cloud native exige disciplina de plataforma.
@@ -16,6 +20,7 @@ Al finalizar este capitulo, el lector podra:
 - Separar configuracion, secretos, imagenes, pipelines y manifiestos.
 - Definir probes, requests, limits, rollout y observabilidad con criterio tecnico.
 - Explicar continuidad, respaldo y recuperacion sin prometer produccion real.
+- Cerrar una ficha de despliegue con evidencia de runtime, seguridad, red, capacidad, rollout y rollback.
 
 ## 08.1 Desplegar no es solo levantar contenedores
 
@@ -70,6 +75,19 @@ Para el lector, lo importante no es memorizar objetos. Lo importante es entender
 
 Sin ese contrato, el despliegue queda atado a conocimiento tribal.
 
+El contrato de runtime queda cerrado cuando puede responder:
+
+| Dimension | Evidencia esperada |
+|---|---|
+| Imagen | Nombre, tag o digest y origen del build |
+| Configuracion | Variables no sensibles y fuente de valores |
+| Secretos | Referencias a Secret/Vault sin valor en Git |
+| Salud | Startup, liveness y readiness con semantica real |
+| Capacidad | Requests, limits y metrica inicial |
+| Red | Dependencias permitidas y trafico bloqueado |
+| Observabilidad | Logs, metricas, traces o correlation id |
+| Rollback | Estrategia para volver a version anterior |
+
 ## 08.4 Unidad minima de despliegue
 
 Cada microservicio Spotybank deberia tener una unidad minima de despliegue documentada. Esa unidad combina:
@@ -86,6 +104,8 @@ Cada microservicio Spotybank deberia tener una unidad minima de despliegue docum
 - Smoke test minimo.
 
 Un buen ejercicio docente es pedir que un equipo tome `spotybank-auth` o `spotybank-accounts` y complete esa unidad minima. El resultado no es solo tecnico; tambien revela preguntas pendientes sobre owner, criticidad, integraciones y seguridad.
+
+La unidad minima no debe cerrarse si falta alguna de estas piezas: secreto referenciado sin mecanismo, readiness sin semantica, imagen sin version, ausencia de rollback o dependencia de red no declarada.
 
 ## 08.5 Configuracion externa
 
@@ -143,6 +163,16 @@ Reglas de prudencia:
 
 Un HPA mal configurado puede amplificar un problema. Escalar un sistema opaco no lo vuelve resiliente; puede hacerlo mas caro y mas dificil de diagnosticar.
 
+Para habilitar HPA en un laboratorio avanzado, deben cumplirse estas condiciones:
+
+| Condicion | Motivo |
+|---|---|
+| Requests definidos | El scheduler necesita una base para calcular uso relativo |
+| Metrica relevante | CPU no sirve para todos los workers o adapters |
+| Probes correctas | No conviene escalar pods que no estan listos |
+| Limites observados | Evita matar procesos por limites arbitrarios |
+| Escenario de carga | Permite comprobar que el escalamiento mejora algo |
+
 ## 08.9 Pipeline CI/CD
 
 Un pipeline minimo para Spotybank deberia cubrir:
@@ -187,6 +217,8 @@ spotybank-platform/
 
 En un curso, GitOps permite que estudiantes propongan cambios por pull request y discutan arquitectura con evidencia concreta.
 
+Un cambio GitOps queda bien formado cuando incluye manifiesto, justificacion, impacto esperado, rollback y evidencia de validacion en ambiente no productivo.
+
 ## 08.11 Estrategias de rollout
 
 No todos los servicios deben promoverse igual. Un backend interno puede usar rolling update. Un servicio de autenticacion necesita mas cuidado. Un ledger requiere aun mas control porque los errores pueden duplicar, perder o desordenar transacciones.
@@ -200,6 +232,15 @@ No todos los servicios deben promoverse igual. Un backend interno puede usar rol
 | Migracion por oleadas | Cambios de plataforma o version mayor | Alto si no hay telemetria |
 
 La estrategia depende del dominio. No es lo mismo desplegar una pantalla informativa que una pieza de autenticacion, MFA o ledger.
+
+Para elegir estrategia de rollout, usar esta regla:
+
+| Criticidad | Estrategia inicial |
+|---|---|
+| Baja, stateless, con pruebas maduras | Rolling update |
+| Media, con consumidores relevantes | Blue/green o canary controlado |
+| Alta, identidad, MFA o ledger educativo | Canary conservador, shadow o despliegue por oleadas |
+| Desconocida | No promover hasta agregar observabilidad y smoke tests |
 
 ## 08.12 Observabilidad desde el despliegue
 
@@ -248,6 +289,16 @@ Un despliegue bancario simulado debe hablar de continuidad. Aunque Spotybank sea
 - Que integraciones pueden degradarse?
 
 La continuidad no se documenta para cumplir una formalidad. Se prueba. Un backup no probado es una esperanza, no una garantia.
+
+La evidencia minima de continuidad incluye:
+
+| Control | Evidencia |
+|---|---|
+| Backup | Politica, frecuencia y alcance |
+| Restore | Prueba de restauracion documentada |
+| RPO/RTO | Objetivo educativo o simulado declarado |
+| Dependencias | Broker, base de datos, cache y configuracion cubiertos |
+| Runbook | Pasos de recuperacion y escalamiento |
 
 ## 08.15 Ambientes y datos sinteticos
 
@@ -311,6 +362,8 @@ Luego justificar si el servicio puede usar rolling update o necesita una estrate
 | Red | Declara dependencias y restricciones |
 | Rollout | La estrategia coincide con criticidad del dominio |
 
+El ejercicio queda cerrado si la ficha permite desplegar, observar, probar y revertir un servicio en ambiente educativo sin depender de conocimiento oral.
+
 ## Resumen del capitulo
 
 - Cloud native es una disciplina operativa, no solo contenedores.
@@ -321,6 +374,21 @@ Luego justificar si el servicio puede usar rolling update o necesita una estrate
 - CI/CD y GitOps aportan trazabilidad, repetibilidad y control.
 - La continuidad requiere backups, restauracion probada, RPO y RTO.
 
+## Cierre tecnico-editorial del capitulo
+
+| Control | Dictamen |
+|---|---|
+| Escenarios | Cerrado: local, laboratorio, staging educativo y produccion simulada quedan diferenciados |
+| Contrato runtime | Cerrado: imagen, configuracion, secretos, salud, capacidad, red, observabilidad y rollback |
+| Unidad minima | Cerrado: codigo, build, imagen, manifiestos, config, secretos, probes, resources, red y smoke test |
+| Probes | Cerrado: startup, liveness y readiness tienen semantica diferenciada |
+| Resources/HPA | Cerrado: HPA requiere requests, metrica, probes, limites observados y carga |
+| GitOps | Cerrado: cambios revisables con justificacion, impacto, rollback y validacion |
+| Rollout | Cerrado: estrategia depende de criticidad y evidencia |
+| Continuidad | Cerrado: backup, restore, RPO/RTO, dependencias y runbook |
+
+Pendientes editoriales internos del capitulo: ninguno.
+
 ## Preguntas de revision
 
 1. Que diferencia hay entre ejecutar un contenedor y operar un microservicio cloud native?
@@ -328,6 +396,7 @@ Luego justificar si el servicio puede usar rolling update o necesita una estrate
 3. Por que un secreto ficticio puede ser util en un laboratorio?
 4. Cuando conviene usar canary en lugar de rolling update?
 5. Que evidencia pedirias para afirmar que un backup funciona?
+6. Que dimensiones debe cubrir un contrato de runtime?
 
 ## Referencias del capitulo
 

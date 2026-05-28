@@ -33,8 +33,10 @@ La obra debe evitar prometer produccion real. Los escenarios propuestos son educ
 - Incluir unidad minima de despliegue por servicio.
 - Reforzar probes, resources, HPA, GitOps y network policies como controles operativos.
 - Mantener datos sinteticos como regla para ambientes educativos.
+- Cerrar el capitulo con contrato runtime, criterios de HPA, rollout, GitOps, continuidad y ficha de despliegue verificable.
+- Registrar que no quedan pendientes editoriales internos para el capitulo 8 en el ciclo `v0.2-editorial`.
 
-## Decisiones pendientes para versiones futuras
+## Mejoras futuras no bloqueantes
 
 - Definir laboratorio concreto con OpenShift Local, Kind o Minikube.
 - Crear figura de unidad minima de despliegue.

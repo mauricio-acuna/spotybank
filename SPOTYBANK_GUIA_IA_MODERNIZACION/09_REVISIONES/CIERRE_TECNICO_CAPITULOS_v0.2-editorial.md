@@ -21,8 +21,8 @@ La regla de trabajo es simple: un capitulo solo pasa a `CERRADO_TECNICO` cuando 
 | 5 - Dominios bancarios y fronteras | CERRADO_TECNICO | Define dominios, fronteras, adapters, commons, ledger educativo y criterios para mover responsabilidades |
 | 6 - Modernizacion de backend | CERRADO_TECNICO | Define oleadas backend, baseline, piloto, matrices Java/Spring, pruebas, observabilidad y rollback |
 | 7 - Seguridad y DevSecOps | CERRADO_TECNICO | Define amenaza, severidad, secretos, MFA, supply chain, pipeline, IA y backlog verificable |
-| 8 - Despliegue cloud native | PENDIENTE_CIERRE | Siguiente capitulo a revisar |
-| 9 - Performance, escalamiento y resiliencia | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
+| 8 - Despliegue cloud native | CERRADO_TECNICO | Define escenarios, contrato runtime, unidad minima, probes, resources, HPA, GitOps, rollout y continuidad |
+| 9 - Performance, escalamiento y resiliencia | PENDIENTE_CIERRE | Siguiente capitulo a revisar |
 | 10 - IA como acelerador | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
 | 11 - Spotybank como curso | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
 | 12 - Roadmap de evolucion | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
@@ -122,6 +122,20 @@ La regla de trabajo es simple: un capitulo solo pasa a `CERRADO_TECNICO` cuando 
 | Backlog de seguridad accionable | OK |
 | No deja pendientes editoriales internos | OK |
 
+## Checklist de cierre aplicado al capitulo 8
+
+| Control | Resultado |
+|---|---|
+| Escenarios local, laboratorio, staging y produccion simulada diferenciados | OK |
+| Contrato runtime definido | OK |
+| Unidad minima de despliegue verificable | OK |
+| Probes con semantica real | OK |
+| Resources/HPA condicionados a metricas y carga | OK |
+| GitOps con justificacion, impacto, rollback y validacion | OK |
+| Rollout segun criticidad | OK |
+| Continuidad con backup, restore, RPO/RTO y runbook | OK |
+| No deja pendientes editoriales internos | OK |
+
 ## Proximo paso
 
-Cerrar el capitulo 8 con el mismo criterio: despliegue cloud native, runtime contract, probes, resources, HPA, GitOps, network policies y continuidad sin pendientes internos.
+Cerrar el capitulo 9 con el mismo criterio: performance, SLIs/SLOs educativos, escalamiento, resiliencia, colas, pruebas de carga, observabilidad y criterios de salida sin pendientes internos.
