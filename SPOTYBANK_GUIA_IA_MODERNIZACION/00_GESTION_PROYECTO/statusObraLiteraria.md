@@ -49,7 +49,7 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 1 - Introduccion | CERRADO_TECNICO | `04_CUERPO_PRINCIPAL/CAP_01_Introduccion/CAP_01_BORRADOR.md` |
 | 2 - Inventario tecnico inicial | CERRADO_TECNICO | `04_CUERPO_PRINCIPAL/CAP_02_Marco_Teorico/CAP_02_BORRADOR.md` |
 | 3 - Anonimizacion y rebranding seguro | CERRADO_TECNICO | `04_CUERPO_PRINCIPAL/CAP_03_Metodologia/CAP_03_BORRADOR.md` |
-| 4 - Documentacion viva de microservicios | DONE_EDITORIAL | `04_CUERPO_PRINCIPAL/CAP_04_Desarrollo/CAP_04_BORRADOR.md` |
+| 4 - Documentacion viva de microservicios | CERRADO_TECNICO | `04_CUERPO_PRINCIPAL/CAP_04_Desarrollo/CAP_04_BORRADOR.md` |
 | 5 - Dominios bancarios y fronteras | DONE_EDITORIAL | `04_CUERPO_PRINCIPAL/CAP_05_Resultados/CAP_05_BORRADOR.md` |
 | 6 - Modernizacion de backend | DONE_EDITORIAL | `04_CUERPO_PRINCIPAL/CAP_06_Discusion/CAP_06_BORRADOR.md` |
 | 7 - Seguridad y DevSecOps | DONE_EDITORIAL | `04_CUERPO_PRINCIPAL/CAP_07_Conclusiones/CAP_07_BORRADOR.md` |
@@ -119,10 +119,11 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-28 | Capitulo 1 - Introduccion | CERRADO_TECNICO | Cierre reforzado con dictamen, compuerta tecnica, higiene de IA, validacion de actividad y sin pendientes internos |
 | 2026-05-28 | Capitulo 2 - Inventario tecnico inicial | CERRADO_TECNICO | Cierre reforzado con baseline reproducible, clasificacion de artefactos, matriz de riesgo, dependencias y uso controlado de IA |
 | 2026-05-28 | Capitulo 3 - Anonimizacion y rebranding seguro | CERRADO_TECNICO | Cierre reforzado con matriz de decision por superficie, placeholders, control de artefactos y compuerta segura de publicacion |
+| 2026-05-28 | Capitulo 4 - Documentacion viva de microservicios | CERRADO_TECNICO | Cierre reforzado con criterios para README, fichas vivas, catalogos, runbooks, gobernanza e IA documental |
 
 ## Proximo bloque recomendado
 
-1. Cerrar tecnicamente el capitulo 4 antes de avanzar al capitulo 5.
+1. Cerrar tecnicamente el capitulo 5 antes de avanzar al capitulo 6.
 2. Continuar el cierre capitulo por capitulo hasta que los 12 esten en `CERRADO_TECNICO`.
 3. Recien despues ordenar publicacion, formato de venta, release notes finales y tag `v0.2-editorial`.
 
@@ -159,3 +160,4 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-28 | Cerrado tecnicamente el capitulo 1 y creado registro de cierre tecnico por capitulos. |
 | 2026-05-28 | Cerrado tecnicamente el capitulo 2 y saneada fuente de modernizacion asociada. |
 | 2026-05-28 | Cerrado tecnicamente el capitulo 3 y saneada fuente de refactor de identidad asociada. |
+| 2026-05-28 | Cerrado tecnicamente el capitulo 4 con criterios verificables de documentacion viva. |

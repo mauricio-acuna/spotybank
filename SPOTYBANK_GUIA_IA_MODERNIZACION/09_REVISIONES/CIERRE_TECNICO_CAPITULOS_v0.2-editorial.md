@@ -17,8 +17,8 @@ La regla de trabajo es simple: un capitulo solo pasa a `CERRADO_TECNICO` cuando 
 | 1 - Introduccion | CERRADO_TECNICO | Define pacto de lectura, limites del caso, uso de IA, compuerta tecnica y actividad inicial validable |
 | 2 - Inventario tecnico inicial | CERRADO_TECNICO | Define baseline reproducible, clasificacion de artefactos, matriz de riesgo, dependencias y uso controlado de IA |
 | 3 - Anonimizacion y rebranding seguro | CERRADO_TECNICO | Define saneamiento, rebranding, placeholders, artefactos no publicables y compuerta segura antes de publicar |
-| 4 - Documentacion viva de microservicios | PENDIENTE_CIERRE | Siguiente capitulo a revisar |
-| 5 - Dominios bancarios y fronteras | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
+| 4 - Documentacion viva de microservicios | CERRADO_TECNICO | Define README, fichas vivas, catalogos, matriz de relaciones, runbooks, gobernanza e IA documental |
+| 5 - Dominios bancarios y fronteras | PENDIENTE_CIERRE | Siguiente capitulo a revisar |
 | 6 - Modernizacion de backend | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
 | 7 - Seguridad y DevSecOps | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
 | 8 - Despliegue cloud native | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
@@ -66,6 +66,20 @@ La regla de trabajo es simple: un capitulo solo pasa a `CERRADO_TECNICO` cuando 
 | Compuerta de publicacion segura definida | OK |
 | No deja pendientes editoriales internos | OK |
 
+## Checklist de cierre aplicado al capitulo 4
+
+| Control | Resultado |
+|---|---|
+| Documentacion generada, validada y operacional diferenciada | OK |
+| README por microservicio con controles minimos | OK |
+| Ficha viva por funcionalidad definida | OK |
+| Matriz de relaciones orientada a impacto | OK |
+| Catalogo de mensajeria con error, recuperacion y observabilidad | OK |
+| Runbook minimo con diagnostico y accion segura | OK |
+| Gobernanza documental ligada a PR, release, incidente, refactor y onboarding | OK |
+| Uso de IA condicionado a trazabilidad y validacion humana | OK |
+| No deja pendientes editoriales internos | OK |
+
 ## Proximo paso
 
-Cerrar el capitulo 4 con el mismo criterio: documentacion viva verificable, README por servicio, catalogos, matrices, runbooks, gobierno documental e IA sin pendientes internos.
+Cerrar el capitulo 5 con el mismo criterio: dominios, fronteras, adapters, contratos, ownership educativo y criterios de modernizacion sin pendientes internos.

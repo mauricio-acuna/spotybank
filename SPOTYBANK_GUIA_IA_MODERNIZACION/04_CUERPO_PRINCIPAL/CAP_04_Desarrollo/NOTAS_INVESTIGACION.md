@@ -33,8 +33,10 @@ La idea central es que cada pieza documental debe tener una funcion concreta. Un
 - Tratar la matriz de relaciones como evidencia para priorizar refactors.
 - Separar documentacion generada, validada y operacional.
 - Incluir definicion de done documental como criterio de modernizacion.
+- Cerrar el capitulo con criterios verificables para README, fichas vivas, matrices, catalogos, runbooks, gobernanza e IA documental.
+- Registrar que no quedan pendientes editoriales internos para el capitulo 4 en el ciclo `v0.2-editorial`.
 
-## Decisiones pendientes para versiones futuras
+## Mejoras futuras no bloqueantes
 
 - Crear ejemplos resueltos de fichas vivas por funcionalidad.
 - Conectar catalogos con enlaces navegables desde README principal.
