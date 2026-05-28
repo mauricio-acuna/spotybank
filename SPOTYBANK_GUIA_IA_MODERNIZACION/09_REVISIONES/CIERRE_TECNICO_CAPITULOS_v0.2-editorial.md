@@ -20,8 +20,8 @@ La regla de trabajo es simple: un capitulo solo pasa a `CERRADO_TECNICO` cuando 
 | 4 - Documentacion viva de microservicios | CERRADO_TECNICO | Define README, fichas vivas, catalogos, matriz de relaciones, runbooks, gobernanza e IA documental |
 | 5 - Dominios bancarios y fronteras | CERRADO_TECNICO | Define dominios, fronteras, adapters, commons, ledger educativo y criterios para mover responsabilidades |
 | 6 - Modernizacion de backend | CERRADO_TECNICO | Define oleadas backend, baseline, piloto, matrices Java/Spring, pruebas, observabilidad y rollback |
-| 7 - Seguridad y DevSecOps | PENDIENTE_CIERRE | Siguiente capitulo a revisar |
-| 8 - Despliegue cloud native | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
+| 7 - Seguridad y DevSecOps | CERRADO_TECNICO | Define amenaza, severidad, secretos, MFA, supply chain, pipeline, IA y backlog verificable |
+| 8 - Despliegue cloud native | PENDIENTE_CIERRE | Siguiente capitulo a revisar |
 | 9 - Performance, escalamiento y resiliencia | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
 | 10 - IA como acelerador | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
 | 11 - Spotybank como curso | PENDIENTE_CIERRE | Pendiente de revision tecnica final |
@@ -107,6 +107,21 @@ La regla de trabajo es simple: un capitulo solo pasa a `CERRADO_TECNICO` cuando 
 | Rollback y criterio de salida incluidos | OK |
 | No deja pendientes editoriales internos | OK |
 
+## Checklist de cierre aplicado al capitulo 7
+
+| Control | Resultado |
+|---|---|
+| Saneamiento educativo, aplicacion y plataforma diferenciados | OK |
+| Modelo de amenazas minimo definido | OK |
+| Severidad y evidencia de cierre incorporadas | OK |
+| Secretos con remocion, rotacion, externalizacion y prevencion | OK |
+| MFA/Auth con controles minimos verificables | OK |
+| Supply chain con SBOM, imagenes, digests y procedencia | OK |
+| Pipeline DevSecOps con bloqueantes claros | OK |
+| IA limitada a artefactos verificables | OK |
+| Backlog de seguridad accionable | OK |
+| No deja pendientes editoriales internos | OK |
+
 ## Proximo paso
 
-Cerrar el capitulo 7 con el mismo criterio: seguridad, DevSecOps, saneamiento, threat model, secretos, supply chain, pipeline y controles sin pendientes internos.
+Cerrar el capitulo 8 con el mismo criterio: despliegue cloud native, runtime contract, probes, resources, HPA, GitOps, network policies y continuidad sin pendientes internos.

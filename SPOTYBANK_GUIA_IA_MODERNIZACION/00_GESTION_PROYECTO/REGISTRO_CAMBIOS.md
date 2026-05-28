@@ -35,3 +35,4 @@
 | 2026-05-28 | v0.2-cierre-tecnico | Cuerpo principal | Cerrado tecnicamente el capitulo 4 con criterios para documentacion viva, fichas funcionales, catalogos, runbooks, gobernanza e IA documental. |
 | 2026-05-28 | v0.2-cierre-tecnico | Cuerpo principal | Cerrado tecnicamente el capitulo 5 con criterios para dominios, fronteras, adapters, commons, ledger educativo y movimiento de responsabilidades. |
 | 2026-05-28 | v0.2-cierre-tecnico | Cuerpo principal | Cerrado tecnicamente el capitulo 6 con oleadas backend, baseline, piloto, matrices Java/Spring, pruebas, observabilidad y rollback. |
+| 2026-05-28 | v0.2-cierre-tecnico | Cuerpo principal | Cerrado tecnicamente el capitulo 7 con amenaza, severidad, secretos, MFA, supply chain, pipeline, IA y backlog verificable. |

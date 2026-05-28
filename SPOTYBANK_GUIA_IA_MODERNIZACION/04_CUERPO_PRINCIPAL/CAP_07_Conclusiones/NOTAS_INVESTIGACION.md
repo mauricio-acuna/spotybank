@@ -33,8 +33,10 @@ La idea central es que un hallazgo de seguridad solo sirve si termina en una acc
 - Priorizar secretos, MFA, Actuator, dependencias, contenedores y mensajeria.
 - Considerar publicacion segura del caso como parte de la cadena DevSecOps.
 - Exigir backlog accionable con criticidad, evidencia y criterio de cierre.
+- Cerrar el capitulo con severidad, tickets verificables, compuertas de pipeline, evidencia de cierre y limites del uso de IA.
+- Registrar que no quedan pendientes editoriales internos para el capitulo 7 en el ciclo `v0.2-editorial`.
 
-## Decisiones pendientes para versiones futuras
+## Mejoras futuras no bloqueantes
 
 - Crear checklist ASVS/API Top 10 adaptado a Spotybank.
 - Agregar ejemplo resuelto de threat modeling para MFA.

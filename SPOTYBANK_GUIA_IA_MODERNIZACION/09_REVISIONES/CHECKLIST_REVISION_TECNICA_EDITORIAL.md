@@ -16,7 +16,7 @@ Este checklist prepara la obra Spotybank para una version publicable.
 - [ok] Cada capitulo diferencia evidencia, inferencia y decision pendiente.
 - [ok] Las recomendaciones tienen criterio de validacion.
 - [ok] Los capitulos no prometen SLAs reales.
-- [ok] `spotybank-core-ledger` se presenta como pieza pendiente o educativa, no como modulo productivo ya cerrado.
+- [ok] `spotybank-core-ledger` se presenta como pieza de diseno educativo, no como modulo productivo ya cerrado.
 - [ok] Los capitulos de nube no dependen de proveedor unico.
 - [ok] Los capitulos de IA incluyen limites de privacidad y validacion humana.
 - [ok] Los ejercicios usan datos sinteticos.
@@ -51,7 +51,7 @@ Este checklist prepara la obra Spotybank para una version publicable.
 
 ## Criterio de salida
 
-La obra puede pasar a version `v0.1-publicable` cuando:
+La obra puede considerarse apta para salida tecnica/editorial cuando:
 
 - El cuerpo principal esta completo.
 - Los apendices docentes estan completos.
