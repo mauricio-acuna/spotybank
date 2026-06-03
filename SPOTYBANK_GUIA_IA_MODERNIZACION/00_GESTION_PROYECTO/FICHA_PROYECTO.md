@@ -7,13 +7,13 @@
 | Autor | Mauricio Acuña, Ingeniero en Informatica |
 | Institucion / Editorial | Edicion independiente para uso educativo, academico y empresarial |
 | Fecha de inicio | 2026-05-11 |
-| Fecha objetivo entrega | 2026-05-12 para version `v0.1-publicable` |
+| Fecha objetivo entrega | 2026-05-12 para version `v0.1-publicable`; 2026-06-03 para tag editorial interno `v0.2-editorial` |
 | Publico objetivo | Estudiantes avanzados, docentes, arquitectos, desarrolladores, QA, DevOps/SRE, seguridad y lideres tecnicos |
 | Idioma principal | Espanol |
 | Extension estimada | Libro base: 180-260 paginas. Fasciculos: 25-45 paginas cada uno |
-| Ultimo tag publicado | v0.1-publicable |
-| Version en preparacion | v0.2-editorial |
-| Estado | CAPITULOS 1 A 12 EN CERRADO_TECNICO; VALIDACION INTEGRAL DE CIERRE COMPLETADA |
+| Ultimo tag publicado | v0.2-editorial |
+| Version en preparacion | PDF/HTML, release con assets o salida comercial si se decide una etapa posterior |
+| Estado | V0.2-EDITORIAL CERRADA COMO TAG EDITORIAL INTERNO; CAPITULOS 1 A 12 EN CERRADO_TECNICO |
 | Licencia textual | CC BY-NC-SA 4.0 |
 | Licencia de ejemplos de codigo propios | Apache License 2.0 |
 

@@ -17,7 +17,7 @@ Edicion independiente para uso educativo, academico y empresarial
 
 Version base publicada: `v0.1-publicable`
 
-Ciclo actual: `v0.2-editorial` en preparacion, con cierre tecnico completado
+Version editorial actual: `v0.2-editorial`, con cierre tecnico y salida interna completados
 
 2026
 

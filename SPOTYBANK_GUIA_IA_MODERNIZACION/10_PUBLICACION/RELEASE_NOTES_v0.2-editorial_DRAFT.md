@@ -1,6 +1,6 @@
 # Release notes - v0.2-editorial
 
-Estado: borrador preparado para tag editorial interno. No crear release final con artefactos hasta cerrar la etapa PDF/HTML o una decision equivalente.
+Estado: lista para tag editorial interno. No crear release final con artefactos hasta cerrar la etapa PDF/HTML o una decision equivalente.
 
 ## Nombre de version
 
@@ -43,7 +43,6 @@ Spotybank Guia IA de Modernizacion - v0.2-editorial
 ## No incluye todavia
 
 - Dictamenes externos completados.
-- Tag `v0.2-editorial`.
 - Release formal en GitHub con artefactos descargables.
 - PDF/HTML exportado dentro del repo.
 - Arte grafico final de portada.
@@ -70,7 +69,7 @@ Spotybank Guia IA de Modernizacion - v0.2-editorial
 - [ok] Ejecutar script de publicacion segura.
 - [ok] Verificar `main` sincronizada con `origin/main`.
 - [later] Generar PDF/HTML como etapa posterior al tag editorial interno.
-- [next] Crear tag `v0.2-editorial` solo cuando los obligatorios esten en `[ok]`.
+- [ok] Crear tag `v0.2-editorial` cuando los obligatorios esten en `[ok]`.
 
 ## Comandos sugeridos al cierre
 

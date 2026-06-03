@@ -1,23 +1,23 @@
 # Status de Obra Literaria Tecnica
 
-Fecha de control: 2026-05-27
+Fecha de control: 2026-06-03
 
 Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de microservicios bancarios`.
 
 ## Resumen de cierre
 
-- Avance global estimado: 100% para `v0.1-publicable` y 100% de cierre tecnico de capitulos para preparacion `v0.2-editorial`.
-- Estado editorial: CAPITULOS 1 A 12 EN CERRADO_TECNICO; VALIDACION INTEGRAL DE CIERRE COMPLETADA.
+- Avance global estimado: 100% para `v0.1-publicable` y 100% para tag editorial interno `v0.2-editorial`.
+- Estado editorial: CAPITULOS 1 A 12 EN CERRADO_TECNICO; VALIDACION INTEGRAL Y CIERRE DE SALIDA COMPLETADOS.
 - Autor: Mauricio Acuña, Ingeniero en Informatica.
 - Version base publicada: `v0.1-publicable`.
-- Version objetivo del ciclo actual: `v0.2-editorial`.
+- Version editorial publicada: `v0.2-editorial`.
 - Estrategia de publicacion: libro unico en Markdown y fasciculos por perfil; exportacion PDF/HTML disponible como siguiente formato.
 - Licencia textual: CC BY-NC-SA 4.0.
 - Licencia de ejemplos de codigo propios: Apache License 2.0.
 - Repo Git independiente de la obra: `Documentacion/ObraLiteraria`.
 - Repo remoto registrado: `https://github.com/mauricio-acuna/spotybank.git`.
-- Estado Git verificado: `main` sincronizada con `origin/main` para cierre tecnico global al 2026-05-28.
-- Ciclo actual: cierre tecnico global completado; siguiente bloque es ordenar salida `v0.2-editorial` sin crear tag ni release antes del checklist final.
+- Estado Git verificado: `main` sincronizada con `origin/main` para cierre editorial interno al 2026-06-03.
+- Ciclo actual: salida editorial interna cerrada; PDF/HTML, release con assets, revision externa ampliada y venta/curso quedan como etapas posteriores.
 
 ## Estados usados
 
@@ -77,7 +77,7 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 
 | Item | Estado | Motivo |
 |---|---|---|
-| Revision externa por especialistas | NEXT | Proximo bloque recomendado para cerrar `v0.2-editorial` con mirada por perfiles |
+| Revision externa por especialistas | LATER | Recomendada antes de producto institucional, comercial o release con artefactos |
 | ISBN | LATER | Solo requerido para edicion editorial o impresa formal |
 | Maquetacion profesional | LATER | Markdown es el formato base de `v0.1-publicable` |
 | Exportacion PDF/HTML | NEXT | Plan preparado; falta herramienta local y generacion de artefactos si se decide release formal |
@@ -134,9 +134,9 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 
 ## Proximo bloque recomendado
 
-1. Confirmar `main` sincronizada con `origin/main`.
-2. Crear tag `v0.2-editorial` solo si el usuario confirma avanzar con tag editorial interno.
-3. Dejar PDF/HTML, release con assets, revision externa ampliada y venta/curso como etapas posteriores.
+1. Generar PDF/HTML solo si se decide preparar release con artefactos descargables.
+2. Activar revision externa por perfiles antes de producto institucional, comercial o curso pago.
+3. Mantener venta, licencia comercial y landing page como decisiones separadas del cierre editorial.
 
 ## Historial
 
@@ -183,3 +183,4 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-28 | Completada validacion integral de cierre tecnico global posterior a los 12 capitulos. |
 | 2026-05-28 | Ordenado plan de salida y formato de venta sin crear tag, release, precio ni oferta comercial. |
 | 2026-05-28 | Cerrados criterios internos del checklist de salida y documentada decision sobre revision externa. |
+| 2026-06-03 | Publicado `main` y preparado tag editorial interno `v0.2-editorial` despues del escaneo de publicacion segura. |

@@ -7,8 +7,8 @@ Este directorio contiene la base editorial de una obra tecnica y educativa basad
 - Titulo: `Spotybank: guia IA de modernizacion de microservicios bancarios`.
 - Subtitulo: `De sistema legacy anonimizado a laboratorio educativo de arquitectura, nube, seguridad y performance`.
 - Autor: Mauricio Acuña, Ingeniero en Informatica.
-- Ultimo tag publicado: `v0.1-publicable`.
-- Estado actual en `main`: capitulos 1 a 12 en `CERRADO_TECNICO`, con validacion integral documentada para `v0.2-editorial`.
+- Ultimo tag publicado: `v0.2-editorial`.
+- Estado actual en `main`: capitulos 1 a 12 en `CERRADO_TECNICO`, con validacion integral publicada como tag editorial interno.
 - Licencia textual: CC BY-NC-SA 4.0.
 - Ejemplos de codigo propios: Apache License 2.0.
 - Archivo de licencia: `../LICENSE.md`.
@@ -102,5 +102,5 @@ SPOTYBANK_GUIA_IA_MODERNIZACION/
 - `10_PUBLICACION/PROPUESTA_LICENCIA_Y_USO.md`
 - `10_PUBLICACION/PLAN_SALIDA_FORMATO_VENTA_v0.2-editorial.md`
 - `10_PUBLICACION/PLAN_VERSION_PUBLICABLE.md`
-- `10_PUBLICACION/RELEASE_NOTES_v0.1-publicable_DRAFT.md`
+- `10_PUBLICACION/RELEASE_NOTES_v0.2-editorial_DRAFT.md`
 - `10_PUBLICACION/CHECKLIST_TAG_RELEASE.md`

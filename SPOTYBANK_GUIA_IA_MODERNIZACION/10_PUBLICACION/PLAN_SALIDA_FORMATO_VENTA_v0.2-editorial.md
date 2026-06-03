@@ -1,6 +1,6 @@
 # Plan de salida y formato de venta v0.2-editorial
 
-Estado: plan de ordenamiento. No crea tag, release, precio, landing page ni oferta comercial.
+Estado: plan de ordenamiento ejecutado para tag editorial interno. No crea release con assets, precio, landing page ni oferta comercial.
 
 ## Principio rector
 
@@ -11,7 +11,7 @@ Primero se publica una salida editorial clara; despues se decide si existe una v
 | Decision | Estado recomendado | Criterio |
 |---|---|---|
 | Contenido tecnico-editorial | Cerrado | Capitulos 1 a 12 en `CERRADO_TECNICO` y validacion integral completada |
-| Tag `v0.2-editorial` | Pendiente | Solo despues de checklist final, escaneo seguro y decision sobre revision externa |
+| Tag `v0.2-editorial` | Cerrado | Checklist final, escaneo seguro y decision sobre revision externa documentados |
 | PDF/HTML | Pendiente tecnico | Requiere herramienta de exportacion o pipeline |
 | Release con assets | Posterior | Solo si existen PDF/HTML revisados |
 | Venta directa | Posterior | Requiere formato final, precio, canal, terminos comerciales e impuestos |
@@ -31,14 +31,10 @@ Primero se publica una salida editorial clara; despues se decide si existe una v
 
 ## Recomendacion de secuencia
 
-1. Cerrar checklist `v0.2-editorial`.
-2. Decidir si revision externa minima bloquea o no el tag.
-3. Ejecutar script de publicacion segura.
-4. Crear tag `v0.2-editorial` solo si los criterios obligatorios estan en `[ok]`.
-5. Generar PDF/HTML en una etapa separada.
-6. Revisar PDF/HTML como artefactos, no como fuente.
-7. Crear release con assets solo si los artefactos estan revisados.
-8. Definir venta o curso comercial con terminos propios.
+1. Generar PDF/HTML en una etapa separada si se decide entregar artefactos.
+2. Revisar PDF/HTML como artefactos, no como fuente.
+3. Crear release con assets solo si los artefactos estan revisados.
+4. Definir venta o curso comercial con terminos propios.
 
 ## Minimo para venta o curso pago
 
@@ -63,4 +59,4 @@ Si el autor decide vender una version PDF, un pack docente o un taller, debe tra
 - No publicar landing de venta.
 - No mezclar release tecnico con oferta paga.
 - No cambiar licencia sin decision editorial explicita.
-- No generar tag antes del checklist final.
+- No generar release con assets antes de revisar PDF/HTML.

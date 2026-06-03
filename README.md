@@ -6,8 +6,8 @@ Indice del material editorial de Spotybank.
 
 - Titulo: `Spotybank: guia IA de modernizacion de microservicios bancarios`.
 - Autor: Mauricio Acuña, Ingeniero en Informatica.
-- Ultimo tag publicado: `v0.1-publicable`.
-- Estado actual en `main`: cierre tecnico-editorial de capitulos 1 a 12 completado para preparacion de `v0.2-editorial`.
+- Ultimo tag publicado: `v0.2-editorial`.
+- Estado actual en `main`: cierre tecnico-editorial de capitulos 1 a 12 publicado como tag editorial interno; PDF/HTML, release con assets y salida comercial quedan como etapas posteriores.
 - Licencia textual: CC BY-NC-SA 4.0.
 - Ejemplos de codigo propios: Apache License 2.0.
 - Archivo de licencia: [LICENSE.md](LICENSE.md)
@@ -70,7 +70,7 @@ La agenda sugerida publica 3 veces al dia: 09:00, 14:00 y 19:00 hora local de la
 21. `SPOTYBANK_GUIA_IA_MODERNIZACION/10_PUBLICACION/PLAN_VERSION_PUBLICABLE.md`
 22. `SPOTYBANK_GUIA_IA_MODERNIZACION/09_REVISIONES/CHECKLIST_REVISION_TECNICA_EDITORIAL.md`
 23. `SPOTYBANK_GUIA_IA_MODERNIZACION/09_REVISIONES/MATRIZ_REVISION_POR_PERFIL.md`
-24. `SPOTYBANK_GUIA_IA_MODERNIZACION/10_PUBLICACION/RELEASE_NOTES_v0.1-publicable_DRAFT.md`
+24. `SPOTYBANK_GUIA_IA_MODERNIZACION/10_PUBLICACION/RELEASE_NOTES_v0.2-editorial_DRAFT.md`
 25. `SPOTYBANK_GUIA_IA_MODERNIZACION/09_REVISIONES/CIERRE_TECNICO_CAPITULOS_v0.2-editorial.md`
 26. `SPOTYBANK_GUIA_IA_MODERNIZACION/09_REVISIONES/VALIDACION_INTEGRAL_CIERRE_TECNICO_v0.2-editorial.md`
 27. `SPOTYBANK_GUIA_IA_MODERNIZACION/10_PUBLICACION/PLAN_SALIDA_FORMATO_VENTA_v0.2-editorial.md`
