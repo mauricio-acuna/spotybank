@@ -83,8 +83,23 @@ function Assert-ContenidoPublicable {
     ("P0" + "-4PP")
   )
   $pattern = ($terms | ForEach-Object { [regex]::Escape($_) }) -join "|"
-  $matches = & rg -n -i $pattern . -g "!.git/**" -g "!_logs/**" 2>$null
-  $code = $LASTEXITCODE
+
+  $rg = Get-Command rg -ErrorAction SilentlyContinue
+  if ($rg) {
+    $matches = & $rg.Source -n -i $pattern . -g "!.git/**" -g "!_logs/**" 2>$null
+    $code = $LASTEXITCODE
+  }
+  else {
+    Write-Host "rg no disponible; usando Select-String para el escaneo de seguridad."
+    $root = (Resolve-Path ".").Path
+    $matches = Get-ChildItem -Path . -Recurse -File -Force |
+      Where-Object {
+        $relative = $_.FullName.Substring($root.Length).TrimStart("\", "/")
+        -not ($relative -like ".git*") -and -not ($relative -like "_logs*")
+      } |
+      Select-String -Pattern $pattern
+    $code = 0
+  }
 
   if ($code -eq 0 -and $matches) {
     Write-Host "Se detectaron referencias no publicables:"

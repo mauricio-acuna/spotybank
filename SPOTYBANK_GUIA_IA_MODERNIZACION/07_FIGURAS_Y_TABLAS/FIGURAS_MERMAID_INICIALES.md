@@ -1,6 +1,8 @@
 # Figuras Mermaid iniciales
 
-Estas figuras son borradores editoriales. Pueden usarse en Markdown, exportarse a SVG/PNG o reemplazarse luego por piezas graficas finales.
+Estado de revision: figuras revisadas como material editorial inicial para `v0.2-editorial`.
+
+Estas figuras pueden usarse en Markdown, exportarse a SVG/PNG o reemplazarse luego por piezas graficas finales. No representan arquitectura productiva certificada; sintetizan el caso educativo y los capitulos cerrados tecnicamente.
 
 ## FIG_001 - Spotybank como caso educativo
 

@@ -2,7 +2,7 @@
 
 Este documento prepara la ronda minima de revision externa para `v0.2-editorial`.
 
-La revision busca detectar bloqueantes tecnicos, editoriales o de publicacion antes de crear un tag o release formal posterior a `v0.1-publicable`.
+La revision busca detectar bloqueantes tecnicos, editoriales o de publicacion antes de una salida institucional, comercial, docente paga o release con artefactos. Para un tag editorial interno `v0.2-editorial`, la decision vigente queda documentada en `DECISION_REVISION_EXTERNA_v0.2-editorial.md`.
 
 ## Alcance de la ronda
 
@@ -75,7 +75,7 @@ La ronda minima queda cerrada cuando:
 - Los hallazgos medios tienen decision: corregir ahora o pasar a backlog posterior.
 - El checklist de salida `v0.2-editorial` refleja el resultado de la ronda.
 
-## Pendientes inmediatos
+## Trabajo posterior recomendado
 
 1. Seleccionar revisores o responsables por perfil.
 2. Copiar la plantilla para cada dictamen.

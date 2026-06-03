@@ -43,3 +43,4 @@
 | 2026-05-28 | v0.2-cierre-tecnico | Cuerpo principal | Cerrado tecnicamente el capitulo 12 con versiones, fases de evolucion, ledger educativo, eventos, roadmap 90 dias, metricas, riesgos y criterios de salida sin promesas productivas. |
 | 2026-05-28 | v0.2-cierre-tecnico | Revision | Completada validacion integral de cierre tecnico con README, ficha, indice, checklist de salida y release notes draft alineados al estado `CERRADO_TECNICO`. |
 | 2026-05-28 | v0.2-salida | Publicacion | Ordenado plan de salida y formato de venta, separando tag editorial, PDF/HTML, release con assets, venta directa, curso pago y licencia comercial. |
+| 2026-05-28 | v0.2-salida | Revision | Cerrados criterios internos de salida con glosario, acronimos, figuras, tablas, ejercicios, laboratorios y decision sobre revision externa. |

@@ -130,12 +130,13 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-28 | Capitulo 12 - Roadmap de evolucion | CERRADO_TECNICO | Cierre reforzado con versiones, fases, ledger educativo, eventos, roadmap 90 dias, criterios v0.2 y limites de release/formato |
 | 2026-05-28 | Validacion integral de cierre tecnico | CERRADO_TECNICO | README, ficha, leeme primero, indice, checklist de salida y release notes draft alineados con los 12 capitulos cerrados |
 | 2026-05-28 | Plan de salida y formato de venta | DONE | Publicacion editorial separada de PDF/HTML, release con assets, venta directa, curso pago y licencia comercial |
+| 2026-05-28 | Checklist de salida v0.2-editorial | DONE | Criterios internos cerrados y escaneo seguro del cierre de salida ejecutado en publicacion |
 
 ## Proximo bloque recomendado
 
-1. Cerrar checklist de salida `v0.2-editorial`.
-2. Decidir si revision externa minima bloquea el tag.
-3. No crear tag ni release hasta ejecutar escaneo seguro y confirmar formato de entrega.
+1. Confirmar `main` sincronizada con `origin/main`.
+2. Crear tag `v0.2-editorial` solo si el usuario confirma avanzar con tag editorial interno.
+3. Dejar PDF/HTML, release con assets, revision externa ampliada y venta/curso como etapas posteriores.
 
 ## Historial
 
@@ -181,3 +182,4 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-28 | Cerrado tecnicamente el capitulo 12 con criterios verificables de roadmap, fases, ledger educativo, v0.2 y limites de publicacion. |
 | 2026-05-28 | Completada validacion integral de cierre tecnico global posterior a los 12 capitulos. |
 | 2026-05-28 | Ordenado plan de salida y formato de venta sin crear tag, release, precio ni oferta comercial. |
+| 2026-05-28 | Cerrados criterios internos del checklist de salida y documentada decision sobre revision externa. |

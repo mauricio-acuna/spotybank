@@ -2,6 +2,8 @@
 
 Este documento organiza laboratorios para usar Spotybank en cursos, talleres o formacion interna. Cada laboratorio puede ejecutarse como actividad independiente o como parte de un proyecto final.
 
+Estado de revision: laboratorios revisados para `v0.2-editorial`; cada perfil declara duracion, lecturas, objetivo, entregables, evaluacion y secuencia.
+
 ## Perfil backend
 
 | Item | Descripcion |
@@ -139,7 +141,7 @@ Secuencia:
 | Entregables | Diagnostico, arquitectura, seguridad, pruebas, despliegue, SLOs y roadmap. |
 | Evaluacion | Coherencia entre perfiles, evidencia y capacidad de defensa. |
 
-Dinámica sugerida:
+Dinamica sugerida:
 
 1. Equipo backend prepara inventario.
 2. Equipo arquitectura define frontera.
@@ -148,3 +150,13 @@ Dinámica sugerida:
 5. Equipo QA propone validacion.
 6. Equipo gestion tecnica prioriza roadmap.
 7. Todos defienden una decision conjunta.
+
+## Validacion de salida
+
+| Control | Resultado |
+|---|---|
+| Laboratorios por perfil con objetivo | OK |
+| Entregables por perfil definidos | OK |
+| Evaluacion visible antes de ejecutar | OK |
+| Secuencia de trabajo incluida | OK |
+| Laboratorio integrador con equipos mixtos | OK |

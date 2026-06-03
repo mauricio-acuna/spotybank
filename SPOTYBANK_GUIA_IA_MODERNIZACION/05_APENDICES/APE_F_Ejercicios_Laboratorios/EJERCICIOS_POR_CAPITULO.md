@@ -2,11 +2,13 @@
 
 Este apendice convierte cada capitulo de la obra Spotybank en actividades practicas. Los ejercicios estan pensados para ejecutarse con evidencia saneada, sin datos reales, sin secretos y sin referencias a entidades externas al caso educativo.
 
+Estado de revision: actividades revisadas para `v0.2-editorial`; cada capitulo declara objetivo, actividad, entregable, evidencia y criterio de exito.
+
 ## Reglas comunes
 
 - Usar siempre la identidad publica `Spotybank`.
 - No copiar secretos, tokens, endpoints privados ni datos reales.
-- Distinguir evidencia, inferencia, decision pendiente y recomendacion.
+- Distinguir evidencia, inferencia, decision pendiente metodologica, validacion externa y recomendacion.
 - Entregar resultados en Markdown.
 - Incluir fuentes consultadas dentro del workspace.
 - Actualizar el status de la obra cuando una actividad cambie el alcance.
@@ -83,7 +85,7 @@ Preguntas guia:
 | Actividad | Crear un mapa de bounded contexts para `spotybank-auth`, `spotybank-accounts` y `spotybank-core-ledger`. |
 | Entregable | `MAPA_DOMINIOS_SPOTYBANK.md` |
 | Evidencia | Servicios canonicos y matriz de relaciones. |
-| Criterio de exito | El mapa diferencia dominio, adapter, dependencia externa y decision pendiente. |
+| Criterio de exito | El mapa diferencia dominio, adapter, dependencia externa y validacion externa. |
 
 Preguntas guia:
 
@@ -160,7 +162,7 @@ Preguntas guia:
 | Item | Descripcion |
 |---|---|
 | Objetivo | Usar IA con trazabilidad y seguridad. |
-| Actividad | Tomar un hallazgo tecnico y convertirlo en evidencia, inferencia, decision pendiente y ticket. |
+| Actividad | Tomar un hallazgo tecnico y convertirlo en evidencia, inferencia, validacion externa y ticket. |
 | Entregable | `HALLAZGO_ASISTIDO_IA.md` |
 | Evidencia | Capitulo 10, backlog y registro de bloqueos. |
 | Criterio de exito | El texto no presenta inferencias como hechos y no expone informacion sensible. |
@@ -213,3 +215,13 @@ Cada equipo debe elegir tres ejercicios de capitulos distintos y producir una en
 - Plan de prueba de carga.
 
 La entrega debe incluir una seccion final: `Decisiones tomadas y evidencia`.
+
+## Validacion de salida
+
+| Control | Resultado |
+|---|---|
+| Ejercicios por capitulo con objetivo | OK |
+| Entregables nombrados en Markdown | OK |
+| Evidencia requerida por actividad | OK |
+| Criterio de exito visible | OK |
+| Restriccion de datos reales y secretos | OK |

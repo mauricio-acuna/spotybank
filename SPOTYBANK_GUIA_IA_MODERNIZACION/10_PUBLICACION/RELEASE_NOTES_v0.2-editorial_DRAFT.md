@@ -1,6 +1,6 @@
 # Release notes - v0.2-editorial
 
-Estado: borrador preparado. No crear tag ni release final hasta cerrar los criterios obligatorios del checklist de salida.
+Estado: borrador preparado para tag editorial interno. No crear release final con artefactos hasta cerrar la etapa PDF/HTML o una decision equivalente.
 
 ## Nombre de version
 
@@ -10,7 +10,7 @@ Spotybank Guia IA de Modernizacion - v0.2-editorial
 
 ## Resumen
 
-`v0.2-editorial` consolida el desarrollo editorial ampliado y el cierre tecnico de la obra Spotybank despues de `v0.1-publicable`. La version fortalece los capitulos 1 a 12, ordena el cierre editorial, prepara criterios de salida, deja lista la ronda de revision externa minima por perfiles y mantiene el enfoque educativo, anonimizado y no productivo del caso.
+`v0.2-editorial` consolida el desarrollo editorial ampliado y el cierre tecnico de la obra Spotybank despues de `v0.1-publicable`. La version fortalece los capitulos 1 a 12, ordena el cierre editorial, prepara criterios de salida, deja documentada la decision sobre revision externa y mantiene el enfoque educativo, anonimizado y no productivo del caso.
 
 ## Cambios principales frente a v0.1-publicable
 
@@ -21,6 +21,7 @@ Spotybank Guia IA de Modernizacion - v0.2-editorial
 - Criterios de salida `v0.2-editorial` documentados.
 - Validacion integral de cierre tecnico documentada.
 - Plan de salida y formato de venta separado de tag/release.
+- Decision sobre revision externa documentada para no bloquear el tag editorial interno.
 - Paquete de revision externa minima preparado por perfiles.
 - Registro de cambios, status de obra y checklist de etapas alineados con el ciclo posterior al tag `v0.1-publicable`.
 
@@ -30,6 +31,7 @@ Spotybank Guia IA de Modernizacion - v0.2-editorial
 - Checklist de salida `v0.2-editorial`.
 - Validacion integral de cierre tecnico.
 - Plan de salida y formato de venta.
+- Decision sobre revision externa.
 - Paquete de revision externa minima por perfiles.
 - Matriz de revision por perfil actualizada.
 - Registro de cambios actualizado.
@@ -62,11 +64,12 @@ Spotybank Guia IA de Modernizacion - v0.2-editorial
 - [ok] Validacion integral de cierre tecnico documentada.
 - [ok] Checklist de salida `v0.2-editorial` creado.
 - [ok] Paquete de revision externa minima preparado.
-- [next] Recopilar dictamenes externos por perfiles criticos.
-- [next] Resolver hallazgos bloqueantes o registrarlos como fuera de alcance.
-- [next] Ejecutar script de publicacion segura.
-- [next] Verificar `main` sincronizada con `origin/main`.
-- [next] Decidir si se genera PDF/HTML antes del release.
+- [ok] Decision sobre revision externa documentada.
+- [later] Recopilar dictamenes externos por perfiles criticos si se prepara producto institucional/comercial.
+- [later] Resolver hallazgos bloqueantes o registrarlos como fuera de alcance si se activa ronda externa.
+- [ok] Ejecutar script de publicacion segura.
+- [ok] Verificar `main` sincronizada con `origin/main`.
+- [later] Generar PDF/HTML como etapa posterior al tag editorial interno.
 - [next] Crear tag `v0.2-editorial` solo cuando los obligatorios esten en `[ok]`.
 
 ## Comandos sugeridos al cierre
@@ -80,4 +83,4 @@ git push origin v0.2-editorial
 
 ## Criterio de publicacion
 
-Publicar `v0.2-editorial` cuando la ronda minima de revision externa no tenga bloqueantes abiertos, el checklist de salida marque los obligatorios en `[ok]` y el script de publicacion segura complete sin hallazgos sensibles.
+Declarar `v0.2-editorial` lista para tag editorial interno cuando el checklist de salida marque los obligatorios en `[ok]`, el script de publicacion segura complete sin hallazgos sensibles y `main` este sincronizada con `origin/main`. La revision externa, PDF/HTML y release con artefactos quedan como etapas posteriores salvo decision explicita.

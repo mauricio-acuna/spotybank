@@ -2,6 +2,8 @@
 
 Fecha de elaboracion: 2026-05-12
 
+Estado de revision: tablas revisadas como material ejecutivo inicial para `v0.2-editorial`.
+
 Estas tablas resumen la propuesta de modernizacion de Spotybank en formato reutilizable para capitulos, fasciculos, presentaciones y revision por perfiles. Son material propio, derivado de la evidencia local y de las referencias de modernizacion registradas en la obra.
 
 ## TAB_002 - Inventario tecnico base
