@@ -45,3 +45,4 @@
 | 2026-05-28 | v0.2-salida | Publicacion | Ordenado plan de salida y formato de venta, separando tag editorial, PDF/HTML, release con assets, venta directa, curso pago y licencia comercial. |
 | 2026-05-28 | v0.2-salida | Revision | Cerrados criterios internos de salida con glosario, acronimos, figuras, tablas, ejercicios, laboratorios y decision sobre revision externa. |
 | 2026-06-03 | v0.2-editorial | Publicacion | Publicado `main` y preparado tag editorial interno `v0.2-editorial` despues del escaneo de publicacion segura. |
+| 2026-06-04 | v0.2-formatos | Formatos | Preparado exportador local para generar libro unico en Markdown y HTML/PDF cuando Pandoc este disponible. |

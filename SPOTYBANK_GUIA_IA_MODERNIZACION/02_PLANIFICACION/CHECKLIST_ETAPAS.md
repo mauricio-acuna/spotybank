@@ -48,6 +48,7 @@ La revision externa queda recomendada para producto institucional, comercial o r
 
 - [ok] Formato fuente Markdown definido.
 - [ok] Figuras Mermaid iniciales registradas.
+- [ok] Exportador local de libro unico Markdown preparado.
 - [later] Exportar PDF/HTML.
 - [later] Generar indice analitico.
 - [later] Preparar portada grafica final.

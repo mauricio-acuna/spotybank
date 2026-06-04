@@ -11,7 +11,7 @@ Este plan define como generar artefactos PDF/HTML para `v0.2-editorial` cuando s
 
 ## Estado local de herramientas
 
-Chequeo actualizado el 2026-05-28:
+Chequeo actualizado el 2026-06-04:
 
 | Herramienta | Estado |
 |---|---|
@@ -19,7 +19,7 @@ Chequeo actualizado el 2026-05-28:
 | `wkhtmltopdf` | No disponible localmente |
 | `typst` | No disponible localmente |
 
-Por este motivo no se generaron artefactos PDF/HTML en este avance. El repo queda preparado con instrucciones reproducibles.
+Por este motivo no se generaron artefactos PDF/HTML en este avance. El repo queda preparado con instrucciones reproducibles y con `Exportar_ObraLiteraria_Spotybank.ps1`, que genera un Markdown unico local y exporta HTML/PDF cuando Pandoc este disponible.
 
 ## Orden recomendado de archivos
 
@@ -55,6 +55,26 @@ SPOTYBANK_GUIA_IA_MODERNIZACION/06_PARTES_FINALES/CONTRAPORTADA.md
 Las notas de investigacion no deben entrar en el libro unico salvo que se quiera publicar un anexo de trazabilidad.
 
 ## Comando sugerido para HTML
+
+### Exportador local
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\Exportar_ObraLiteraria_Spotybank.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File .\Exportar_ObraLiteraria_Spotybank.ps1 -Html
+powershell -NoProfile -ExecutionPolicy Bypass -File .\Exportar_ObraLiteraria_Spotybank.ps1 -Html -Pdf
+```
+
+Salida local esperada:
+
+```text
+dist/v0.2-editorial/spotybank-guia-ia-modernizacion-v0.2-editorial.md
+dist/v0.2-editorial/spotybank-guia-ia-modernizacion-v0.2-editorial.html
+dist/v0.2-editorial/spotybank-guia-ia-modernizacion-v0.2-editorial.pdf
+```
+
+El directorio `dist/` queda ignorado por Git para evitar publicar builds por accidente. Si se decide crear un release con assets, agregar los artefactos de forma explicita.
+
+### Comando manual con Pandoc
 
 ```powershell
 $out = "dist/v0.2-editorial"

@@ -80,7 +80,7 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | Revision externa por especialistas | LATER | Recomendada antes de producto institucional, comercial o release con artefactos |
 | ISBN | LATER | Solo requerido para edicion editorial o impresa formal |
 | Maquetacion profesional | LATER | Markdown es el formato base de `v0.1-publicable` |
-| Exportacion PDF/HTML | NEXT | Plan preparado; falta herramienta local y generacion de artefactos si se decide release formal |
+| Exportacion PDF/HTML | NEXT | Script preparado; Markdown unico local generable; falta Pandoc para HTML/PDF si se decide release formal |
 | Portada grafica final | LATER | Ya existe prompt de imagen; falta generar o seleccionar arte final |
 | Landing page y difusion ampliada | LATER | Plan creado; ejecucion posterior |
 
@@ -184,3 +184,4 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-05-28 | Ordenado plan de salida y formato de venta sin crear tag, release, precio ni oferta comercial. |
 | 2026-05-28 | Cerrados criterios internos del checklist de salida y documentada decision sobre revision externa. |
 | 2026-06-03 | Publicado `main` y preparado tag editorial interno `v0.2-editorial` despues del escaneo de publicacion segura. |
+| 2026-06-04 | Preparado exportador local para libro unico en Markdown y exportacion HTML/PDF condicionada a Pandoc. |

@@ -30,8 +30,11 @@ Indice del material editorial de Spotybank.
 ## Generador
 
 - [Crear_Obra_Literaria_Tecnica.ps1](Crear_Obra_Literaria_Tecnica.ps1)
+- [Exportar_ObraLiteraria_Spotybank.ps1](Exportar_ObraLiteraria_Spotybank.ps1)
 
 El generador crea la estructura base del proyecto editorial. Ya esta preparado para usar el nombre `SPOTYBANK_GUIA_IA_MODERNIZACION`.
+
+El exportador genera un Markdown unico local en `dist/v0.2-editorial/` y, si Pandoc esta disponible, puede generar HTML/PDF.
 
 ## Versionado y publicacion
 

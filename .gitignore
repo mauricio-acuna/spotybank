@@ -10,6 +10,7 @@ Thumbs.db
 
 # Salidas locales de sincronizacion
 _logs/
+dist/
 
 # Material sensible que no debe entrar al repo publico
 *.secret
