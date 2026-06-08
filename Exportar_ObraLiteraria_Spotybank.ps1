@@ -283,6 +283,39 @@ function New-BasicHtmlDocument {
   return $html
 }
 
+function Write-ArtifactManifest {
+  param(
+    [string]$OutputDirectory,
+    [string]$Version
+  )
+
+  $manifest = Join-Path $OutputDirectory ("spotybank-guia-ia-modernizacion-" + $Version + "-manifest.txt")
+  $artifactPattern = "spotybank-guia-ia-modernizacion-$Version.*"
+  $artifacts = @(Get-ChildItem -Path $OutputDirectory -File -Filter $artifactPattern | Where-Object { $_.FullName -ne $manifest })
+  $lines = New-Object System.Collections.Generic.List[string]
+
+  $lines.Add("Spotybank Guia IA de Modernizacion - manifiesto de artefactos")
+  $lines.Add("Version: $Version")
+  $lines.Add("Generado: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')")
+  $lines.Add("")
+
+  if ($artifacts.Count -eq 0) {
+    $lines.Add("Sin artefactos generados.")
+  }
+  else {
+    foreach ($artifact in $artifacts | Sort-Object Name) {
+      $hash = Get-FileHash -Algorithm SHA256 -LiteralPath $artifact.FullName
+      $lines.Add("Archivo: $($artifact.Name)")
+      $lines.Add("Tamano: $($artifact.Length) bytes")
+      $lines.Add("SHA256: $($hash.Hash)")
+      $lines.Add("")
+    }
+  }
+
+  $lines | Set-Content -Path $manifest -Encoding UTF8
+  Write-Host "Manifiesto generado: $manifest"
+}
+
 $project = "SPOTYBANK_GUIA_IA_MODERNIZACION"
 $outDir = Join-Path (Join-Path $PSScriptRoot "dist") $Version
 New-Item -ItemType Directory -Force -Path $outDir | Out-Null
@@ -357,6 +390,7 @@ if (-not $pandoc) {
     Write-Host "pandoc no disponible; HTML/PDF quedan omitidos."
   }
 
+  Write-ArtifactManifest -OutputDirectory $outDir -Version $Version
   exit 0
 }
 
@@ -397,3 +431,5 @@ if ($Pdf) {
   }
   Write-Host "PDF generado: $pdfOut"
 }
+
+Write-ArtifactManifest -OutputDirectory $outDir -Version $Version
