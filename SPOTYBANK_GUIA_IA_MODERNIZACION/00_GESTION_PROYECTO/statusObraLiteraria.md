@@ -1,6 +1,6 @@
 # Status de Obra Literaria Tecnica
 
-Fecha de control: 2026-06-03
+Fecha de control: 2026-06-08
 
 Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de microservicios bancarios`.
 
@@ -11,13 +11,13 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 - Autor: Mauricio Acuña, Ingeniero en Informatica.
 - Version base publicada: `v0.1-publicable`.
 - Version editorial publicada: `v0.2-editorial`.
-- Estrategia de publicacion: libro unico en Markdown y fasciculos por perfil; exportacion PDF/HTML disponible como siguiente formato.
+- Estrategia de publicacion: libro unico en Markdown, HTML local navegable y fasciculos por perfil; PDF disponible como siguiente formato si se instala herramienta de exportacion.
 - Licencia textual: CC BY-NC-SA 4.0.
 - Licencia de ejemplos de codigo propios: Apache License 2.0.
 - Repo Git independiente de la obra: `Documentacion/ObraLiteraria`.
 - Repo remoto registrado: `https://github.com/mauricio-acuna/spotybank.git`.
-- Estado Git verificado: `main` sincronizada con `origin/main` para cierre editorial interno al 2026-06-03.
-- Ciclo actual: salida editorial interna cerrada; PDF/HTML, release con assets, revision externa ampliada y venta/curso quedan como etapas posteriores.
+- Estado Git verificado: `main` sincronizada con `origin/main` para cierre de formatos locales al 2026-06-08.
+- Ciclo actual: salida editorial interna cerrada; Markdown unico, HTML local y manifiesto generados; PDF, release con assets, revision externa ampliada y venta/curso quedan como etapas posteriores.
 
 ## Estados usados
 
@@ -134,9 +134,9 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 
 ## Proximo bloque recomendado
 
-1. Generar PDF/HTML solo si se decide preparar release con artefactos descargables.
-2. Activar revision externa por perfiles antes de producto institucional, comercial o curso pago.
-3. Mantener venta, licencia comercial y landing page como decisiones separadas del cierre editorial.
+1. Generar PDF solo si se instala Pandoc y motor PDF o si se decide una herramienta equivalente.
+2. Realizar revision visual/editorial de artefactos antes de publicar release con descargables.
+3. Activar revision externa por perfiles antes de producto institucional, comercial o curso pago.
 
 ## Historial
 
