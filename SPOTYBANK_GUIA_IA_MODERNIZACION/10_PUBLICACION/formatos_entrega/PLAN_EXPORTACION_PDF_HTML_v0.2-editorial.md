@@ -11,7 +11,7 @@ Este plan define como generar artefactos PDF/HTML para `v0.2-editorial` cuando s
 
 ## Estado local de herramientas
 
-Chequeo actualizado el 2026-06-04:
+Chequeo actualizado el 2026-06-08:
 
 | Herramienta | Estado |
 |---|---|
@@ -22,6 +22,8 @@ Chequeo actualizado el 2026-06-04:
 | `typst` | No disponible localmente |
 
 Se genero un HTML basico local con `Exportar_ObraLiteraria_Spotybank.ps1 -Html`, sin depender de Pandoc. El PDF queda pendiente porque requiere Pandoc y un motor PDF disponible. Los artefactos generados permanecen en `dist/`, ignorado por Git, hasta que se decida un release con descargables.
+
+La validacion del HTML local queda registrada en `VALIDACION_HTML_LOCAL_v0.2-formatos_2026-06-08.md`.
 
 ## Orden recomendado de archivos
 

@@ -186,3 +186,4 @@ Este tablero controla la obra editorial `Spotybank: guia IA de modernizacion de 
 | 2026-06-03 | Publicado `main` y preparado tag editorial interno `v0.2-editorial` despues del escaneo de publicacion segura. |
 | 2026-06-04 | Preparado exportador local para libro unico en Markdown y exportacion HTML/PDF condicionada a Pandoc. |
 | 2026-06-04 | Generado HTML basico local navegable sin Pandoc; PDF queda pendiente por herramienta externa. |
+| 2026-06-08 | Validado HTML local navegable de `v0.2-formatos` con TOC, tablas, bloques de codigo, capitulo 12 y contraportada. |

@@ -50,6 +50,7 @@ La revision externa queda recomendada para producto institucional, comercial o r
 - [ok] Figuras Mermaid iniciales registradas.
 - [ok] Exportador local de libro unico Markdown preparado.
 - [ok] Exportar HTML basico local sin Pandoc.
+- [ok] Validar HTML local como artefacto no versionado.
 - [later] Exportar PDF.
 - [later] Generar indice analitico.
 - [later] Preparar portada grafica final.
