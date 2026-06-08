@@ -34,7 +34,7 @@ Indice del material editorial de Spotybank.
 
 El generador crea la estructura base del proyecto editorial. Ya esta preparado para usar el nombre `SPOTYBANK_GUIA_IA_MODERNIZACION`.
 
-El exportador genera un Markdown unico local en `dist/v0.2-editorial/` y, si Pandoc esta disponible, puede generar HTML/PDF.
+El exportador genera Markdown unico y HTML navegable local en `dist/v0.2-editorial/`. Si Pandoc esta disponible, tambien puede generar HTML/PDF con Pandoc.
 
 ## Versionado y publicacion
 

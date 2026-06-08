@@ -15,11 +15,13 @@ Chequeo actualizado el 2026-06-04:
 
 | Herramienta | Estado |
 |---|---|
+| Exportador PowerShell local | Disponible |
+| HTML basico local | Generado sin Pandoc |
 | `pandoc` | No disponible localmente |
 | `wkhtmltopdf` | No disponible localmente |
 | `typst` | No disponible localmente |
 
-Por este motivo no se generaron artefactos PDF/HTML en este avance. El repo queda preparado con instrucciones reproducibles y con `Exportar_ObraLiteraria_Spotybank.ps1`, que genera un Markdown unico local y exporta HTML/PDF cuando Pandoc este disponible.
+Se genero un HTML basico local con `Exportar_ObraLiteraria_Spotybank.ps1 -Html`, sin depender de Pandoc. El PDF queda pendiente porque requiere Pandoc y un motor PDF disponible. Los artefactos generados permanecen en `dist/`, ignorado por Git, hasta que se decida un release con descargables.
 
 ## Orden recomendado de archivos
 
@@ -72,7 +74,7 @@ dist/v0.2-editorial/spotybank-guia-ia-modernizacion-v0.2-editorial.html
 dist/v0.2-editorial/spotybank-guia-ia-modernizacion-v0.2-editorial.pdf
 ```
 
-El directorio `dist/` queda ignorado por Git para evitar publicar builds por accidente. Si se decide crear un release con assets, agregar los artefactos de forma explicita.
+El directorio `dist/` queda ignorado por Git para evitar publicar builds por accidente. Si se decide crear un release con assets, agregar los artefactos de forma explicita despues de revision editorial interna.
 
 ### Comando manual con Pandoc
 

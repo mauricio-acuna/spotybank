@@ -79,7 +79,7 @@ Usar `09_REVISIONES/REVISION_EXTERNA_MINIMA_v0.2-editorial.md` y `09_REVISIONES/
 |---|---|---|
 | Markdown versionado en Git | [ok] | Entregable base |
 | PDF unico de la obra | [later] | Plan de exportacion preparado; falta herramienta local y generacion |
-| HTML navegable | [later] | Util si se publica como sitio |
+| HTML navegable local | [ok] | Generado con exportador PowerShell en `dist/`; no versionado por defecto |
 | Fasciculos PDF por perfil | [later] | Util para talleres especificos |
 | Release notes de `v0.2-editorial` | [ok] | Draft creado y alineado con cierre tecnico; cerrar antes de tag/release |
 | Plan de salida y formato de venta | [ok] | Publicacion editorial separada de venta directa, curso pago y licencia comercial |
