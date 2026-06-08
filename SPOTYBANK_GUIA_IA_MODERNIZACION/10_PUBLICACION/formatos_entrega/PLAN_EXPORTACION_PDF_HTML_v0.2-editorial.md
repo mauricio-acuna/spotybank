@@ -73,10 +73,11 @@ Salida local esperada:
 ```text
 dist/v0.2-editorial/spotybank-guia-ia-modernizacion-v0.2-editorial.md
 dist/v0.2-editorial/spotybank-guia-ia-modernizacion-v0.2-editorial.html
+dist/v0.2-editorial/spotybank-guia-ia-modernizacion-v0.2-editorial-manifest.txt
 dist/v0.2-editorial/spotybank-guia-ia-modernizacion-v0.2-editorial.pdf
 ```
 
-El directorio `dist/` queda ignorado por Git para evitar publicar builds por accidente. Si se decide crear un release con assets, agregar los artefactos de forma explicita despues de revision editorial interna.
+El manifiesto local registra tamano y SHA256 de los artefactos generados. El directorio `dist/` queda ignorado por Git para evitar publicar builds por accidente. Si se decide crear un release con assets, agregar los artefactos de forma explicita despues de revision editorial interna.
 
 ### Comando manual con Pandoc
 

@@ -48,3 +48,4 @@
 | 2026-06-04 | v0.2-formatos | Formatos | Preparado exportador local para generar libro unico en Markdown y HTML/PDF cuando Pandoc este disponible. |
 | 2026-06-04 | v0.2-formatos | Formatos | Generado HTML basico local navegable sin Pandoc; artefactos mantenidos en `dist/` fuera de Git hasta decidir release. |
 | 2026-06-08 | v0.2-formatos | Revision | Validado HTML local con tabla de contenidos, estructura navegable, tablas, bloques de codigo, capitulo 12 y contraportada. |
+| 2026-06-08 | v0.2-formatos | Formatos | Agregado manifiesto local de artefactos con tamano y SHA256 para preparar una eventual publicacion con assets. |
